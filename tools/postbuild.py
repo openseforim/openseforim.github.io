@@ -147,7 +147,7 @@ def process(page, root, slug, work):
 
     head = re.sub(r'(href|src)="([^"]+\.(?:css|js))"', lambda m: stamp(m, page.parent), head)
     body = re.sub(r'(src)="([^"]+\.js)"', lambda m: stamp(m, page.parent), body)
-    body = re.sub(r"<(\w+)((?:\s[^<>]*?)?\sdir=\"rtl\"[^<>]*?)>([^<]{0,200})", add_lang, body)
+    body = re.sub(r"<(\w+)((?:\s[^<>]*?)?\sdir=[\"']rtl[\"'][^<>]*?)>([^<]{0,200})", add_lang, body)
     body = re.sub(r'<(\w+)((?:\s[^<>]*?)?\sclass="(?:[^"]*\s)?he(?:\s[^"]*)?"[^<>]*?)>([^<]{0,200})', add_lang, body)
     t = head.rstrip("\n") + "\n" + block + "</head>" + body
     if t != orig:

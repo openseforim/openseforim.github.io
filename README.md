@@ -26,3 +26,6 @@ Landing site for https://openseforim.org (org site of the `openseforim` GitHub o
   repository" and Zenodo DOIs. Add `"doi"` to a work.json after Zenodo mints one; the footer and tags then use it.
 - `assets/os.js`: set `GOATCOUNTER` to the GoatCounter site code to turn on page counts. A `#anchor` in the address
   shows a "This passage" bar with Copy citation / Copy link.
+- `tools/check_downloads.py` tests every file in `downloads/`: EPUB (main epubcheck rules: mimetype, OPF, manifest, spine,
+  well-formed XHTML, links, nav, cover), TEI (well-formed, header, ids, links, empty segments) and plain text (UTF-8,
+  no HTML or interface text left). Run it after `build.py`.

@@ -103,7 +103,8 @@
 
     var c2 = el('div');
     c2.appendChild(el('h2', {}, 'Cite and reuse'));
-    var today = new Date().toISOString().slice(0, 10);
+    var dt = new Date(), MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var today = ('0' + dt.getDate()).slice(-2) + '-' + MON[dt.getMonth()] + '-' + dt.getFullYear();
     var cite = (w.cite || (w.title + '. Open Seforim')) + '. https://openseforim.org' + base + ' (accessed ' + today + ').';
     var cp = el('p', { 'class': 'os-cite' }, cite);
     c2.appendChild(cp);

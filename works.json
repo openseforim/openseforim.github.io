@@ -19,8 +19,8 @@
     "url": "https://openseforim.org/emden/",
     "repo": "https://github.com/openseforim/emden",
     "licence": {
-      "name": "Translation and notes: CC BY 4.0; code: MIT",
-      "url": "https://creativecommons.org/licenses/by/4.0/"
+      "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   {
@@ -67,8 +67,8 @@
     "url": "https://openseforim.org/meor-einayim/",
     "repo": "https://github.com/openseforim/meor-einayim",
     "licence": {
-      "name": "MIT License (transcription, translation and code)",
-      "url": "https://github.com/openseforim/meor-einayim/blob/main/LICENSE"
+      "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   {
@@ -91,8 +91,8 @@
     "url": "https://openseforim.org/hyman/",
     "repo": "https://github.com/openseforim/hyman",
     "licence": {
-      "name": "MIT License (transcription, translation and code)",
-      "url": "https://github.com/openseforim/hyman/blob/main/LICENSE"
+      "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   {
@@ -114,8 +114,8 @@
     "url": "https://openseforim.org/bochart/",
     "repo": "https://github.com/openseforim/bochart",
     "licence": {
-      "name": "MIT License (transcription, translation and code)",
-      "url": "https://github.com/openseforim/bochart/blob/main/LICENSE"
+      "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   {
@@ -137,8 +137,8 @@
     "url": "https://openseforim.org/lewysohn/",
     "repo": "https://github.com/openseforim/lewysohn",
     "licence": {
-      "name": "MIT License (transcription, translation and code)",
-      "url": "https://github.com/openseforim/lewysohn/blob/main/LICENSE"
+      "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   {
@@ -160,8 +160,8 @@
     "url": "https://openseforim.org/loew/",
     "repo": "https://github.com/openseforim/loew",
     "licence": {
-      "name": "MIT License (transcription, translation and code)",
-      "url": "https://github.com/openseforim/loew/blob/main/LICENSE"
+      "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   {

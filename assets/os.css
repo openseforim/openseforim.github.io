@@ -41,8 +41,14 @@
 html:not(.os-own-palette) body{background:var(--os-bg);color:var(--os-fg)}
 
 /* ---- shared strip (inserted by os.js) ---- */
-.os-strip{background:var(--os-bg);border-bottom:1px solid var(--os-line);font:13px/1.4 var(--os-sans);color:var(--os-muted)}
-.os-strip-in{display:flex;align-items:center;gap:8px;max-width:1250px;margin:0 auto;padding:5px 16px;flex-wrap:wrap}
+/* The strip has a fixed height and its space is reserved before os.js runs, so the page does not jump. */
+:root{--os-strip-h:34px}
+html body{padding-top:var(--os-strip-h)}
+.os-strip{position:absolute;top:0;left:0;right:0;height:var(--os-strip-h);overflow:hidden;z-index:20;
+  background:var(--os-bg);border-bottom:1px solid var(--os-line);font:13px/1.4 var(--os-sans);color:var(--os-muted)}
+.os-strip-in{display:flex;align-items:center;gap:10px;max-width:1250px;height:100%;margin:0 auto;padding:0 16px;flex-wrap:nowrap;white-space:nowrap}
+.os-strip .os-work{min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:420px){.os-strip .os-about{display:none}}
 .os-strip a{color:var(--os-muted);text-decoration:none}
 .os-strip a:hover{color:var(--os-accent);text-decoration:underline}
 .os-strip .os-home{color:var(--os-fg);font:italic 600 14px/1.4 var(--os-serif)}
@@ -62,12 +68,15 @@ html:not(.os-own-palette) body{background:var(--os-bg);color:var(--os-fg)}
 .os-foot .os-brand{grid-column:1/-1;border-top:1px solid var(--os-line);padding-top:10px;font-size:13px}
 
 /* ---- landing page ---- */
-.os-landing{margin:0;background:var(--os-bg);color:var(--os-fg);font:17px/1.6 var(--os-serif)}
+.os-landing{background:var(--os-bg);color:var(--os-fg);font:17px/1.6 var(--os-serif)}
 .os-landing a{color:var(--os-accent)}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 .hero{padding:40px 0 16px}
 .hero h1{font-size:2rem;margin:0 0 6px}
 .hero p{color:var(--os-muted);max-width:42em;margin:0}
+.prose{max-width:46em}
+.prose h2{font-size:1.25rem;margin:28px 0 6px}
+.prose li{margin:.4em 0}
 .sect{font-size:1.15rem;margin:28px 0 0;color:var(--os-muted);font-weight:600}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:14px 0 16px}
 .card{background:var(--os-card);border:1px solid var(--os-line);border-radius:8px;padding:16px 18px;text-decoration:none;color:var(--os-fg) !important;display:flex;flex-direction:column;gap:6px}

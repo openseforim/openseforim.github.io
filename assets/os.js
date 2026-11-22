@@ -2,6 +2,8 @@
    Each reader page loads it with: <script src="/assets/os.js" defer></script>
    The work's metadata comes from /<slug>/work.json. */
 (function () {
+  // short work titles, written by build.py from the works' work.json (no flash of the slug)
+  var TITLES = /*TITLES*/{"emden": "Megillat Sefer", "immanuel": "Maḥberot", "meor-einayim": "Me'or Einayim", "hyman": "Toldot Tannaim ve-Amoraim", "bochart": "Hierozoicon", "lewysohn": "Zoologie des Talmuds", "loew": "Flora der Juden", "barhebraeus": "Chronography", "defus": "Defus"}/*END*/;
   var KEY = 'os-theme';
   var OLD_KEYS = ['ms-theme', 'me-theme', 'bh-theme', 'lz-theme'];
   var root = document.documentElement;
@@ -39,11 +41,12 @@
   var workLink = null;
   if (slug) {
     inner.appendChild(el('span', { 'class': 'os-sep', 'aria-hidden': 'true' }, '/'));
-    workLink = el('a', { href: base }, slug);
+    workLink = el('a', { href: base, 'class': 'os-work' }, TITLES[slug] || slug);
     inner.appendChild(workLink);
   }
   inner.appendChild(el('span', { 'class': 'os-sp' }));
   inner.appendChild(el('a', { href: '/#works' }, 'All works'));
+  inner.appendChild(el('a', { href: '/about/', 'class': 'os-about' }, 'About'));
   var sel = el('select', { 'aria-label': 'Colour theme', title: 'Colour theme (all works)' });
   [['auto', 'Auto'], ['light', 'Light'], ['paper', 'Paper'], ['dark', 'Dark']].forEach(function (o) {
     var op = el('option', { value: o[0] }, o[1]); sel.appendChild(op);

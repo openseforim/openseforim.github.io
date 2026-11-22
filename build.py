@@ -3,7 +3,7 @@
 py -3.13 build.py   (run from this folder; the reader clones are siblings in ..\\)
 Add a line to WORKS when a repo moves into the org. Rerun after a reader adds pages or changes work.json.
 """
-import html, json, sys
+import html, json, re, sys
 from datetime import date
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
@@ -81,7 +81,7 @@ def landing(works):
 
 
 def sitemap(works):
-    urls = ["https://openseforim.org/"]
+    urls = ["https://openseforim.org/", "https://openseforim.org/about/"]
     for w in works:
         base = w["_base"]
         pages = sorted(p for p in base.rglob("*.html")
@@ -107,4 +107,12 @@ if __name__ == "__main__":
     (HERE / "works.json").write_text(json.dumps([{k: v for k, v in w.items() if not k.startswith("_")} for w in ws],
                                                 ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"index.html: {len(ws)} works", flush=True)
+    # short titles for the strip in os.js (shown at once, before work.json loads)
+    js = HERE / "assets" / "os.js"
+    titles = json.dumps({w["slug"]: w.get("short_title", w["title"]) for w in ws}, ensure_ascii=False)
+    t = js.read_text(encoding="utf-8")
+    t = re.sub(r"/\*TITLES\*/.*?/\*END\*/", lambda m: "/*TITLES*/" + titles + "/*END*/", t, flags=re.S)
+    js.write_text(t, encoding="utf-8")
     sitemap(ws)
+    import subprocess
+    subprocess.run([sys.executable, str(HERE / "tools" / "postbuild.py"), "", str(HERE)], check=True)

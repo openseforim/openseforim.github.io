@@ -3,7 +3,7 @@
    The work's metadata comes from /<slug>/work.json. */
 (function () {
   // short work titles, written by build.py from the works' work.json (no flash of the slug)
-  var TITLES = /*TITLES*/{"emden": "Megillat Sefer", "immanuel": "Maḥberot", "meor-einayim": "Me'or Einayim", "hyman": "Toldot Tannaim ve-Amoraim", "bochart": "Hierozoicon", "lewysohn": "Zoologie des Talmuds", "loew": "Flora der Juden", "barhebraeus": "Chronography", "defus": "Defus"}/*END*/;
+  var TITLES = /*TITLES*/{"emden": "*Megillat Sefer*", "immanuel": "*Maḥberot*", "meor-einayim": "*Me'or Einayim*", "hyman": "*Toldot Tannaim ve-Amoraim*", "bochart": "*Hierozoicon*", "lewysohn": "*Zoologie des Talmuds*", "loew": "*Flora der Juden*", "barhebraeus": "*Chronography*", "defus": "Defus"}/*END*/;
   var KEY = 'os-theme';
   var OLD_KEYS = ['ms-theme', 'me-theme', 'bh-theme', 'lz-theme'];
   var root = document.documentElement;
@@ -27,6 +27,11 @@
   var slug = location.pathname.split('/').filter(Boolean)[0] || '';
   var base = slug ? '/' + slug + '/' : '/';
 
+  // work.json marks book titles as *Title*: show them in italics, and drop the marks in plain text
+  function escHtml(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function ital(s) { return escHtml(s).replace(/\*(.+?)\*/g, '<i>$1</i>'); }
+  function plain(s) { return String(s).replace(/\*/g, ''); }
+
   function el(tag, attrs, text) {
     var e = document.createElement(tag);
     for (var k in attrs || {}) e.setAttribute(k, attrs[k]);
@@ -43,7 +48,8 @@
   var ownBar = document.querySelector('a.brand');
   if (slug && !ownBar) {
     inner.appendChild(el('span', { 'class': 'os-sep', 'aria-hidden': 'true' }, '/'));
-    workLink = el('a', { href: base, 'class': 'os-work' }, TITLES[slug] || slug);
+    workLink = el('a', { href: base, 'class': 'os-work' });
+    workLink.innerHTML = ital(TITLES[slug] || slug);
     inner.appendChild(workLink);
   }
   inner.appendChild(el('span', { 'class': 'os-sp' }));
@@ -82,13 +88,14 @@
   }
 
   function footer(w) {
-    if (workLink && w.short_title) workLink.textContent = w.short_title;
+    if (workLink && w.short_title) workLink.innerHTML = ital(w.short_title);
     var f = el('footer', { 'class': 'os-foot' });
     var fi = el('div', { 'class': 'os-foot-in' });
 
     var c1 = el('div');
     c1.appendChild(el('h2', {}, 'About this edition'));
-    var st = para([w.title]);
+    var st = el('p');
+    st.innerHTML = ital(w.title);
     if (w.status_label) { st.appendChild(document.createTextNode(' ')); st.appendChild(el('span', { 'class': 'os-status' }, w.status_label)); }
     c1.appendChild(st);
     if (w.base_edition) {
@@ -106,8 +113,10 @@
     var dt = new Date(), MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var today = ('0' + dt.getDate()).slice(-2) + '-' + MON[dt.getMonth()] + '-' + dt.getFullYear();
     var cite = (w.cite || (w.title + '. Open Seforim')) + '. https://openseforim.org' + base + ' (accessed ' + today + ').';
-    var cp = el('p', { 'class': 'os-cite' }, cite);
+    var cp = el('p', { 'class': 'os-cite' });
+    cp.innerHTML = ital(cite);
     c2.appendChild(cp);
+    cite = plain(cite);
     var btn = el('button', { type: 'button', 'class': 'os-copy' }, 'Copy citation');
     btn.addEventListener('click', function () {
       var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy citation'; }, 1600); };

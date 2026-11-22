@@ -38,13 +38,18 @@ def load():
     return sorted(works, key=lambda w: w.get("order", 999))
 
 
+def ital(s):
+    """Escape, then show *Book Title* in italics (work.json marks titles with asterisks)."""
+    return re.sub(r"\*(.+?)\*", r"<i>\1</i>", e(s))
+
+
 def card(w):
     he = f'\n      <div class="he" lang="he">{e(w["title_he"])}</div>' if w.get("title_he") else ""
     meta = ""  # the title already names the author
     return f'''    <a class="card" href="/{w["slug"]}/">
       <span class="badge">{e(w.get("status_label", ""))}</span>
-      <h3>{e(w["title"])}</h3>{he}{meta}
-      <p>{e(w.get("summary", ""))}</p>
+      <h3>{ital(w["title"])}</h3>{he}{meta}
+      <p>{ital(w.get("summary", ""))}</p>
     </a>'''
 
 
@@ -109,7 +114,7 @@ if __name__ == "__main__":
     print(f"index.html: {len(ws)} works", flush=True)
     # short titles for the strip in os.js (shown at once, before work.json loads)
     js = HERE / "assets" / "os.js"
-    titles = json.dumps({w["slug"]: w.get("short_title", w["title"]) for w in ws}, ensure_ascii=False)
+    titles = json.dumps({w["slug"]: w.get("short_title", w["title"]) for w in ws}, ensure_ascii=False)  # *...* = italics, rendered by os.js
     t = js.read_text(encoding="utf-8")
     t = re.sub(r"/\*TITLES\*/.*?/\*END\*/", lambda m: "/*TITLES*/" + titles + "/*END*/", t, flags=re.S)
     js.write_text(t, encoding="utf-8")

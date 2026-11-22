@@ -79,14 +79,14 @@ def add_lang(m):
 
 
 def jsonld(work, url):
-    d = {"@context": "https://schema.org", "@type": "Book", "name": work["title"], "url": url,
+    d = {"@context": "https://schema.org", "@type": "Book", "name": work["title"].replace("*", ""), "url": url,
          "publisher": {"@type": "Organization", "name": "Open Seforim", "url": SITE + "/"},
          "editor": {"@type": "Person", "name": "Ezra Brand"},
          "isAccessibleForFree": True}
     if work.get("author"):
         d["author"] = {"@type": "Person", "name": re.sub(r"\s*\(.*\)$", "", work["author"])}
     if work.get("summary"):
-        d["description"] = work["summary"]
+        d["description"] = work["summary"].replace("*", "")
     if work.get("licence", {}).get("url"):
         d["license"] = work["licence"]["url"]
     if work.get("base_edition"):
@@ -123,7 +123,7 @@ def process(page, root, slug, work):
     desc = html.unescape(desc_m.group(1)) if desc_m else ""
     tags = []
     if not desc:
-        desc = first_english(body) or (work or {}).get("summary", "")
+        desc = first_english(body) or (work or {}).get("summary", "").replace("*", "")
         if desc:
             tags.append(meta("name", "description", desc))
     if not re.search(r'rel="canonical"', head):

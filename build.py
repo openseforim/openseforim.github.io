@@ -1,0 +1,110 @@
+"""Build the openseforim.org landing page, sitemap.xml and robots.txt from the readers' work.json files.
+
+py -3.13 build.py   (run from this folder; the reader clones are siblings in ..\\)
+Add a line to WORKS when a repo moves into the org. Rerun after a reader adds pages or changes work.json.
+"""
+import html, json, sys
+from datetime import date
+from pathlib import Path
+sys.stdout.reconfigure(encoding="utf-8")
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+# slug: (local folder, Pages source folder inside it)
+WORKS = {
+    "emden": ("emden-megillat-sefer", "docs"),
+    "hyman": ("hyman-toldot", "."),
+    "immanuel": ("immanuel-mahberot", "docs"),
+    "meor-einayim": ("meor-einayim", "docs"),
+    "bochart": ("bochart-hierozoicon", "docs"),
+    "lewysohn": ("lewysohn-zoologie", "docs"),
+    "loew": ("low-flora", "docs"),
+    "barhebraeus": ("barhebraeus-chronography", "docs"),
+    "defus": ("defus", "."),
+}
+SECTIONS = [("translation", "Translations"), ("source", "Source texts"), ("catalogue", "Catalogue")]
+SKIP_PARTS = {"pipeline", "node_modules", ".git", "scans"}
+e = html.escape
+
+
+def load():
+    works = []
+    for slug, (folder, src) in WORKS.items():
+        base = ROOT / folder / src
+        w = json.loads((base / "work.json").read_text(encoding="utf-8"))
+        assert w["slug"] == slug, (slug, w["slug"])
+        w["_base"] = base
+        works.append(w)
+    return sorted(works, key=lambda w: w.get("order", 999))
+
+
+def card(w):
+    he = f'\n      <div class="he" lang="he">{e(w["title_he"])}</div>' if w.get("title_he") else ""
+    meta = f'\n      <div class="meta">{e(w["author"])}</div>' if w.get("author") else ""
+    return f'''    <a class="card" href="/{w["slug"]}/">
+      <span class="badge">{e(w.get("status_label", ""))}</span>
+      <h3>{e(w["title"])}</h3>{he}{meta}
+      <p>{e(w.get("summary", ""))}</p>
+    </a>'''
+
+
+def landing(works):
+    parts = []
+    for kind, label in SECTIONS:
+        ws = [w for w in works if w.get("kind") == kind]
+        if ws:
+            parts.append(f'  <h2 class="sect">{label}</h2>\n  <section class="grid">\n'
+                         + "\n".join(card(w) for w in ws) + "\n  </section>")
+    sections = "\n".join(parts)
+    return f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Seforim</title>
+<meta name="description" content="Open readers for Hebrew and Judaica texts: source text, page scans and English translation side by side.">
+<meta property="og:title" content="Open Seforim"><meta property="og:type" content="website">
+<link rel="canonical" href="https://openseforim.org/">
+<script>var osT=localStorage.getItem('os-theme');osT&&osT!='auto'&&document.documentElement.setAttribute('data-theme',osT)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/os.css">
+<script src="/assets/os.js" defer></script>
+</head><body class="os-landing">
+<main class="wrap" id="works">
+  <section class="hero">
+    <h1>Open Seforim</h1>
+    <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated.</p>
+  </section>
+{sections}
+</main>
+<footer class="os-foot"><div class="os-foot-in"><div class="os-brand"><p>Open Seforim — open readers for Hebrew and Judaica texts, by Ezra Brand · <a href="https://www.ezrabrand.com/">ezrabrand.com</a> · <a href="https://github.com/openseforim">GitHub</a></p></div></div></footer>
+</body></html>
+'''
+
+
+def sitemap(works):
+    urls = ["https://openseforim.org/"]
+    for w in works:
+        base = w["_base"]
+        pages = sorted(p for p in base.rglob("*.html")
+                       if not SKIP_PARTS & set(p.relative_to(base).parts) and p.name != "404.html")
+        for p in pages:
+            rel = p.relative_to(base).as_posix()
+            rel = "" if rel == "index.html" else rel.removesuffix("index.html")
+            urls.append(f"https://openseforim.org/{w['slug']}/{rel}")
+        print(f"{w['slug']}: {len(pages)} pages", flush=True)
+    today = date.today().isoformat()
+    body = "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls)
+    (HERE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+                                      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                                      + body + "</urlset>\n", encoding="utf-8")
+    (HERE / "robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: https://openseforim.org/sitemap.xml\n",
+                                     encoding="utf-8")
+    print(f"sitemap.xml: {len(urls)} URLs", flush=True)
+
+
+if __name__ == "__main__":
+    ws = load()
+    (HERE / "index.html").write_text(landing(ws), encoding="utf-8")
+    (HERE / "works.json").write_text(json.dumps([{k: v for k, v in w.items() if not k.startswith("_")} for w in ws],
+                                                ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"index.html: {len(ws)} works", flush=True)
+    sitemap(ws)

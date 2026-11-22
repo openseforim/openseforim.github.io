@@ -4,12 +4,13 @@
 <meta name="description" content="Open readers for Hebrew and Judaica texts: source text, page scans and English translation side by side.">
 <meta property="og:title" content="Open Seforim"><meta property="og:type" content="website">
 <link rel="canonical" href="https://openseforim.org/">
+<script>var osT=localStorage.getItem('os-theme');osT&&osT!='auto'&&document.documentElement.setAttribute('data-theme',osT)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/os.css">
-</head><body>
-<div class="bar"><div class="barin"><a class="brand" href="/">Open Seforim</a></div></div>
-<main class="wrap">
+<script src="/assets/os.js" defer></script>
+</head><body class="os-landing">
+<main class="wrap" id="works">
   <section class="hero">
     <h1>Open Seforim</h1>
     <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated.</p>
@@ -18,61 +19,69 @@
   <section class="grid">
     <a class="card" href="/emden/">
       <span class="badge">Translation in progress</span>
-      <h2>Jacob Emden, Megillat Sefer</h2>
-      <div class="he">מגילת ספר</div>
-      <p>Kahana's Hebrew text (1896/97) from Gershom Scholem's annotated copy, with an English draft translation.</p>
+      <h3>Jacob Emden, Megillat Sefer</h3>
+      <div class="he" lang="he">מגילת ספר</div>
+      <div class="meta">Jacob Emden (1697–1776)</div>
+      <p>Kahana&#x27;s Hebrew text (1896/97) from Gershom Scholem&#x27;s annotated copy, with an English draft translation.</p>
     </a>
     <a class="card" href="/immanuel/">
       <span class="badge">Translation in progress</span>
-      <h2>Immanuel of Rome, Maḥberot</h2>
-      <div class="he">מחברות עמנואל</div>
+      <h3>Immanuel of Rome, Maḥberot</h3>
+      <div class="he" lang="he">מחברות עמנואל</div>
+      <div class="meta">Immanuel of Rome (about 1261 – about 1335)</div>
       <p>The Hebrew rhymed-prose maḥberot, with an English translation line by line.</p>
     </a>
     <a class="card" href="/meor-einayim/">
-      <span class="badge">Pilot</span>
-      <h2>Azariah de' Rossi, Me'or Einayim</h2>
-      <div class="he">מאור עינים</div>
-      <p>Hebrew text corrected against the Vilna scan, with an English draft translation.</p>
+      <span class="badge">Draft translation, Imrei Binah</span>
+      <h3>Azariah de&#x27; Rossi, Me&#x27;or Einayim</h3>
+      <div class="he" lang="he">מאור עינים</div>
+      <div class="meta">Azariah de&#x27; Rossi (about 1511–1578)</div>
+      <p>Imrei Binah, the third part: Hebrew text checked against the Vilna scan, with an English draft translation.</p>
     </a>
     <a class="card" href="/hyman/">
-      <span class="badge">Sample + machine translation</span>
-      <h2>Aaron Hyman, Toldot Tannaim ve-Amoraim</h2>
-      <div class="he">תולדות תנאים ואמוראים</div>
-      <p>The biographical dictionary of the Talmudic sages: two annotated sample entries, and a machine translation of the entries.</p>
+      <span class="badge">Machine translation + reviewed samples</span>
+      <h3>Aaron Hyman, Toldot Tannaim ve-Amoraim</h3>
+      <div class="he" lang="he">תולדות תנאים ואמוראים</div>
+      <div class="meta">Aaron Hyman (1863–1937)</div>
+      <p>The biographical dictionary of the Talmudic sages: a machine translation of all 1,889 entries, and reviewed sample entries.</p>
     </a>
     <a class="card" href="/bochart/">
       <span class="badge">Translation in progress</span>
-      <h2>Samuel Bochart, Hierozoicon</h2>
+      <h3>Samuel Bochart, Hierozoicon</h3>
+      <div class="meta">Samuel Bochart (1599–1667)</div>
       <p>The classic study of the animals of the Bible (1663): Latin text and English translation side by side, with links to the scans.</p>
     </a>
     <a class="card" href="/lewysohn/">
-      <span class="badge">Sample pages</span>
-      <h2>Ludwig Lewysohn, Die Zoologie des Talmuds</h2>
-      <p>Machine transcription and English translation of pages of the 1858 study of the animals of the Talmud.</p>
+      <span class="badge">Translation in progress</span>
+      <h3>Ludwig Lewysohn, Die Zoologie des Talmuds</h3>
+      <div class="meta">Ludwig Lewysohn (1819–1901)</div>
+      <p>German text and English translation of the 1858 study of the animals of the Talmud.</p>
     </a>
     <a class="card" href="/loew/">
       <span class="badge">Sample pages</span>
-      <h2>Immanuel Löw, Die Flora der Juden</h2>
-      <p>Machine transcription and English translation of pages of Löw's study of the plants of Jewish sources.</p>
+      <h3>Immanuel Löw, Die Flora der Juden</h3>
+      <div class="meta">Immanuel Löw (1854–1944)</div>
+      <p>German text and English translation of sample pages and the contents lists of Löw&#x27;s study of the plants of Jewish sources.</p>
     </a>
   </section>
   <h2 class="sect">Source texts</h2>
   <section class="grid">
     <a class="card" href="/barhebraeus/">
       <span class="badge">OCR pilot</span>
-      <h2>Barhebraeus, Chronography</h2>
-      <p>OCR of Bedjan's edition of the Chronicon Syriacum (1890), with a transliteration into Hebrew letters.</p>
+      <h3>Barhebraeus, Chronography</h3>
+      <div class="meta">Gregory Barhebraeus (1226–1286)</div>
+      <p>OCR of Bedjan&#x27;s edition of the Chronicon Syriacum (1890), with a transliteration into Hebrew letters.</p>
     </a>
   </section>
   <h2 class="sect">Catalogue</h2>
   <section class="grid">
     <a class="card" href="/defus/">
-      <span class="badge">Catalogue</span>
-      <h2>Defus</h2>
-      <div class="he">דפוס</div>
+      <span class="badge">Prototype catalogue</span>
+      <h3>Defus: open scans of printed Hebrew books</h3>
+      <div class="he" lang="he">דפוס</div>
       <p>Open scans of printed Hebrew books and Judaica, 1469–1920, gathered from the libraries that hold them.</p>
     </a>
   </section>
 </main>
-<footer><div class="wrap">Open Seforim · by Ezra Brand · <a href="https://www.ezrabrand.com/">ezrabrand.com</a></div></footer>
+<footer class="os-foot"><div class="os-foot-in"><div class="os-brand"><p>Open Seforim — open readers for Hebrew and Judaica texts, by Ezra Brand · <a href="https://www.ezrabrand.com/">ezrabrand.com</a> · <a href="https://github.com/openseforim">GitHub</a></p></div></div></footer>
 </body></html>

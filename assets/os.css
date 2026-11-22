@@ -48,7 +48,7 @@ html body{padding-top:var(--os-strip-h)}
   background:var(--os-bg);border-bottom:1px solid var(--os-line);font:13px/1.4 var(--os-sans);color:var(--os-muted)}
 .os-strip-in{display:flex;align-items:center;gap:10px;max-width:1250px;height:100%;margin:0 auto;padding:0 16px;flex-wrap:nowrap;white-space:nowrap}
 .os-strip .os-work{min-width:0;overflow:hidden;text-overflow:ellipsis}
-@media (max-width:420px){.os-strip .os-about{display:none}}
+@media (max-width:420px){.os-strip-in{gap:8px;padding:0 12px}}
 .os-strip a{color:var(--os-muted);text-decoration:none}
 .os-strip a:hover{color:var(--os-accent);text-decoration:underline}
 .os-strip .os-home{color:var(--os-fg);font:italic 600 14px/1.4 var(--os-serif)}

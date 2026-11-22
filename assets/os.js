@@ -139,7 +139,7 @@
 
     var b = el('div', { 'class': 'os-brand' });
     b.appendChild(para([a('/', 'Open Seforim'), ' — open readers for Hebrew and Judaica texts, by Ezra Brand · ',
-      a('https://www.ezrabrand.com/', 'ezrabrand.com')]));
+      a('/about/', 'About'), ' · ', a('/#works', 'All works'), ' · ', a('https://www.ezrabrand.com/', 'ezrabrand.com')]));
     fi.appendChild(b);
 
     f.appendChild(fi);

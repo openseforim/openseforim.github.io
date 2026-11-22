@@ -1,0 +1,22 @@
+/* Open Seforim shared theme, v0. Palette taken from the Emden reader. */
+:root{--bg:#fbfaf7;--fg:#1d1c1a;--muted:#6b665e;--line:#e3dfd6;--accent:#8a3b12;--card:#fff;--badge:#efe9dc}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17161a;--fg:#e9e6df;--muted:#a19b90;--line:#34313a;--accent:#e39a6c;--card:#1f1e23;--badge:#2a282e}}
+:root[data-theme="dark"]{--bg:#17161a;--fg:#e9e6df;--muted:#a19b90;--line:#34313a;--accent:#e39a6c;--card:#1f1e23;--badge:#2a282e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 "Noto Serif",Georgia,serif}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.bar{border-bottom:1px solid var(--line);font-size:.9rem}
+.barin{display:flex;align-items:center;gap:16px;padding:10px 16px;max-width:1100px;margin:0 auto}
+.brand{font-weight:600;font-style:italic;text-decoration:none;color:var(--fg)}
+.hero{padding:40px 0 16px}
+.hero h1{font-size:2rem;margin:0 0 6px}
+.hero p{color:var(--muted);max-width:42em;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:24px 0 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;text-decoration:none;color:var(--fg);display:flex;flex-direction:column;gap:6px}
+.card:hover{border-color:var(--accent)}
+.card h2{font-size:1.1rem;margin:0}
+.card .he{font-family:"Noto Serif Hebrew",serif;direction:rtl;color:var(--muted)}
+.card p{margin:0;font-size:.92rem;color:var(--muted)}
+.badge{align-self:flex-start;background:var(--badge);border-radius:4px;padding:1px 8px;font-size:.78rem;color:var(--fg)}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:16px 0 32px}

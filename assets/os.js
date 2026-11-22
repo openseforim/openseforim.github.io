@@ -25,6 +25,7 @@
   apply(theme);
 
   var slug = location.pathname.split('/').filter(Boolean)[0] || '';
+  if (!Object.prototype.hasOwnProperty.call(TITLES, slug)) slug = '';  // site pages such as /about/ are not works
   var base = slug ? '/' + slug + '/' : '/';
 
   // work.json marks book titles as *Title*: show them in italics, and drop the marks in plain text

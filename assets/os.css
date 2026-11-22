@@ -5,27 +5,27 @@
 
 :root{
   --os-bg:#fbfaf7; --os-fg:#1d1c1a; --os-muted:#6b665e; --os-line:#e3dfd6;
-  --os-accent:#7a4b12; --os-card:#ffffff; --os-badge:#efe9dc;
+  --os-accent:#7a4b12; --os-card:#ffffff; --os-badge:#efe9dc; --os-mark:#efe3cf;
   --os-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --os-serif:"Noto Serif",Georgia,serif;
 }
 :root[data-theme="light"]{
   --os-bg:#fbfaf7; --os-fg:#1d1c1a; --os-muted:#6b665e; --os-line:#e3dfd6;
-  --os-accent:#7a4b12; --os-card:#ffffff; --os-badge:#efe9dc;
+  --os-accent:#7a4b12; --os-card:#ffffff; --os-badge:#efe9dc; --os-mark:#efe3cf;
 }
 :root[data-theme="paper"]{
   --os-bg:#f3ead6; --os-fg:#3a2e1f; --os-muted:#7a6a52; --os-line:#dccdab;
-  --os-accent:#7a4b12; --os-card:#f8f1e1; --os-badge:#e9dcbd;
+  --os-accent:#7a4b12; --os-card:#f8f1e1; --os-badge:#e9dcbd; --os-mark:#e3cfa3;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]):not([data-theme="paper"]){
     --os-bg:#17161a; --os-fg:#e9e6df; --os-muted:#a19b90; --os-line:#34313a;
-    --os-accent:#e0a95c; --os-card:#1f1e23; --os-badge:#2a282e;
+    --os-accent:#e0a95c; --os-card:#1f1e23; --os-badge:#2a282e; --os-mark:#3a3022;
   }
 }
 :root[data-theme="dark"]{
   --os-bg:#17161a; --os-fg:#e9e6df; --os-muted:#a19b90; --os-line:#34313a;
-  --os-accent:#e0a95c; --os-card:#1f1e23; --os-badge:#2a282e;
+  --os-accent:#e0a95c; --os-card:#1f1e23; --os-badge:#2a282e; --os-mark:#3a3022;
 }
 
 /* Aliases for the readers' own variable names. Not applied to Defus (html.os-own-palette).
@@ -34,6 +34,9 @@
   --bg:var(--os-bg); --fg:var(--os-fg); --text:var(--os-fg); --muted:var(--os-muted);
   --accent:var(--os-accent); --line:var(--os-line); --rule:var(--os-line);
   --card:var(--os-card); --panel:var(--os-card); --badge:var(--os-badge);
+  --mark:var(--os-mark); --hl:var(--os-mark); --gray:var(--os-muted);
+  --summary-bg:var(--os-badge); --note-bg:var(--os-badge);
+  --summary-border:var(--os-accent); --note-border:var(--os-accent);
 }
 html:not(.os-own-palette) body{background:var(--os-bg);color:var(--os-fg)}
 

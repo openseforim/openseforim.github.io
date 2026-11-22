@@ -16,6 +16,8 @@
   }
   theme = theme || 'auto';
   function apply(v) {
+    // a site with its own palette (Defus) has no paper colours: show it light
+    if (v === 'paper' && root.classList.contains('os-own-palette')) v = 'light';
     if (!v || v === 'auto') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', v);
   }
   apply(theme);

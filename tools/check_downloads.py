@@ -129,7 +129,10 @@ def check_tei(f):
         if a.get("corresp", "#")[1:] not in idset:
             bad(f, f"translation points to a missing id {a.get('corresp')}"); break
     empty_src = sum(1 for a in src if not (a.text or "").strip())
-    empty_en = sum(1 for a in tr if not (a.text or "").strip())
+    # an empty translation is right only when the source has no letters (OCR fragments such as ":" or "0")
+    by_id = {a.get(XMLID): a for a in src}
+    empty_en = sum(1 for a in tr if not (a.text or "").strip()
+                   and any(ch.isalpha() for ch in (by_id.get(a.get("corresp", "#")[1:]).text or "")))
     if empty_src or empty_en:
         bad(f, f"empty segments: {empty_src} source, {empty_en} English")
     divs = t.findall(".//tei:body/tei:div", NS)

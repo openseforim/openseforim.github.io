@@ -45,10 +45,27 @@ def is_en(el):
     return "en" in cls(el) or (el.get("lang") or "") == "en"
 
 
+FN_A, FN_B, PG_A, PG_B = "", "", "", ""  # private-use marks, never in the texts
+
+
+def marks(s, kind="plain"):
+    """Footnote markers and page marks: [1] and [p. VIII] in plain text and TEI; <sup> and a small span in EPUB."""
+    if kind == "epub":
+        s = re.sub(FN_A + "(.*?)" + FN_B, r'<sup class="fn">\1</sup>', s)
+        return re.sub(PG_A + "(.*?)" + PG_B, r'<span class="pg">[\1]</span>', s)
+    s = re.sub(FN_A + "(.*?)" + FN_B, r"[\1]", s)
+    return re.sub(PG_A + "(.*?)" + PG_B, r"[\1]", s)
+
+
 def text(el):
     el = BeautifulSoup(str(el), "lxml")
     for j in el.select(JUNK):
         j.decompose()
+    # footnote markers and page marks keep their role: marked here, shown by each writer (see marks())
+    for a in el.select("a.fn, sup"):
+        a.replace_with(NavigableString(FN_A + " ".join(a.get_text().split()) + FN_B))
+    for a in el.select("a.pg"):
+        a.replace_with(NavigableString(PG_A + " ".join(a.get_text().split()) + PG_B))
     for br in el.find_all("br"):
         br.replace_with(NavigableString("\n"))
     for p in el.find_all(["p", "div", "li", "h2", "h3", "tr"]):
@@ -125,7 +142,7 @@ def write_txt(w, chs, path):
     for c in chs:
         lines += [c["title"], "-" * min(len(c["title"]), 60), c["url"], ""]
         for u in c["units"]:
-            lines += [u["src"], "", u["en"], "", ""]
+            lines += [marks(u["src"]), "", marks(u["en"]), "", ""]
     path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
@@ -155,16 +172,25 @@ def write_tei(w, chs, path):
         out.append(f'<div type="chapter" n="{ci}" facs="{x(c["url"])}"><head>{x(c["title"])}</head>')
         for u in c["units"]:
             n += 1
-            out.append(f'<ab xml:id="s{n}" xml:lang="{u["lang"]}">{x(u["src"])}</ab>')
-            out.append(f'<ab type="translation" xml:lang="en" corresp="#s{n}">{x(u["en"])}</ab>')
+            out.append(f'<ab xml:id="s{n}" xml:lang="{u["lang"]}">{x(marks(u["src"]))}</ab>')
+            out.append(f'<ab type="translation" xml:lang="en" corresp="#s{n}">{x(marks(u["en"]))}</ab>')
         out.append("</div>")
     out += ["</body></text>", "</TEI>"]
     path.write_text("\n".join(out) + "\n", encoding="utf-8")
 
 
+# Kindle and other apps replace fonts and often colours, but keep size, indentation and borders: the original is
+# smaller, indented and ruled at its side; the English is full size; each pair is grouped with space around it.
 EPUB_CSS = """body{font-family:serif;line-height:1.5}
-h1{font-size:1.4em}.src{margin:1em 0 .2em}.src[dir=rtl]{text-align:right;font-size:1.1em}
-.en{margin:0 0 1em;color:#333}.note{font-size:.85em;color:#555}"""
+h1{font-size:1.4em;margin:0 0 1em}
+.pair{margin:0 0 1.5em;padding:0 0 .9em;border-bottom:1px solid #e3d8c2;page-break-inside:avoid}
+.src{margin:0 0 .5em 1.4em;padding:.1em 0 .1em .8em;border-left:3px solid #b08a4e;font-size:.88em;color:#6b5a43;text-indent:0}
+.src[dir=rtl]{margin:0 1.4em .5em 0;padding:.1em .8em .1em 0;border-left:0;border-right:3px solid #b08a4e;text-align:right;font-size:1em}
+.en{margin:0;text-indent:0}
+sup.fn{font-size:.7em;line-height:0;vertical-align:super}
+.pg{font-size:.75em;color:#8a7a60;white-space:nowrap}
+.note{font-size:.85em;color:#555}
+.legend{font-size:.9em;margin-top:1.2em}"""
 
 
 def xhtml(title, body, lang="en"):
@@ -175,7 +201,7 @@ def xhtml(title, body, lang="en"):
 
 
 def para(s):
-    return "<br/>".join(x(line) for line in s.split("\n"))
+    return marks("<br/>".join(x(line) for line in s.split("\n")), "epub")
 
 
 LANG_NAMES = {"he": "Hebrew", "la": "Latin", "de": "German", "syr": "Syriac", "ar": "Arabic"}
@@ -279,12 +305,16 @@ def write_epub(w, chs, path, slug):
     files["OEBPS/title.xhtml"] = xhtml(title, f"<h1>{x(title)}</h1><p>{x(plain(w.get('summary', '')))}</p>"
                                        f"<p class=\"note\">Source text: {x(w.get('base_edition', {}).get('label', ''))}.<br/>"
                                        f"{x(w.get('method', ''))}<br/>Licence: {x(lic.get('name', ''))}.<br/>"
-                                       f"Open Seforim · {x(w['url'])}</p>")
+                                       f"Open Seforim · {x(w['url'])}</p>"
+                                       f"<p class=\"legend\">Each passage gives the {x(sub_title(chs).split(' text')[0])} "
+                                       "original first (set in, with a line at its side), then the English "
+                                       "translation.</p>")
     for i, c in enumerate(chs, 1):
         parts = [f"<h1>{x(c['title'])}</h1>"]
         for u in c["units"]:
             rtl = ' dir="rtl"' if u["lang"] in ("he", "syr", "ar") else ""
-            parts.append(f'<p class="src" lang="{u["lang"]}"{rtl}>{para(u["src"])}</p><p class="en">{para(u["en"])}</p>')
+            parts.append(f'<div class="pair"><p class="src" lang="{u["lang"]}"{rtl}>{para(u["src"])}</p>'
+                         f'<p class="en">{para(u["en"])}</p></div>')
         files[f"OEBPS/c{i:04d}.xhtml"] = xhtml(c["title"], "".join(parts))
     nav = "".join(f'<li><a href="c{i:04d}.xhtml">{x(c["title"])}</a></li>' for i, c in enumerate(chs, 1))
     files["OEBPS/nav.xhtml"] = xhtml("Contents", f'<nav epub:type="toc" id="toc"><h1>Contents</h1><ol>'

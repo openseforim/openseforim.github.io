@@ -17,7 +17,11 @@
     "method": "Kraken OCR checked line by line against the scan; English draft translation by Claude (Anthropic), not yet reviewed.",
     "cite": "Jacob Emden, Megillat Sefer, Hebrew text ed. Kahana (1896/97) with an English draft translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/emden/",
-    "repo": "https://github.com/openseforim/emden"
+    "repo": "https://github.com/openseforim/emden",
+    "licence": {
+      "name": "Translation and notes: CC BY 4.0; code: MIT",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "schema": 1,
@@ -37,7 +41,11 @@
     "method": "Line-aligned Hebrew and English, one English line for each Hebrew line.",
     "cite": "Immanuel of Rome, Maḥberot, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/immanuel/",
-    "repo": "https://github.com/openseforim/immanuel"
+    "repo": "https://github.com/openseforim/immanuel",
+    "licence": {
+      "name": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
   },
   {
     "schema": 1,
@@ -173,7 +181,11 @@
     "method": "Kraken OCR with Beth Mardutho's Qoruyo East Syriac models; not yet proofread.",
     "cite": "Barhebraeus, Chronicon Syriacum, ed. Bedjan (1890), OCR text, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/barhebraeus/",
-    "repo": "https://github.com/openseforim/barhebraeus"
+    "repo": "https://github.com/openseforim/barhebraeus",
+    "licence": {
+      "name": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
   },
   {
     "schema": 1,
@@ -188,6 +200,10 @@
     "method": "Harvested from library catalogues (HathiTrust, Internet Archive, Munich, Frankfurt and others); editions grouped into works. The scans stay with the libraries; rights are per copy.",
     "cite": "Defus: open scans of printed Hebrew books and Judaica, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/defus/",
-    "repo": "https://github.com/openseforim/defus"
+    "repo": "https://github.com/openseforim/defus",
+    "licence": {
+      "name": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
   }
 ]

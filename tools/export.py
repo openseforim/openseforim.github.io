@@ -206,7 +206,10 @@ def sub_title(chs):
 def file_base(w):
     """Descriptive, URL-safe file name: 'jacob-emden-megillat-sefer'."""
     import unicodedata
-    t = unicodedata.normalize("NFKD", plain(w["title"]))
+    t = plain(w["title"])
+    for a, b in (("ö", "oe"), ("ü", "ue"), ("ä", "ae"), ("Ö", "Oe"), ("Ü", "Ue"), ("Ä", "Ae")):
+        t = t.replace(a, b)  # German convention: Löw -> Loew
+    t = unicodedata.normalize("NFKD", t)
     t = "".join(ch for ch in t if not unicodedata.combining(ch)).replace("'", "").replace("’", "")
     return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
 

@@ -1,23 +1,76 @@
-/* Open Seforim shared theme, v0. Palette taken from the Emden reader. */
-:root{--bg:#fbfaf7;--fg:#1d1c1a;--muted:#6b665e;--line:#e3dfd6;--accent:#8a3b12;--card:#fff;--badge:#efe9dc}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17161a;--fg:#e9e6df;--muted:#a19b90;--line:#34313a;--accent:#e39a6c;--card:#1f1e23;--badge:#2a282e}}
-:root[data-theme="dark"]{--bg:#17161a;--fg:#e9e6df;--muted:#a19b90;--line:#34313a;--accent:#e39a6c;--card:#1f1e23;--badge:#2a282e}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 "Noto Serif",Georgia,serif}
-a{color:var(--accent)}
+/* Open Seforim shared theme v1.
+   Load AFTER a reader's own stylesheet: <link rel="stylesheet" href="/assets/os.css">
+   It sets one palette for every work and maps the variable names that the readers use.
+   Selectors match or beat the readers' own theme selectors, so the later file wins. */
+
+:root{
+  --os-bg:#fbfaf7; --os-fg:#1d1c1a; --os-muted:#6b665e; --os-line:#e3dfd6;
+  --os-accent:#7a4b12; --os-card:#ffffff; --os-badge:#efe9dc;
+  --os-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --os-serif:"Noto Serif",Georgia,serif;
+}
+:root[data-theme="light"]{
+  --os-bg:#fbfaf7; --os-fg:#1d1c1a; --os-muted:#6b665e; --os-line:#e3dfd6;
+  --os-accent:#7a4b12; --os-card:#ffffff; --os-badge:#efe9dc;
+}
+:root[data-theme="paper"]{
+  --os-bg:#f3ead6; --os-fg:#3a2e1f; --os-muted:#7a6a52; --os-line:#dccdab;
+  --os-accent:#7a4b12; --os-card:#f8f1e1; --os-badge:#e9dcbd;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]):not([data-theme="paper"]){
+    --os-bg:#17161a; --os-fg:#e9e6df; --os-muted:#a19b90; --os-line:#34313a;
+    --os-accent:#e0a95c; --os-card:#1f1e23; --os-badge:#2a282e;
+  }
+}
+:root[data-theme="dark"]{
+  --os-bg:#17161a; --os-fg:#e9e6df; --os-muted:#a19b90; --os-line:#34313a;
+  --os-accent:#e0a95c; --os-card:#1f1e23; --os-badge:#2a282e;
+}
+
+/* Aliases for the readers' own variable names. Not applied to Defus (html.os-own-palette).
+   :not(#os-none) adds ID weight, so this beats every theme selector in the readers' CSS. */
+:root:not(.os-own-palette):not(#os-none){
+  --bg:var(--os-bg); --fg:var(--os-fg); --text:var(--os-fg); --muted:var(--os-muted);
+  --accent:var(--os-accent); --line:var(--os-line); --rule:var(--os-line);
+  --card:var(--os-card); --panel:var(--os-card); --badge:var(--os-badge);
+}
+html:not(.os-own-palette) body{background:var(--os-bg);color:var(--os-fg)}
+
+/* ---- shared strip (inserted by os.js) ---- */
+.os-strip{background:var(--os-bg);border-bottom:1px solid var(--os-line);font:13px/1.4 var(--os-sans);color:var(--os-muted)}
+.os-strip-in{display:flex;align-items:center;gap:8px;max-width:1250px;margin:0 auto;padding:5px 16px;flex-wrap:wrap}
+.os-strip a{color:var(--os-muted);text-decoration:none}
+.os-strip a:hover{color:var(--os-accent);text-decoration:underline}
+.os-strip .os-home{color:var(--os-fg);font:italic 600 14px/1.4 var(--os-serif)}
+.os-strip .os-sep{opacity:.6}
+.os-strip .os-sp{flex:1}
+.os-strip select{font:inherit;color:var(--os-fg);background:var(--os-card);border:1px solid var(--os-line);border-radius:4px;padding:1px 4px}
+/* the strip replaces the readers' own theme selects */
+.os-hidden{display:none !important}
+
+/* ---- shared footer (inserted by os.js from work.json) ---- */
+.os-foot{border-top:1px solid var(--os-line);margin-top:48px;background:var(--os-bg);color:var(--os-muted);font:14px/1.6 var(--os-sans)}
+.os-foot-in{max-width:1250px;margin:0 auto;padding:18px 16px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 32px}
+.os-foot h2{font:600 13px/1.4 var(--os-sans);text-transform:uppercase;letter-spacing:.04em;color:var(--os-fg);margin:0 0 4px}
+.os-foot p{margin:0 0 6px}
+.os-foot a{color:var(--os-accent)}
+.os-foot .os-cite{font-family:var(--os-serif);font-size:13px;background:var(--os-card);border:1px solid var(--os-line);border-radius:6px;padding:8px 10px;user-select:all}
+.os-foot .os-brand{grid-column:1/-1;border-top:1px solid var(--os-line);padding-top:10px;font-size:13px}
+
+/* ---- landing page ---- */
+.os-landing{margin:0;background:var(--os-bg);color:var(--os-fg);font:17px/1.6 var(--os-serif)}
+.os-landing a{color:var(--os-accent)}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-.bar{border-bottom:1px solid var(--line);font-size:.9rem}
-.barin{display:flex;align-items:center;gap:16px;padding:10px 16px;max-width:1100px;margin:0 auto}
-.brand{font-weight:600;font-style:italic;text-decoration:none;color:var(--fg)}
 .hero{padding:40px 0 16px}
 .hero h1{font-size:2rem;margin:0 0 6px}
-.hero p{color:var(--muted);max-width:42em;margin:0}
-.sect{font-size:1.15rem;margin:28px 0 0;color:var(--muted);font-weight:600}
+.hero p{color:var(--os-muted);max-width:42em;margin:0}
+.sect{font-size:1.15rem;margin:28px 0 0;color:var(--os-muted);font-weight:600}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:14px 0 16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;text-decoration:none;color:var(--fg);display:flex;flex-direction:column;gap:6px}
-.card:hover{border-color:var(--accent)}
-.card h2{font-size:1.1rem;margin:0}
-.card .he{font-family:"Noto Serif Hebrew",serif;direction:rtl;color:var(--muted)}
-.card p{margin:0;font-size:.92rem;color:var(--muted)}
-.badge{align-self:flex-start;background:var(--badge);border-radius:4px;padding:1px 8px;font-size:.78rem;color:var(--fg)}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:16px 0 32px}
+.card{background:var(--os-card);border:1px solid var(--os-line);border-radius:8px;padding:16px 18px;text-decoration:none;color:var(--os-fg) !important;display:flex;flex-direction:column;gap:6px}
+.card:hover{border-color:var(--os-accent)}
+.card h3{font-size:1.1rem;margin:0}
+.card .he{font-family:"Noto Serif Hebrew",serif;direction:rtl;color:var(--os-muted)}
+.card p{margin:0;font-size:.92rem;color:var(--os-muted)}
+.card .meta{font:12px/1.4 var(--os-sans);color:var(--os-muted)}
+.badge{align-self:flex-start;background:var(--os-badge);border-radius:4px;padding:1px 8px;font:12px/1.6 var(--os-sans);color:var(--os-fg)}

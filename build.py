@@ -120,7 +120,7 @@ if __name__ == "__main__":
                 subprocess.run([sys.executable, str(HERE / "tools" / "export.py"), w["slug"], str(w["_base"]),
                                 str(HERE / "downloads" / w["slug"])], check=True)
     order = {"txt": 0, "xml": 1, "epub": 2}
-    downloads = {w["slug"]: sorted((p.name for p in (HERE / "downloads" / w["slug"]).glob(w["slug"] + ".*")),
+    downloads = {w["slug"]: sorted((p.name for p in (HERE / "downloads" / w["slug"]).glob("*.*")),
                                    key=lambda n: order.get(n.rsplit(".", 1)[1], 9))
                  for w in ws if (HERE / "downloads" / w["slug"]).is_dir()}
     # short titles for the strip, and the download files, for os.js (shown at once, before work.json loads)

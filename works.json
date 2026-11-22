@@ -83,7 +83,7 @@
     "short_title": "*Toldot Tannaim ve-Amoraim*",
     "title_he": "תולדות תנאים ואמוראים",
     "author": "Aaron Hyman (1863–1937)",
-    "status_label": "Complete · machine translation",
+    "status_label": "Complete · 1,889 entries",
     "summary": "The biographical dictionary of the Talmudic sages: a machine translation of all 1,889 entries, and reviewed sample entries.",
     "base_edition": {
       "label": "London 1910, text from Hebrew Wikisource",
@@ -119,7 +119,7 @@
         "url": "https://rightsstatements.org/vocab/NoC-NC/1.0/"
       }
     },
-    "method": "Machine transcription checked against the scan; English translation with AI models.",
+    "method": "Transcription checked against the scan; English translation with AI models.",
     "cite": "Samuel Bochart, *Hierozoicon*, Latin text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/bochart/",
     "repo": "https://github.com/openseforim/bochart",

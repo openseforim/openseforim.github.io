@@ -76,7 +76,7 @@ def landing(works):
 <main class="wrap" id="works">
   <section class="hero">
     <h1>Open Seforim</h1>
-    <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated.</p>
+    <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated. <a href="/about/">How the editions are made →</a></p>
   </section>
 {sections}
 </main>

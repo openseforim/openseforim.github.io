@@ -54,6 +54,11 @@ html body{padding-top:var(--os-strip-h)}
 .os-strip .os-home{color:var(--os-fg);font:italic 600 14px/1.4 var(--os-serif)}
 .os-strip .os-sep{opacity:.6}
 .os-strip .os-sp{flex:1}
+.os-strip .os-theme{display:inline-flex;align-items:center;gap:5px}
+@media (max-width:420px){.os-strip .os-theme-word{display:none}}
+.os-foot .os-status{display:inline-block;background:var(--os-badge);color:var(--os-fg);border-radius:4px;padding:0 7px;font-size:12px}
+.os-foot .os-copy{font:12px/1.4 var(--os-sans);color:var(--os-fg);background:var(--os-card);border:1px solid var(--os-line);border-radius:4px;padding:3px 10px;margin:0 0 8px;cursor:pointer}
+.os-foot .os-copy:hover{border-color:var(--os-accent)}
 .os-strip select{font:inherit;color:var(--os-fg);background:var(--os-card);border:1px solid var(--os-line);border-radius:4px;padding:1px 4px}
 /* the strip replaces the readers' own theme selects */
 .os-hidden{display:none !important}

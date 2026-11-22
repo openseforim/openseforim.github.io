@@ -39,7 +39,9 @@
   var inner = el('div', { 'class': 'os-strip-in' });
   inner.appendChild(el('a', { 'class': 'os-home', href: '/' }, 'Open Seforim'));
   var workLink = null;
-  if (slug) {
+  // a reader with its own top bar (a.brand) already names the work: the strip does not repeat it
+  var ownBar = document.querySelector('a.brand');
+  if (slug && !ownBar) {
     inner.appendChild(el('span', { 'class': 'os-sep', 'aria-hidden': 'true' }, '/'));
     workLink = el('a', { href: base, 'class': 'os-work' }, TITLES[slug] || slug);
     inner.appendChild(workLink);
@@ -47,13 +49,16 @@
   inner.appendChild(el('span', { 'class': 'os-sp' }));
   inner.appendChild(el('a', { href: '/#works' }, 'All works'));
   inner.appendChild(el('a', { href: '/about/', 'class': 'os-about' }, 'About'));
-  var sel = el('select', { 'aria-label': 'Colour theme', title: 'Colour theme (all works)' });
+  var lab = el('label', { 'class': 'os-theme', title: 'Colour theme, for all works' });
+  lab.appendChild(el('span', { 'class': 'os-theme-word' }, 'Theme'));
+  var sel = el('select', { 'aria-label': 'Colour theme' });
   [['auto', 'Auto'], ['light', 'Light'], ['paper', 'Paper'], ['dark', 'Dark']].forEach(function (o) {
     var op = el('option', { value: o[0] }, o[1]); sel.appendChild(op);
   });
   sel.value = theme === '' ? 'auto' : theme;
   sel.addEventListener('change', function () { set(KEY, sel.value); apply(sel.value); });
-  inner.appendChild(sel);
+  lab.appendChild(sel);
+  inner.appendChild(lab);
   strip.appendChild(inner);
   document.body.insertBefore(strip, document.body.firstChild);
 
@@ -82,33 +87,43 @@
     var fi = el('div', { 'class': 'os-foot-in' });
 
     var c1 = el('div');
-    c1.appendChild(el('h2', {}, 'This edition'));
-    c1.appendChild(para([w.title + (w.status_label ? ' — ' + w.status_label + '.' : '')]));
+    c1.appendChild(el('h2', {}, 'About this edition'));
+    var st = para([w.title]);
+    if (w.status_label) { st.appendChild(document.createTextNode(' ')); st.appendChild(el('span', { 'class': 'os-status' }, w.status_label)); }
+    c1.appendChild(st);
     if (w.base_edition) {
-      var be = ['Based on: ' + w.base_edition.label];
+      var be = ['Source text: ' + w.base_edition.label];
       if (w.base_edition.scan_url) { be.push(' · '); be.push(a(w.base_edition.scan_url, 'page scans')); }
+      var r = w.base_edition.scan_rights;
+      if (r) { be.push(' ('); be.push(r.url ? a(r.url, r.name) : r.name); be.push(')'); }
       c1.appendChild(para(be));
     }
     if (w.method) c1.appendChild(para(['Method: ' + w.method]));
     fi.appendChild(c1);
 
     var c2 = el('div');
-    c2.appendChild(el('h2', {}, 'Use and cite'));
+    c2.appendChild(el('h2', {}, 'Cite and reuse'));
+    var today = new Date().toISOString().slice(0, 10);
+    var cite = (w.cite || (w.title + '. Open Seforim')) + '. https://openseforim.org' + base + ' (accessed ' + today + ').';
+    var cp = el('p', { 'class': 'os-cite' }, cite);
+    c2.appendChild(cp);
+    var btn = el('button', { type: 'button', 'class': 'os-copy' }, 'Copy citation');
+    btn.addEventListener('click', function () {
+      var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy citation'; }, 1600); };
+      if (navigator.clipboard) navigator.clipboard.writeText(cite).then(done, function () {});
+    });
+    c2.appendChild(btn);
     if (w.licence) {
       c2.appendChild(para(['Licence: ', w.licence.url ? a(w.licence.url, w.licence.name) : w.licence.name]));
     }
-    var today = new Date().toISOString().slice(0, 10);
-    var cite = (w.cite || (w.title + '. Open Seforim')) + '. https://openseforim.org' + base + ' (accessed ' + today + ').';
-    c2.appendChild(el('p', { 'class': 'os-cite' }, cite));
     fi.appendChild(c2);
 
     var c3 = el('div');
-    c3.appendChild(el('h2', {}, 'Source and corrections'));
+    c3.appendChild(el('h2', {}, 'Corrections'));
     if (w.repo) {
-      c3.appendChild(para([a(w.repo, 'Code, text and data on GitHub')]));
-      c3.appendChild(para([a(w.repo + '/issues/new', 'Report a mistake')]));
+      c3.appendChild(para(['Found a misreading or a wrong translation? ', a(w.repo + '/issues/new', 'Report a mistake'), '.']));
+      c3.appendChild(para([a(w.repo, 'Code and data'), ' on GitHub']));
     }
-    if (w.updated) c3.appendChild(para(['Last updated: ' + w.updated]));
     fi.appendChild(c3);
 
     var b = el('div', { 'class': 'os-brand' });

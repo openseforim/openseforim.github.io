@@ -8,11 +8,14 @@
     "short_title": "Megillat Sefer",
     "title_he": "מגילת ספר",
     "author": "Jacob Emden (1697–1776)",
-    "status_label": "Translation in progress",
+    "status_label": "Draft translation, in progress",
     "summary": "Kahana's Hebrew text (1896/97) from Gershom Scholem's annotated copy, with an English draft translation.",
     "base_edition": {
       "label": "ed. David Kahana, Warsaw 1896/97 (Gershom Scholem's copy)",
-      "scan_url": "https://hebrewbooks.org/37017"
+      "scan_url": "https://hebrewbooks.org/37017",
+      "scan_rights": {
+        "name": "public domain"
+      }
     },
     "method": "Kraken OCR checked line by line against the scan; English draft translation by Claude (Anthropic), not yet reviewed.",
     "cite": "Jacob Emden, Megillat Sefer, Hebrew text ed. Kahana (1896/97) with an English draft translation, ed. Ezra Brand. Open Seforim",
@@ -32,7 +35,7 @@
     "short_title": "Maḥberot",
     "title_he": "מחברות עמנואל",
     "author": "Immanuel of Rome (about 1261 – about 1335)",
-    "status_label": "Translation in progress",
+    "status_label": "In progress: 2 of 28 maḥberot",
     "summary": "The Hebrew rhymed-prose maḥberot, with an English translation line by line.",
     "base_edition": {
       "label": "ed. Dov Yarden (Mosad Bialik, 1957), text from Project Ben-Yehuda",
@@ -56,7 +59,7 @@
     "short_title": "Me'or Einayim",
     "title_he": "מאור עינים",
     "author": "Azariah de' Rossi (about 1511–1578)",
-    "status_label": "Draft translation, Imrei Binah",
+    "status_label": "Draft: Imrei Binah, all 60 chapters",
     "summary": "Imrei Binah, the third part: Hebrew text checked against the Vilna scan, with an English draft translation.",
     "base_edition": {
       "label": "Vilna 1863–66 (Kiryat Sefer), after the Mantua edition of 1573–75",
@@ -80,11 +83,14 @@
     "short_title": "Toldot Tannaim ve-Amoraim",
     "title_he": "תולדות תנאים ואמוראים",
     "author": "Aaron Hyman (1863–1937)",
-    "status_label": "Machine translation + reviewed samples",
+    "status_label": "Machine translation: all 1,889 entries",
     "summary": "The biographical dictionary of the Talmudic sages: a machine translation of all 1,889 entries, and reviewed sample entries.",
     "base_edition": {
       "label": "London 1910, text from Hebrew Wikisource",
-      "scan_url": "https://he.wikisource.org/wiki/%D7%AA%D7%95%D7%9C%D7%93%D7%95%D7%AA_%D7%AA%D7%A0%D7%90%D7%99%D7%9D_%D7%95%D7%90%D7%9E%D7%95%D7%A8%D7%90%D7%99%D7%9D"
+      "scan_url": "https://he.wikisource.org/wiki/%D7%AA%D7%95%D7%9C%D7%93%D7%95%D7%AA_%D7%AA%D7%A0%D7%90%D7%99%D7%9D_%D7%95%D7%90%D7%9E%D7%95%D7%A8%D7%90%D7%99%D7%9D",
+      "scan_rights": {
+        "name": "public domain"
+      }
     },
     "method": "Machine translation paragraph by paragraph (Gemini via OpenRouter), shown next to the Hebrew; two sample entries translated with Claude and checked.",
     "cite": "Aaron Hyman, Toldot Tannaim ve-Amoraim, English translation, ed. Ezra Brand. Open Seforim",
@@ -103,11 +109,15 @@
     "title": "Samuel Bochart, Hierozoicon",
     "short_title": "Hierozoicon",
     "author": "Samuel Bochart (1599–1667)",
-    "status_label": "Translation in progress",
+    "status_label": "In progress: 94 chapters",
     "summary": "The classic study of the animals of the Bible (1663): Latin text and English translation side by side, with links to the scans.",
     "base_edition": {
       "label": "ed. E. F. C. Rosenmüller, Leipzig 1793–96 (scans: Munich Digitization Center)",
-      "scan_url": "https://www.digitale-sammlungen.de/"
+      "scan_url": "https://www.digitale-sammlungen.de/",
+      "scan_rights": {
+        "name": "NoC-NC 1.0",
+        "url": "https://rightsstatements.org/vocab/NoC-NC/1.0/"
+      }
     },
     "method": "Machine transcription checked against the scan; English translation with AI models.",
     "cite": "Samuel Bochart, Hierozoicon, Latin text with English translation, ed. Ezra Brand. Open Seforim",
@@ -126,11 +136,15 @@
     "title": "Ludwig Lewysohn, Die Zoologie des Talmuds",
     "short_title": "Zoologie des Talmuds",
     "author": "Ludwig Lewysohn (1819–1901)",
-    "status_label": "Translation in progress",
+    "status_label": "Draft: the whole book",
     "summary": "German text and English translation of the 1858 study of the animals of the Talmud.",
     "base_edition": {
       "label": "Frankfurt am Main 1858",
-      "scan_url": "https://archive.org/details/diezoologiedesta00lewyuoft"
+      "scan_url": "https://archive.org/details/diezoologiedesta00lewyuoft",
+      "scan_rights": {
+        "name": "Public Domain Mark 1.0",
+        "url": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
     },
     "method": "OCR with the Hebrew checked against the scan; English translation with AI models.",
     "cite": "Ludwig Lewysohn, Die Zoologie des Talmuds, German text with English translation, ed. Ezra Brand. Open Seforim",
@@ -153,7 +167,11 @@
     "summary": "German text and English translation of sample pages and the contents lists of Löw's study of the plants of Jewish sources.",
     "base_edition": {
       "label": "Vienna and Leipzig 1924–34 (scans: Frankfurt University Library, Freimann collection)",
-      "scan_url": "https://sammlungen.ub.uni-frankfurt.de/freimann/"
+      "scan_url": "https://sammlungen.ub.uni-frankfurt.de/freimann/",
+      "scan_rights": {
+        "name": "Public Domain Mark 1.0",
+        "url": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
     },
     "method": "OCR with a second model as checker, disagreements checked on the scan; English translation with AI models.",
     "cite": "Immanuel Löw, Die Flora der Juden, German text with English translation, ed. Ezra Brand. Open Seforim",
@@ -172,7 +190,7 @@
     "title": "Barhebraeus, Chronography",
     "short_title": "Chronography",
     "author": "Gregory Barhebraeus (1226–1286)",
-    "status_label": "OCR pilot",
+    "status_label": "OCR of all 599 pages, not proofread",
     "summary": "OCR of Bedjan's edition of the Chronicon Syriacum (1890), with a transliteration into Hebrew letters.",
     "base_edition": {
       "label": "ed. Paul Bedjan, Paris 1890 (scan: University of Toronto)",
@@ -195,7 +213,7 @@
     "title": "Defus: open scans of printed Hebrew books",
     "short_title": "Defus",
     "title_he": "דפוס",
-    "status_label": "Prototype catalogue",
+    "status_label": "Prototype",
     "summary": "Open scans of printed Hebrew books and Judaica, 1469–1920, gathered from the libraries that hold them.",
     "method": "Harvested from library catalogues (HathiTrust, Internet Archive, Munich, Frankfurt and others); editions grouped into works. The scans stay with the libraries; rights are per copy.",
     "cite": "Defus: open scans of printed Hebrew books and Judaica, ed. Ezra Brand. Open Seforim",

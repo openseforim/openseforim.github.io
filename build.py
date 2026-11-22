@@ -40,7 +40,7 @@ def load():
 
 def card(w):
     he = f'\n      <div class="he" lang="he">{e(w["title_he"])}</div>' if w.get("title_he") else ""
-    meta = f'\n      <div class="meta">{e(w["author"])}</div>' if w.get("author") else ""
+    meta = ""  # the title already names the author
     return f'''    <a class="card" href="/{w["slug"]}/">
       <span class="badge">{e(w.get("status_label", ""))}</span>
       <h3>{e(w["title"])}</h3>{he}{meta}

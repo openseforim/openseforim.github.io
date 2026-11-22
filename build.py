@@ -112,12 +112,23 @@ if __name__ == "__main__":
     (HERE / "works.json").write_text(json.dumps([{k: v for k, v in w.items() if not k.startswith("_")} for w in ws],
                                                 ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"index.html: {len(ws)} works", flush=True)
-    # short titles for the strip in os.js (shown at once, before work.json loads)
+    import subprocess
+    # downloads: plain text, TEI and EPUB of every text work (tools/export.py), in downloads/<slug>/
+    if "--no-export" not in sys.argv:
+        for w in ws:
+            if w.get("kind") != "catalogue":
+                subprocess.run([sys.executable, str(HERE / "tools" / "export.py"), w["slug"], str(w["_base"]),
+                                str(HERE / "downloads" / w["slug"])], check=True)
+    order = {"txt": 0, "xml": 1, "epub": 2}
+    downloads = {w["slug"]: sorted((p.name for p in (HERE / "downloads" / w["slug"]).glob(w["slug"] + ".*")),
+                                   key=lambda n: order.get(n.rsplit(".", 1)[1], 9))
+                 for w in ws if (HERE / "downloads" / w["slug"]).is_dir()}
+    # short titles for the strip, and the download files, for os.js (shown at once, before work.json loads)
     js = HERE / "assets" / "os.js"
     titles = json.dumps({w["slug"]: w.get("short_title", w["title"]) for w in ws}, ensure_ascii=False)  # *...* = italics, rendered by os.js
     t = js.read_text(encoding="utf-8")
     t = re.sub(r"/\*TITLES\*/.*?/\*END\*/", lambda m: "/*TITLES*/" + titles + "/*END*/", t, flags=re.S)
+    t = re.sub(r"/\*DOWNLOADS\*/.*?/\*END\*/", lambda m: "/*DOWNLOADS*/" + json.dumps(downloads) + "/*END*/", t, flags=re.S)
     js.write_text(t, encoding="utf-8")
     sitemap(ws)
-    import subprocess
     subprocess.run([sys.executable, str(HERE / "tools" / "postbuild.py"), "", str(HERE)], check=True)

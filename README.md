@@ -19,3 +19,10 @@ Landing site for https://openseforim.org (org site of the `openseforim` GitHub o
   these files (for example in a local preview); they only lose the strip and the shared colours.
 - Add a work: give its repo a `work.json`, add it to `WORKS` in `build.py`, run `py -3.13 build.py`.
 - `build.py` makes `index.html` (cards), `works.json` and `sitemap.xml` from each reader's `work.json`.
+- `tools/export.py` writes `downloads/<slug>/<slug>.txt|.tei.xml|.epub` from a work's built pages (build.py runs it for
+  every text work; `py -3.13 build.py --no-export` skips it). The footer of each work links them.
+- `tools/postbuild.py` (run by every reader's build) also writes Google Scholar `citation_*` tags.
+- `tools/citation_files.py` writes `CITATION.cff` and `.zenodo.json` into each work's repo, for GitHub's "Cite this
+  repository" and Zenodo DOIs. Add `"doi"` to a work.json after Zenodo mints one; the footer and tags then use it.
+- `assets/os.js`: set `GOATCOUNTER` to the GoatCounter site code to turn on page counts. A `#anchor` in the address
+  shows a "This passage" bar with Copy citation / Copy link.

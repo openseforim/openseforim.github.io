@@ -141,6 +141,22 @@ def process(page, root, slug, work):
         tags.append('<link rel="icon" href="/favicon.svg" type="image/svg+xml">')
         tags.append('<link rel="icon" href="/favicon.ico" sizes="any">')
         tags.append('<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
+    # Google Scholar (Highwire Press) tags, so the editions can be found and cited as scholarly works
+    if work and "citation_title" not in head:
+        wt = work["title"].replace("*", "")
+        h1m = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", body)
+        h1t = " ".join(html.unescape(re.sub(r"(?s)<span class=\"sub\">.*?</span>|<[^>]+>", " ", h1m.group(1))).split()) if h1m else ""
+        ctitle = wt if is_home or not h1t or h1t == wt else f"{wt}: {h1t}"
+        tags.append(meta("name", "citation_title", ctitle))
+        if work.get("author"):
+            tags.append(meta("name", "citation_author", re.sub(r"\s*\(.*\)$", "", work["author"])))
+        tags.append(meta("name", "citation_author", "Brand, Ezra"))
+        tags.append(meta("name", "citation_publication_date", "2026"))
+        tags.append(meta("name", "citation_publisher", "Open Seforim"))
+        tags.append(meta("name", "citation_language", "en"))
+        tags.append(meta("name", "citation_public_url", url))
+        if work.get("doi"):
+            tags.append(meta("name", "citation_doi", work["doi"]))
     if is_home and 'application/ld+json' not in head:
         tags.append(jsonld(work, url) if work else site_jsonld() if not slug else "")
     block = "<!--os:seo-->\n" + "\n".join(x for x in tags if x) + "\n<!--/os:seo-->\n"

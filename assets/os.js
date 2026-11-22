@@ -4,6 +4,10 @@
 (function () {
   // short work titles, written by build.py from the works' work.json (no flash of the slug)
   var TITLES = /*TITLES*/{"emden": "*Megillat Sefer*", "immanuel": "*Maḥberot*", "meor-einayim": "*Me'or Einayim*", "hyman": "*Toldot Tannaim ve-Amoraim*", "bochart": "*Hierozoicon*", "lewysohn": "*Zoologie des Talmuds*", "loew": "*Flora der Juden*", "barhebraeus": "*Chronography*", "defus": "Defus"}/*END*/;
+  // download files per work (plain text, TEI, EPUB in /downloads/<slug>/), written by build.py
+  var DOWNLOADS = /*DOWNLOADS*/{"emden": ["emden.txt", "emden.tei.xml", "emden.epub"], "immanuel": ["immanuel.txt", "immanuel.tei.xml", "immanuel.epub"], "meor-einayim": ["meor-einayim.txt", "meor-einayim.tei.xml", "meor-einayim.epub"], "hyman": ["hyman.txt", "hyman.tei.xml", "hyman.epub"], "bochart": ["bochart.txt", "bochart.tei.xml", "bochart.epub"], "lewysohn": ["lewysohn.txt", "lewysohn.tei.xml", "lewysohn.epub"], "loew": ["loew.txt", "loew.tei.xml", "loew.epub"], "barhebraeus": ["barhebraeus.txt", "barhebraeus.tei.xml", "barhebraeus.epub"]}/*END*/;
+  // GoatCounter site code (privacy-friendly page counts, no cookies). Empty = off.
+  var GOATCOUNTER = '';
   var KEY = 'os-theme';
   var OLD_KEYS = ['ms-theme', 'me-theme', 'bh-theme', 'lz-theme'];
   var root = document.documentElement;
@@ -24,7 +28,17 @@
   }
   apply(theme);
 
-  var slug = location.pathname.split('/').filter(Boolean)[0] || '';
+  if (GOATCOUNTER && location.hostname === 'openseforim.org') {
+    var gc = document.createElement('script');
+    gc.async = true; gc.src = 'https://gc.zgo.at/count.js';
+    gc.setAttribute('data-goatcounter', 'https://' + GOATCOUNTER + '.goatcounter.com/count');
+    document.head.appendChild(gc);
+  }
+
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function today() { var d = new Date(); return ('0' + d.getDate()).slice(-2) + '-' + MON[d.getMonth()] + '-' + d.getFullYear(); }
+
+  var slug =location.pathname.split('/').filter(Boolean)[0] || '';
   if (!Object.prototype.hasOwnProperty.call(TITLES, slug)) slug = '';  // site pages such as /about/ are not works
   var base = slug ? '/' + slug + '/' : '/';
 
@@ -111,9 +125,7 @@
 
     var c2 = el('div');
     c2.appendChild(el('h2', {}, 'Cite and reuse'));
-    var dt = new Date(), MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var today = ('0' + dt.getDate()).slice(-2) + '-' + MON[dt.getMonth()] + '-' + dt.getFullYear();
-    var cite = (w.cite || (w.title + '. Open Seforim')) + '. https://openseforim.org' + base + ' (accessed ' + today + ').';
+    var cite = (w.cite || (w.title + '. Open Seforim')) + '. ' + (w.doi ? 'https://doi.org/' + w.doi : 'https://openseforim.org' + base) + ' (accessed ' + today() + ').';
     var cp = el('p', { 'class': 'os-cite' });
     cp.innerHTML = ital(cite);
     c2.appendChild(cp);
@@ -127,6 +139,18 @@
     if (w.licence) {
       c2.appendChild(para(['Licence: ', w.licence.url ? a(w.licence.url, w.licence.name) : w.licence.name]));
     }
+    var files = DOWNLOADS[slug] || [];
+    if (files.length) {
+      var names = { txt: 'Plain text', xml: 'TEI XML', epub: 'EPUB' }, dl = ['Download: '];
+      files.forEach(function (fn, i) {
+        var ext = fn.split('.').pop(), x = a('/downloads/' + slug + '/' + fn, names[ext] || ext);
+        x.setAttribute('download', '');
+        if (i) dl.push(' · ');
+        dl.push(x);
+      });
+      c2.appendChild(para(dl));
+    }
+    if (w.doi) c2.appendChild(para(['DOI: ', a('https://doi.org/' + w.doi, w.doi)]));
     fi.appendChild(c2);
 
     var c3 = el('div');
@@ -144,5 +168,58 @@
 
     f.appendChild(fi);
     document.body.appendChild(f);
+    work = w;
+    showPassage();
   }
+
+  // ---- cite this passage: a bar for the passage in the address (#anchor) ----
+  var work = null, bar = null;
+  function passageLabel(t, id) {
+    if (t.getAttribute('data-label')) return t.getAttribute('data-label');
+    var m;
+    if ((m = /^l(\d+)$/.exec(id))) return 'line ' + m[1];
+    if ((m = /^s(\d+)$/.exec(id))) return slug === 'meor-einayim' ? 'segment ' + m[1] : '§ ' + m[1];
+    if ((m = /^p(\d+)$/.exec(id)) && slug === 'bochart') return 'paragraph ' + (+m[1] + 1);
+    var h = t.querySelector('h1,h2,h3,h4');
+    return h ? h.textContent.replace(/\s+/g, ' ').trim().slice(0, 80) : '#' + id;
+  }
+  function chapterTitle() {
+    var h = document.querySelector('h1');
+    if (!h || location.pathname.replace(/index\.html$/, '') === base) return '';
+    h = h.cloneNode(true);
+    Array.prototype.forEach.call(h.querySelectorAll('.sub, small'), function (s) { s.remove(); });
+    return h.textContent.replace(/\s+/g, ' ').trim();
+  }
+  function copyBtn(label, value) {
+    var b = el('button', { type: 'button', 'class': 'os-copy' }, label);
+    b.addEventListener('click', function () {
+      if (navigator.clipboard) navigator.clipboard.writeText(value).then(function () {
+        b.textContent = 'Copied'; setTimeout(function () { b.textContent = label; }, 1600);
+      }, function () {});
+    });
+    return b;
+  }
+  function showPassage() {
+    if (bar) { bar.remove(); bar = null; }
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (!work || !id || id === 'notes' || id === 'top') return;
+    var t = document.getElementById(id);
+    if (!t || t.closest('footer, .os-foot, nav')) return;
+    var label = passageLabel(t, id), ch = chapterTitle();
+    var url = location.origin + location.pathname + '#' + encodeURIComponent(id);
+    var c = plain(work.cite || work.title) + '. ' + (ch ? ch + ', ' : '') + label + '. ' + url + ' (accessed ' + today() + ').';
+    bar = el('div', { 'class': 'os-passage', role: 'region', 'aria-label': 'Cite this passage' });
+    bar.appendChild(el('span', { 'class': 'os-passage-label' }, 'This passage: ' + (ch ? ch + ', ' : '') + label));
+    bar.appendChild(copyBtn('Copy citation', c));
+    bar.appendChild(copyBtn('Copy link', url));
+    var x = el('button', { type: 'button', 'class': 'os-passage-x', 'aria-label': 'Close' }, '×');
+    x.addEventListener('click', function () { bar.remove(); bar = null; });
+    bar.appendChild(x);
+    document.body.appendChild(bar);
+  }
+  window.addEventListener('hashchange', showPassage);
+  document.addEventListener('click', function (e) {
+    var l = e.target.closest && e.target.closest('a[href^="#"]');
+    if (l && l.getAttribute('href') === location.hash) setTimeout(showPassage, 0);  // same anchor clicked again
+  });
 })();

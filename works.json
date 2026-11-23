@@ -21,6 +21,7 @@
     "cite": "Jacob Emden, *Megillat Sefer*, Hebrew text ed. Kahana (1896/97) with an English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/emden/",
     "repo": "https://github.com/openseforim/emden",
+    "doi": "10.5281/zenodo.24458128",
     "licence": {
       "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -45,6 +46,7 @@
     "cite": "Immanuel of Rome, *Maḥberot*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/immanuel/",
     "repo": "https://github.com/openseforim/immanuel",
+    "doi": "10.5281/zenodo.24458133",
     "licence": {
       "name": "CC BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -69,6 +71,7 @@
     "cite": "Judah al-Ḥarizi, *Taḥkemoni*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/tahkemoni/",
     "repo": "https://github.com/openseforim/tahkemoni",
+    "doi": "10.5281/zenodo.24458135",
     "licence": {
       "name": "CC BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -93,6 +96,7 @@
     "cite": "Azariah de' Rossi, *Me'or Einayim*: *Imrei Binah*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/meor-einayim/",
     "repo": "https://github.com/openseforim/meor-einayim",
+    "doi": "10.5281/zenodo.24458139",
     "licence": {
       "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -120,6 +124,7 @@
     "cite": "Aaron Hyman, *Toldot Tannaim ve-Amoraim*, English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/hyman/",
     "repo": "https://github.com/openseforim/hyman",
+    "doi": "10.5281/zenodo.24458131",
     "licence": {
       "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -147,6 +152,7 @@
     "cite": "Samuel Bochart, *Hierozoicon*, Latin text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/bochart/",
     "repo": "https://github.com/openseforim/bochart",
+    "doi": "10.5281/zenodo.24458141",
     "licence": {
       "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -174,6 +180,7 @@
     "cite": "Ludwig Lewysohn, *Die Zoologie des Talmuds*, German text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/lewysohn/",
     "repo": "https://github.com/openseforim/lewysohn",
+    "doi": "10.5281/zenodo.24458143",
     "licence": {
       "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -201,6 +208,7 @@
     "cite": "Immanuel Löw, *Die Flora der Juden*, German text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/loew/",
     "repo": "https://github.com/openseforim/loew",
+    "doi": "10.5281/zenodo.24458145",
     "licence": {
       "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -224,6 +232,7 @@
     "cite": "Barhebraeus, *Chronicon Syriacum*, ed. Bedjan (1890), OCR text, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/barhebraeus/",
     "repo": "https://github.com/openseforim/barhebraeus",
+    "doi": "10.5281/zenodo.24458149",
     "licence": {
       "name": "CC BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -243,6 +252,7 @@
     "cite": "Defus: open scans of printed Hebrew books and Judaica, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/defus/",
     "repo": "https://github.com/openseforim/defus",
+    "doi": "10.5281/zenodo.24458153",
     "licence": {
       "name": "CC BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"

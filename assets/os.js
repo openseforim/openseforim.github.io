@@ -7,7 +7,7 @@
   // download files per work (plain text, TEI, EPUB in /downloads/<slug>/), written by build.py
   var DOWNLOADS = /*DOWNLOADS*/{"emden": ["jacob-emden-megillat-sefer.txt", "jacob-emden-megillat-sefer.tei.xml", "jacob-emden-megillat-sefer.epub"], "immanuel": ["immanuel-of-rome-mahberot.txt", "immanuel-of-rome-mahberot.tei.xml", "immanuel-of-rome-mahberot.epub"], "tahkemoni": ["judah-al-harizi-tahkemoni.txt", "judah-al-harizi-tahkemoni.tei.xml", "judah-al-harizi-tahkemoni.epub"], "meor-einayim": ["azariah-de-rossi-meor-einayim.txt", "azariah-de-rossi-meor-einayim.tei.xml", "azariah-de-rossi-meor-einayim.epub"], "hyman": ["aaron-hyman-toldot-tannaim-ve-amoraim.txt", "aaron-hyman-toldot-tannaim-ve-amoraim.tei.xml", "aaron-hyman-toldot-tannaim-ve-amoraim.epub"], "bochart": ["samuel-bochart-hierozoicon.txt", "samuel-bochart-hierozoicon.tei.xml", "samuel-bochart-hierozoicon.epub"], "lewysohn": ["ludwig-lewysohn-die-zoologie-des-talmuds.txt", "ludwig-lewysohn-die-zoologie-des-talmuds.tei.xml", "ludwig-lewysohn-die-zoologie-des-talmuds.epub"], "loew": ["immanuel-loew-die-flora-der-juden.txt", "immanuel-loew-die-flora-der-juden.tei.xml", "immanuel-loew-die-flora-der-juden.epub"], "barhebraeus": ["barhebraeus-chronography.txt", "barhebraeus-chronography.tei.xml", "barhebraeus-chronography.epub"]}/*END*/;
   // GoatCounter site code (privacy-friendly page counts, no cookies). Empty = off.
-  var GOATCOUNTER = '';
+  var GOATCOUNTER = 'openseforim';  // dashboard: https://openseforim.goatcounter.com/ (switched on 23-Nov-2026)
   var KEY = 'os-theme';
   var OLD_KEYS = ['ms-theme', 'me-theme', 'bh-theme', 'lz-theme'];
   var root = document.documentElement;

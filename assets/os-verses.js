@@ -2,7 +2,8 @@
    Loaded by os.js on pages that have references:
    - span.ref "[Gen 1:2; cf. b. Shabbat 31a]" (Taḥkemoni, Immanuel, Me'or Einayim): the references inside become buttons;
    - a.ref with a Sefaria URL (Emden): a click opens the popup; ctrl/cmd/middle click still opens Sefaria.
-   Bible: Hebrew "Miqra according to the Masorah" (CC BY-SA), English JPS 1917 (public domain).
+   Bible: Hebrew "Miqra according to the Masorah" (CC BY-SA), English the Koren Jerusalem Bible (CC BY-NC, shown
+   from Sefaria, not copied), with JPS 1917 (public domain) where Koren has no text.
    Other texts: Sefaria's default Hebrew and English versions (the popup names them).
    Words of the text that also occur in the Hebrew of the same row are marked. */
 (function () {
@@ -33,7 +34,9 @@
     "Lev. Rab.": "Vayikra Rabbah", "Leviticus Rabbah": "Vayikra Rabbah", "Vayikra Rabbah": "Vayikra Rabbah",
     "Pirkei de-Rabbi Eliezer": "Pirkei DeRabbi Eliezer"
   };
-  var HE_BIBLE = "Miqra according to the Masorah", EN_BIBLE = "The Holy Scriptures: A New Translation (JPS 1917)";
+  // Bible English: the Koren Jerusalem Bible; JPS 1917 only where Koren has no text
+  var HE_BIBLE = "Miqra according to the Masorah", EN_BIBLE = "The Koren Jerusalem Bible",
+    EN_BIBLE_2 = "The Holy Scriptures: A New Translation (JPS 1917)";
 
   function rx(list) { return list.map(function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|"); }
   var bookKeys = Object.keys(BOOKS).sort(function (a, b) { return b.length - a.length; });
@@ -133,16 +136,20 @@
   function fetchRef(s) {
     if (cache[s.ref]) return cache[s.ref];
     var u = "https://www.sefaria.org/api/v3/texts/" + encodeURIComponent(s.ref) +
-      (s.bible ? "?version=hebrew|" + encodeURIComponent(HE_BIBLE) + "&version=english|" + encodeURIComponent(EN_BIBLE)
+      (s.bible ? "?version=hebrew|" + encodeURIComponent(HE_BIBLE) + "&version=english|" + encodeURIComponent(EN_BIBLE) +
+                 "&version=english|" + encodeURIComponent(EN_BIBLE_2)
                : "?version=hebrew&version=english");
     cache[s.ref] = fetch(u).then(function (r) {
       if (!r.ok) throw new Error(r.status === 404 ? "not found" : "HTTP " + r.status);
       return r.json();
     }).then(function (j) {
       var d = { ref: j.ref || s.ref, heRef: j.heRef || "", he: "", en: "", heT: "", enT: "" };
-      (j.versions || []).forEach(function (v) {
+      var vs = (j.versions || []).slice().sort(function (a, b) { // the preferred English first
+        return (b.versionTitle === EN_BIBLE) - (a.versionTitle === EN_BIBLE);
+      });
+      vs.forEach(function (v) {
         if (v.language === "he" && !d.he) { d.he = clean(flat(v.text)); d.heT = v.versionTitle; }
-        if (v.language === "en" && !d.en) { d.en = clean(flat(v.text)); d.enT = v.versionTitle; }
+        if (v.language === "en" && !d.en) { var t = clean(flat(v.text)); if (t) { d.en = t; d.enT = v.versionTitle; } }
       });
       if (!d.he && !d.en) throw new Error("no text");
       return d;

@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="/assets/os.css">
 <script src="/assets/os.js" defer></script>
 <!--os:seo-->
+<script>(function(){try{var d=document.documentElement,L=localStorage,s=L.getItem('os-size'),h=L.getItem('os-he'),b=L.getItem('bh-size');if(s===null&&b){s=b;L.setItem('os-size',b)}if(s)d.setAttribute('data-os-size',s);var F={frank:'Frank+Ruhl+Libre:wght@400;600',david:'David+Libre:wght@400;500'};if(h){d.setAttribute('data-os-he',h);if(F[h]){var l=document.createElement('link');l.rel='stylesheet';l.setAttribute('data-os-font',F[h]);l.href='https://fonts.googleapis.com/css2?family='+F[h]+'&display=swap';document.head.appendChild(l)}}}catch(e){}})()</script>
 <meta property="og:description" content="Open readers for Hebrew and Judaica texts: source text, page scans and English translation side by side.">
 <meta property="og:url" content="https://openseforim.org/">
 <meta property="og:site_name" content="Open Seforim">
@@ -29,80 +30,71 @@
     <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated. <a href="/about/">How the editions are made →</a></p>
   </section>
   <h2 class="sect">Translations</h2>
-  <section class="works">
-    <article class="work">
-      <div class="work-main">
-        <h3>Jacob Emden, <i>Megillat Sefer</i></h3>
-        <div class="he" lang="he" dir="rtl">מגילת ספר</div>
-        <p>Kahana&#x27;s Hebrew text (1896/97) from Gershom Scholem&#x27;s annotated copy, with an English translation.</p>
-      </div>
-      <div class="work-side"><span class="badge">Complete</span><a class="open" href="/emden/">Open<span class="vh"> Jacob Emden, Megillat Sefer</span> →</a></div>
+  <section class="grid">
+    <article class="card">
+      <span class="badge">Complete</span>
+      <h3>Jacob Emden, <i>Megillat Sefer</i></h3>
+      <div class="he" lang="he" dir="rtl">מגילת ספר</div>
+      <p>Kahana&#x27;s Hebrew text (1896/97) from Gershom Scholem&#x27;s annotated copy, with an English translation.</p>
+      <a class="open" href="/emden/">Open<span class="vh"> Jacob Emden, Megillat Sefer</span> →</a>
     </article>
-    <article class="work">
-      <div class="work-main">
-        <h3>Immanuel of Rome, <i>Maḥberot</i></h3>
-        <div class="he" lang="he" dir="rtl">מחברות עמנואל</div>
-        <p>The Hebrew rhymed-prose maḥberot, with an English translation line by line.</p>
-      </div>
-      <div class="work-side"><span class="badge">In progress · 2 of 28 maḥberot</span><a class="open" href="/immanuel/">Open<span class="vh"> Immanuel of Rome, Maḥberot</span> →</a></div>
+    <article class="card">
+      <span class="badge">In progress · 2 of 28 maḥberot</span>
+      <h3>Immanuel of Rome, <i>Maḥberot</i></h3>
+      <div class="he" lang="he" dir="rtl">מחברות עמנואל</div>
+      <p>The Hebrew rhymed-prose maḥberot, with an English translation line by line.</p>
+      <a class="open" href="/immanuel/">Open<span class="vh"> Immanuel of Rome, Maḥberot</span> →</a>
     </article>
-    <article class="work">
-      <div class="work-main">
-        <h3>Azariah de&#x27; Rossi, <i>Me&#x27;or Einayim</i></h3>
-        <div class="he" lang="he" dir="rtl">מאור עינים</div>
-        <p><i>Imrei Binah</i>, the third part, in 60 chapters: the Hebrew text checked against the Vilna scan, with an English translation.</p>
-      </div>
-      <div class="work-side"><span class="badge">Imrei Binah complete</span><a class="open" href="/meor-einayim/">Open<span class="vh"> Azariah de&#x27; Rossi, Me&#x27;or Einayim</span> →</a></div>
+    <article class="card">
+      <span class="badge">Imrei Binah complete</span>
+      <h3>Azariah de&#x27; Rossi, <i>Me&#x27;or Einayim</i></h3>
+      <div class="he" lang="he" dir="rtl">מאור עינים</div>
+      <p><i>Imrei Binah</i>, the third part, in 60 chapters: the Hebrew text checked against the Vilna scan, with an English translation.</p>
+      <a class="open" href="/meor-einayim/">Open<span class="vh"> Azariah de&#x27; Rossi, Me&#x27;or Einayim</span> →</a>
     </article>
-    <article class="work">
-      <div class="work-main">
-        <h3>Aaron Hyman, <i>Toldot Tannaim ve-Amoraim</i></h3>
-        <div class="he" lang="he" dir="rtl">תולדות תנאים ואמוראים</div>
-        <p>The biographical dictionary of the Talmudic sages: a machine translation of all 1,889 entries, and reviewed sample entries.</p>
-      </div>
-      <div class="work-side"><span class="badge">Complete · 1,889 entries</span><a class="open" href="/hyman/">Open<span class="vh"> Aaron Hyman, Toldot Tannaim ve-Amoraim</span> →</a></div>
+    <article class="card">
+      <span class="badge">Complete · 1,889 entries</span>
+      <h3>Aaron Hyman, <i>Toldot Tannaim ve-Amoraim</i></h3>
+      <div class="he" lang="he" dir="rtl">תולדות תנאים ואמוראים</div>
+      <p>The biographical dictionary of the Talmudic sages: a machine translation of all 1,889 entries, and reviewed sample entries.</p>
+      <a class="open" href="/hyman/">Open<span class="vh"> Aaron Hyman, Toldot Tannaim ve-Amoraim</span> →</a>
     </article>
-    <article class="work">
-      <div class="work-main">
-        <h3>Samuel Bochart, <i>Hierozoicon</i></h3>
-        <p>The classic study of the animals of the Bible (1663): Latin text and English translation side by side, with links to the scans.</p>
-      </div>
-      <div class="work-side"><span class="badge">In progress · 94 chapters</span><a class="open" href="/bochart/">Open<span class="vh"> Samuel Bochart, Hierozoicon</span> →</a></div>
+    <article class="card">
+      <span class="badge">In progress · 94 chapters</span>
+      <h3>Samuel Bochart, <i>Hierozoicon</i></h3>
+      <p>The classic study of the animals of the Bible (1663): Latin text and English translation side by side, with links to the scans.</p>
+      <a class="open" href="/bochart/">Open<span class="vh"> Samuel Bochart, Hierozoicon</span> →</a>
     </article>
-    <article class="work">
-      <div class="work-main">
-        <h3>Ludwig Lewysohn, <i>Die Zoologie des Talmuds</i></h3>
-        <p>German text and English translation of the 1858 study of the animals of the Talmud.</p>
-      </div>
-      <div class="work-side"><span class="badge">Complete</span><a class="open" href="/lewysohn/">Open<span class="vh"> Ludwig Lewysohn, Die Zoologie des Talmuds</span> →</a></div>
+    <article class="card">
+      <span class="badge">Complete</span>
+      <h3>Ludwig Lewysohn, <i>Die Zoologie des Talmuds</i></h3>
+      <p>German text and English translation of the 1858 study of the animals of the Talmud.</p>
+      <a class="open" href="/lewysohn/">Open<span class="vh"> Ludwig Lewysohn, Die Zoologie des Talmuds</span> →</a>
     </article>
-    <article class="work">
-      <div class="work-main">
-        <h3>Immanuel Löw, <i>Die Flora der Juden</i></h3>
-        <p>German text and English translation of sample pages and the contents lists of Löw&#x27;s study of the plants of Jewish sources.</p>
-      </div>
-      <div class="work-side"><span class="badge">Sample · selected pages</span><a class="open" href="/loew/">Open<span class="vh"> Immanuel Löw, Die Flora der Juden</span> →</a></div>
+    <article class="card">
+      <span class="badge">Sample · selected pages</span>
+      <h3>Immanuel Löw, <i>Die Flora der Juden</i></h3>
+      <p>German text and English translation of sample pages and the contents lists of Löw&#x27;s study of the plants of Jewish sources.</p>
+      <a class="open" href="/loew/">Open<span class="vh"> Immanuel Löw, Die Flora der Juden</span> →</a>
     </article>
   </section>
   <h2 class="sect">Source texts</h2>
-  <section class="works">
-    <article class="work">
-      <div class="work-main">
-        <h3>Barhebraeus, <i>Chronography</i></h3>
-        <p>Bedjan&#x27;s edition of the <i>Chronicon Syriacum</i> (1890), read by OCR, with a transliteration into Hebrew letters.</p>
-      </div>
-      <div class="work-side"><span class="badge">Complete · 599 pages</span><a class="open" href="/barhebraeus/">Open<span class="vh"> Barhebraeus, Chronography</span> →</a></div>
+  <section class="grid">
+    <article class="card">
+      <span class="badge">Complete · 599 pages</span>
+      <h3>Barhebraeus, <i>Chronography</i></h3>
+      <p>Bedjan&#x27;s edition of the <i>Chronicon Syriacum</i> (1890), read by OCR, with a transliteration into Hebrew letters.</p>
+      <a class="open" href="/barhebraeus/">Open<span class="vh"> Barhebraeus, Chronography</span> →</a>
     </article>
   </section>
   <h2 class="sect">Catalogue</h2>
-  <section class="works">
-    <article class="work">
-      <div class="work-main">
-        <h3>Defus: open scans of printed Hebrew books</h3>
-        <div class="he" lang="he" dir="rtl">דפוס</div>
-        <p>Open scans of printed Hebrew books and Judaica, 1469–1920, gathered from the libraries that hold them.</p>
-      </div>
-      <div class="work-side"><span class="badge">Prototype</span><a class="open" href="/defus/">Open<span class="vh"> Defus: open scans of printed Hebrew books</span> →</a></div>
+  <section class="grid">
+    <article class="card">
+      <span class="badge">Prototype</span>
+      <h3>Defus: open scans of printed Hebrew books</h3>
+      <div class="he" lang="he" dir="rtl">דפוס</div>
+      <p>Open scans of printed Hebrew books and Judaica, 1469–1920, gathered from the libraries that hold them.</p>
+      <a class="open" href="/defus/">Open<span class="vh"> Defus: open scans of printed Hebrew books</span> →</a>
     </article>
   </section>
 </main>

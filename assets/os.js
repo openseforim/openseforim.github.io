@@ -1,4 +1,4 @@
-/* Open Seforim shared header strip, theme control and footer. v1.
+/* Open Seforim shared header strip, display settings (theme, text size, Hebrew font) and footer. v2.
    Each reader page loads it with: <script src="/assets/os.js" defer></script>
    The work's metadata comes from /<slug>/work.json. */
 (function () {
@@ -70,21 +70,91 @@
   inner.appendChild(el('span', { 'class': 'os-sp' }));
   inner.appendChild(el('a', { href: '/#works' }, 'All works'));
   inner.appendChild(el('a', { href: '/about/', 'class': 'os-about' }, 'About'));
-  var lab = el('label', { 'class': 'os-theme', title: 'Colour theme, for all works' });
-  lab.appendChild(el('span', { 'class': 'os-theme-word' }, 'Theme'));
+  // ---- display panel: theme, text size, Hebrew font (one choice for all works) ----
+  // The choice is applied before the page paints by the early script that tools/postbuild.py writes in <head>.
+  var SIZES = [['s', 'A−', 'Smaller'], ['', 'A', 'Normal'], ['l', 'A+', 'Larger'], ['xl', 'A++', 'Largest']];
+  // [key, label, CSS family, Google Fonts family parameter]; the default ('') is Noto Serif Hebrew
+  var HEFONTS = [['', 'Noto Serif', '"Noto Serif Hebrew"', 'Noto+Serif+Hebrew:wght@400;600'],
+    ['frank', 'Frank Ruhl', '"Frank Ruhl Libre"', 'Frank+Ruhl+Libre:wght@400;600'],
+    ['david', 'David', '"David Libre"', 'David+Libre:wght@400;500'],
+    ['device', 'Device font', '"SBL Hebrew","Ezra SIL","Taamey Frank CLM","Frank Ruehl CLM",David,"Times New Roman"', '']];
+  var SAMPLE = 'בְּרֵאשִׁית בָּרָא אֱלֹהִים';
+  var ownPalette = root.classList.contains('os-own-palette');
+  function fontLink(param) {
+    if (!param || document.querySelector('link[data-os-font="' + param + '"]')) return;
+    document.head.appendChild(el('link', { rel: 'stylesheet', 'data-os-font': param,
+      href: 'https://fonts.googleapis.com/css2?family=' + param + '&display=swap' }));
+  }
+  var disp = el('button', { type: 'button', 'class': 'os-disp-btn', 'aria-expanded': 'false', 'aria-controls': 'os-disp',
+    'aria-label': 'Display settings', title: 'Theme, text size and Hebrew font, for all works' });
+  disp.innerHTML = '<span aria-hidden="true" class="os-aa">Aa</span><span class="os-disp-word">Display</span>';
+  inner.appendChild(disp);
+
+  var panel = el('div', { 'class': 'os-disp', id: 'os-disp', role: 'dialog', 'aria-label': 'Display settings' });
+  panel.hidden = true;
+  function row(label) {
+    var r = el('div', { 'class': 'os-disp-row' });
+    r.appendChild(el('div', { 'class': 'os-disp-label' }, label));
+    panel.appendChild(r);
+    return r;
+  }
   var sel = el('select', { 'aria-label': 'Colour theme' });
-  [['auto', 'Auto'], ['light', 'Light'], ['paper', 'Paper'], ['dark', 'Dark']].forEach(function (o) {
-    var op = el('option', { value: o[0] }, o[1]); sel.appendChild(op);
+  [['auto', 'Auto (as device)'], ['light', 'Light'], ['paper', 'Paper'], ['dark', 'Dark']].forEach(function (o) {
+    sel.appendChild(el('option', { value: o[0] }, o[1]));
   });
   sel.value = theme === '' ? 'auto' : theme;
   sel.addEventListener('change', function () { set(KEY, sel.value); apply(sel.value); });
-  lab.appendChild(sel);
-  inner.appendChild(lab);
+  row('Theme').appendChild(sel);
+  if (!ownPalette) {  // Defus keeps its own type
+    var curSize = root.getAttribute('data-os-size') || '';
+    var sg = el('div', { 'class': 'os-seg', role: 'group', 'aria-label': 'Text size' });
+    SIZES.forEach(function (z) {
+      var b = el('button', { type: 'button', title: z[2], 'aria-pressed': String(z[0] === curSize) }, z[1]);
+      b.addEventListener('click', function () {
+        if (z[0]) root.setAttribute('data-os-size', z[0]); else root.removeAttribute('data-os-size');
+        set('os-size', z[0]);
+        Array.prototype.forEach.call(sg.children, function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      });
+      sg.appendChild(b);
+    });
+    row('Text size').appendChild(sg);
+    var curHe = root.getAttribute('data-os-he') || '';
+    var fg = el('div', { 'class': 'os-fonts', role: 'radiogroup', 'aria-label': 'Hebrew font' });
+    HEFONTS.forEach(function (f) {
+      var b = el('button', { type: 'button', role: 'radio', 'aria-checked': String(f[0] === curHe) });
+      b.appendChild(el('span', { 'class': 'os-fname' }, f[1]));
+      var smp = el('span', { 'class': 'os-fsample', lang: 'he', dir: 'rtl' }, SAMPLE);
+      smp.style.fontFamily = f[2] + ',serif';
+      b.appendChild(smp);
+      b.addEventListener('click', function () {
+        fontLink(f[3]);
+        if (f[0]) root.setAttribute('data-os-he', f[0]); else root.removeAttribute('data-os-he');
+        set('os-he', f[0]);
+        Array.prototype.forEach.call(fg.children, function (x) { x.setAttribute('aria-checked', String(x === b)); });
+      });
+      fg.appendChild(b);
+    });
+    row('Hebrew font').appendChild(fg);
+  }
+  function openPanel(open) {
+    if (open && !ownPalette) HEFONTS.forEach(function (f) { fontLink(f[3]); });  // load the samples
+    panel.hidden = !open;
+    disp.setAttribute('aria-expanded', String(open));
+  }
+  disp.addEventListener('click', function () { openPanel(panel.hidden); });
+  document.addEventListener('click', function (e) {
+    if (!panel.hidden && !panel.contains(e.target) && !disp.contains(e.target)) openPanel(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !panel.hidden) { openPanel(false); disp.focus(); }
+  });
+
   strip.appendChild(inner);
   document.body.insertBefore(strip, document.body.firstChild);
+  document.body.insertBefore(panel, strip.nextSibling);
 
-  // hide the readers' own theme selects (the strip replaces them)
-  var own = document.querySelectorAll('select#theme');
+  // hide the readers' own theme selects and size buttons (the display panel replaces them)
+  var own = document.querySelectorAll('select#theme, .size[aria-label="Text size"]');
   for (var j = 0; j < own.length; j++) {
     var s = own[j], wrap = s.closest('label') || s;
     wrap.classList.add('os-hidden');

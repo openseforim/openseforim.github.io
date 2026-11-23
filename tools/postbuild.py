@@ -18,6 +18,15 @@ SITE = "https://openseforim.org"
 OG_IMAGE = SITE + "/assets/og.png"
 SKIP_DIRS = {"pipeline", "node_modules", ".git", "scans", "data", ".venv"}
 BLOCK = re.compile(r"\n?<!--os:seo-->.*?<!--/os:seo-->\n?", re.S)
+# applies the saved text size and Hebrew font before the page paints; keys and fonts match assets/os.js
+# (Bochart's old 'bh-size' choice is taken over once)
+EARLY = ("<script>(function(){try{var d=document.documentElement,L=localStorage,s=L.getItem('os-size'),"
+         "h=L.getItem('os-he'),b=L.getItem('bh-size');if(s===null&&b){s=b;L.setItem('os-size',b)}"
+         "if(s)d.setAttribute('data-os-size',s);"
+         "var F={frank:'Frank+Ruhl+Libre:wght@400;600',david:'David+Libre:wght@400;500'};"
+         "if(h){d.setAttribute('data-os-he',h);if(F[h]){var l=document.createElement('link');l.rel='stylesheet';"
+         "l.setAttribute('data-os-font',F[h]);l.href='https://fonts.googleapis.com/css2?family='+F[h]+'&display=swap';"
+         "document.head.appendChild(l)}}}catch(e){}})()</script>")
 
 HE = re.compile(r"[֐-׿]")
 SYR = re.compile(r"[܀-ݏ]")
@@ -159,6 +168,13 @@ def process(page, root, slug, work):
             tags.append(meta("name", "citation_doi", work["doi"]))
     if is_home and 'application/ld+json' not in head:
         tags.append(jsonld(work, url) if work else site_jsonld() if not slug else "")
+    # shared reading type (assets/os.css): the body face for pages that do not load it, and the reader's
+    # text size and Hebrew font choice applied before the page paints (os.js changes them later)
+    if "os-own-palette" not in t[:t.find("<head")]:
+        if "Noto+Serif:" not in head:
+            tags.insert(0, '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400'
+                           '&family=Noto+Serif+Hebrew:wght@400;600&display=swap">')
+        tags.insert(0, EARLY)
     block = "<!--os:seo-->\n" + "\n".join(x for x in tags if x) + "\n<!--/os:seo-->\n"
 
     head = re.sub(r'(href|src)="([^"]+\.(?:css|js))"', lambda m: stamp(m, page.parent), head)

@@ -44,15 +44,13 @@ def ital(s):
 
 
 def card(w):
-    """One row: plain-text title (selectable, copyable), Hebrew title, summary, status, and a separate link."""
-    he = f'\n        <div class="he" lang="he" dir="rtl">{e(w["title_he"])}</div>' if w.get("title_he") else ""
-    badge = f'<span class="badge">{e(w["status_label"])}</span>' if w.get("status_label") else ""
-    return f'''    <article class="work">
-      <div class="work-main">
-        <h3>{ital(w["title"])}</h3>{he}
-        <p>{ital(w.get("summary", ""))}</p>
-      </div>
-      <div class="work-side">{badge}<a class="open" href="/{w["slug"]}/">Open<span class="vh"> {e(re.sub(r"[*]", "", w["title"]))}</span> →</a></div>
+    """One card: plain-text title (selectable, copyable), Hebrew title, summary, and a separate link at the foot."""
+    he = f'\n      <div class="he" lang="he" dir="rtl">{e(w["title_he"])}</div>' if w.get("title_he") else ""
+    badge = f'\n      <span class="badge">{e(w["status_label"])}</span>' if w.get("status_label") else ""
+    return f'''    <article class="card">{badge}
+      <h3>{ital(w["title"])}</h3>{he}
+      <p>{ital(w.get("summary", ""))}</p>
+      <a class="open" href="/{w["slug"]}/">Open<span class="vh"> {e(re.sub(r"[*]", "", w["title"]))}</span> →</a>
     </article>'''
 
 
@@ -61,7 +59,7 @@ def landing(works):
     for kind, label in SECTIONS:
         ws = [w for w in works if w.get("kind") == kind]
         if ws:
-            parts.append(f'  <h2 class="sect">{label}</h2>\n  <section class="works">\n'
+            parts.append(f'  <h2 class="sect">{label}</h2>\n  <section class="grid">\n'
                          + "\n".join(card(w) for w in ws) + "\n  </section>")
     sections = "\n".join(parts)
     return f'''<!doctype html>

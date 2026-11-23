@@ -54,8 +54,48 @@ html body{padding-top:var(--os-strip-h)}
 .os-strip .os-home{color:var(--os-fg);font:italic 600 14px/1.4 var(--os-serif)}
 .os-strip .os-sep{opacity:.6}
 .os-strip .os-sp{flex:1}
-.os-strip .os-theme{display:inline-flex;align-items:center;gap:5px}
-@media (max-width:420px){.os-strip .os-theme-word{display:none}}
+.os-strip .os-disp-btn{display:inline-flex;align-items:center;gap:5px;font:13px/1.4 var(--os-sans);color:var(--os-fg);
+  background:var(--os-card);border:1px solid var(--os-line);border-radius:4px;padding:1px 8px;cursor:pointer}
+.os-strip .os-disp-btn:hover,.os-strip .os-disp-btn[aria-expanded="true"]{border-color:var(--os-accent)}
+.os-strip .os-aa{font:600 13px/1 var(--os-serif)}
+@media (max-width:420px){.os-strip .os-disp-word{display:none}}
+
+/* ---- display panel (os.js) ---- */
+.os-disp{position:absolute;top:calc(var(--os-strip-h) + 4px);right:max(8px,calc((100vw - 1250px)/2 + 8px));z-index:40;
+  width:min(330px,calc(100vw - 16px));box-sizing:border-box;padding:12px 14px;
+  background:var(--os-card);color:var(--os-fg);border:1px solid var(--os-line);border-radius:8px;
+  box-shadow:0 6px 24px rgba(0,0,0,.18);font:13px/1.4 var(--os-sans)}
+.os-disp[hidden]{display:none}
+.os-disp-row+.os-disp-row{margin-top:12px}
+.os-disp-label{font-weight:600;margin-bottom:5px;color:var(--os-muted)}
+.os-disp select{font:inherit;color:var(--os-fg);background:var(--os-bg);border:1px solid var(--os-line);border-radius:4px;padding:3px 6px;width:100%}
+.os-seg{display:flex}
+.os-seg button{flex:1;font:600 14px/1.2 var(--os-serif);color:var(--os-fg);background:var(--os-bg);border:1px solid var(--os-line);
+  margin-left:-1px;padding:6px 0;cursor:pointer}
+.os-seg button:first-child{margin-left:0;border-radius:4px 0 0 4px;font-size:12px}
+.os-seg button:last-child{border-radius:0 4px 4px 0;font-size:17px}
+.os-seg button[aria-pressed="true"],.os-fonts button[aria-checked="true"]{background:var(--os-badge);border-color:var(--os-accent);position:relative}
+.os-fonts{display:flex;flex-direction:column;gap:4px}
+.os-fonts button{display:flex;align-items:center;justify-content:space-between;gap:10px;font:inherit;color:var(--os-fg);
+  background:var(--os-bg);border:1px solid var(--os-line);border-radius:4px;padding:3px 10px;cursor:pointer;text-align:left}
+.os-fonts .os-fsample{font-size:19px;line-height:1.5}
+.os-seg button:focus-visible,.os-fonts button:focus-visible,.os-strip .os-disp-btn:focus-visible{outline:2px solid var(--os-accent);outline-offset:1px}
+
+/* ---- shared reading type: one body face for all works, a chosen Hebrew face, and a text size ----
+   Not applied to Defus (html.os-own-palette). The :not(#os-none) ID weight beats the readers' own rules. */
+:root{--os-fs:1;--os-he:"Noto Serif Hebrew","SBL Hebrew","Times New Roman",serif}
+:root[data-os-size="s"]{--os-fs:.88}
+:root[data-os-size="l"]{--os-fs:1.15}
+:root[data-os-size="xl"]{--os-fs:1.32}
+:root[data-os-he="frank"]{--os-he:"Frank Ruhl Libre","Noto Serif Hebrew",serif}
+:root[data-os-he="david"]{--os-he:"David Libre","Noto Serif Hebrew",serif}
+:root[data-os-he="device"]{--os-he:"SBL Hebrew","Ezra SIL","Taamey Frank CLM","Frank Ruehl CLM",David,"Times New Roman",serif}
+:root:not(.os-own-palette):not(#os-none){--fs:var(--os-fs);font-size:calc(100% * var(--os-fs))}
+html:not(.os-own-palette):not(#os-none) body{font-family:var(--os-serif);font-size:calc(17px * var(--os-fs));line-height:1.6}
+@media (max-width:760px){html:not(.os-own-palette):not(#os-none) body{font-size:calc(16px * var(--os-fs))}}
+html:not(.os-own-palette):not(#os-none) :is(.he,.sub-he,.heb,[lang="he"]):not(.os-fsample){font-family:var(--os-he)}
+html:not(.os-own-palette):not(#os-none) :is(h1,h2,h3,h4){font-family:var(--os-serif)}
+html:not(.os-own-palette):not(#os-none) :is(h1,h2,h3,h4):is(.he,.sub-he,[lang="he"]){font-family:var(--os-he)}
 .os-foot .os-status{display:inline-block;background:var(--os-badge);color:var(--os-fg);border-radius:4px;padding:0 7px;font-size:12px}
 .os-foot .os-copy{font:12px/1.4 var(--os-sans);color:var(--os-fg);background:var(--os-card);border:1px solid var(--os-line);border-radius:4px;padding:3px 10px;margin:0 0 8px;cursor:pointer}
 .os-foot .os-copy:hover{border-color:var(--os-accent)}
@@ -91,22 +131,14 @@ html body{padding-top:var(--os-strip-h)}
 .prose h2{font-size:1.25rem;margin:28px 0 6px}
 .prose li{margin:.4em 0}
 .sect{font-size:1.15rem;margin:28px 0 0;color:var(--os-muted);font-weight:600}
-.works{display:flex;flex-direction:column;border:1px solid var(--os-line);border-radius:8px;background:var(--os-card);margin:14px 0 16px}
-.work{display:flex;gap:20px;justify-content:space-between;align-items:flex-start;padding:14px 18px;border-top:1px solid var(--os-line)}
-.work:first-child{border-top:0}
-.work-main{min-width:0;flex:1}
-.work h3{font-size:1.1rem;margin:0;font-weight:600}
-.work .he{font-family:"Noto Serif Hebrew",serif;color:var(--os-muted);text-align:left}
-.work p{margin:4px 0 0;font-size:.92rem;color:var(--os-muted)}
-.work-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:none;max-width:16em;text-align:right}
-.work-side .badge{align-self:flex-end}
 .os-landing a.open{font:14px/1.4 var(--os-sans);font-weight:600;text-decoration:none;border:1px solid var(--os-accent);border-radius:4px;padding:3px 12px;white-space:nowrap}
 .os-landing a.open:hover{background:var(--os-accent);color:var(--os-bg)}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-@media (max-width:640px){.work{flex-direction:column;gap:10px}.work-side{flex-direction:row;align-items:center;max-width:none;width:100%;justify-content:space-between}}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:14px 0 16px}
-.card{background:var(--os-card);border:1px solid var(--os-line);border-radius:8px;padding:16px 18px;text-decoration:none;color:var(--os-fg) !important;display:flex;flex-direction:column;gap:6px}
+.card{background:var(--os-card);border:1px solid var(--os-line);border-radius:8px;padding:16px 18px;color:var(--os-fg);display:flex;flex-direction:column;gap:6px}
 .card:hover{border-color:var(--os-accent)}
+.card a.open{align-self:flex-start;margin-top:auto}
+.card p{flex:none}
 .card h3{font-size:1.1rem;margin:0}
 .card .he{font-family:"Noto Serif Hebrew",serif;direction:rtl;color:var(--os-muted)}
 .card p{margin:0;font-size:.92rem;color:var(--os-muted)}

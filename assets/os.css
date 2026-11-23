@@ -45,7 +45,7 @@ html:not(.os-own-palette) body{background:var(--os-bg);color:var(--os-fg)}
 :root{--os-strip-h:50px}
 html body{padding-top:var(--os-strip-h)}
 .os-strip{position:absolute;top:0;left:0;right:0;height:var(--os-strip-h);overflow:hidden;z-index:20;
-  background:var(--os-card);border-bottom:1px solid var(--os-line);box-shadow:0 1px 6px rgba(0,0,0,.05);
+  background:var(--os-chrome);border-top:3px solid var(--os-accent);border-bottom:1px solid var(--os-line);box-sizing:border-box;
   font:15px/1.4 var(--os-sans);color:var(--os-muted)}
 .os-strip-in{display:flex;align-items:center;gap:24px;max-width:1250px;height:100%;margin:0 auto;padding:0 20px;flex-wrap:nowrap;white-space:nowrap}
 .os-strip .os-brandbox{display:flex;align-items:center;gap:12px;min-width:0}
@@ -58,11 +58,11 @@ html body{padding-top:var(--os-strip-h)}
 .os-strip .os-sep{opacity:.45;font-size:18px}
 .os-strip .os-sp{flex:1}
 .os-strip .os-nav{display:flex;align-items:center;gap:22px}
-.os-strip .os-disp-btn{display:inline-flex;align-items:center;gap:7px;font:500 14px/1.4 var(--os-sans);color:var(--os-fg);
+.os-disp-btn{display:inline-flex;align-items:center;gap:7px;font:500 14px/1.4 var(--os-sans);color:var(--os-fg);
   background:var(--os-bg);border:1px solid var(--os-line);border-radius:6px;padding:5px 12px;cursor:pointer}
-.os-strip .os-disp-btn:hover,.os-strip .os-disp-btn[aria-expanded="true"]{border-color:var(--os-accent);color:var(--os-accent)}
-.os-strip .os-aa{font:600 15px/1 var(--os-serif)}
-@media (max-width:760px){.os-strip-in{gap:16px;padding:0 14px}.os-strip .os-nav{gap:14px}.os-strip .os-disp-word{display:none}}
+.os-disp-btn:hover,.os-disp-btn[aria-expanded="true"]{border-color:var(--os-accent);color:var(--os-accent)}
+.os-disp-btn .os-aa{font:600 15px/1 var(--os-serif)}
+@media (max-width:760px){.os-strip-in{gap:16px;padding:0 14px}.os-strip .os-nav{gap:14px}.os-disp-btn .os-disp-word{display:none}}
 @media (max-width:480px){:root{--os-strip-h:46px}.os-strip-in{gap:10px;padding:0 12px}.os-strip{font-size:14px}
   .os-strip .os-home span{display:none}.os-strip .os-about{display:none}.os-strip .os-nav{gap:10px}}
 
@@ -76,7 +76,7 @@ html body{padding-top:var(--os-strip-h)}
 @media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
 
 /* ---- display panel (os.js) ---- */
-.os-disp{position:absolute;top:calc(var(--os-strip-h) + 6px);right:max(8px,calc((100vw - 1250px)/2 + 12px));z-index:40;
+.os-disp{position:fixed;top:calc(var(--os-strip-h) + 6px);right:12px;z-index:40;
   width:min(330px,calc(100vw - 16px));box-sizing:border-box;padding:12px 14px;
   background:var(--os-card);color:var(--os-fg);border:1px solid var(--os-line);border-radius:8px;
   box-shadow:0 6px 24px rgba(0,0,0,.18);font:13px/1.4 var(--os-sans)}
@@ -94,10 +94,20 @@ html body{padding-top:var(--os-strip-h)}
 .os-fonts button{display:flex;align-items:center;justify-content:space-between;gap:10px;font:inherit;color:var(--os-fg);
   background:var(--os-bg);border:1px solid var(--os-line);border-radius:4px;padding:3px 10px;cursor:pointer;text-align:left}
 .os-fonts .os-fsample{font-size:19px;line-height:1.5}
-.os-seg button:focus-visible,.os-fonts button:focus-visible,.os-strip .os-disp-btn:focus-visible{outline:2px solid var(--os-accent);outline-offset:1px}
+.os-seg button:focus-visible,.os-fonts button:focus-visible,.os-disp-btn:focus-visible{outline:2px solid var(--os-accent);outline-offset:1px}
 
 /* ---- shared reading type: one body face for all works, a chosen Hebrew face, and a text size ----
    Not applied to Defus (html.os-own-palette). The :not(#os-none) ID weight beats the readers' own rules. */
+:root{--os-chrome:#efe8da}
+:root[data-theme="paper"]{--os-chrome:#e5d6b3}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]):not([data-theme="paper"]){--os-chrome:#0f0e12}}
+:root[data-theme="dark"]{--os-chrome:#0f0e12}
+:root[data-theme="light"]{--os-chrome:#efe8da}
+/* floating header: the strip floats on pages without a sticky reader bar (os.js sets html.os-float) */
+html.os-float .os-strip{position:fixed}
+html.os-float:not(#os-none){scroll-padding-top:calc(var(--os-strip-h) + 12px)}
+/* the Display button inside a reader's sticky bar */
+.os-disp-btn.os-disp-inbar{font-size:13px;padding:3px 10px;background:var(--os-card)}
 :root{--os-fs:1;--os-he:"Noto Serif Hebrew","SBL Hebrew","Times New Roman",serif}
 :root[data-os-size="s"]{--os-fs:.88}
 :root[data-os-size="l"]{--os-fs:1.15}
@@ -169,3 +179,6 @@ html:not(.os-own-palette):not(#os-none) :is(h1,h2,h3,h4):is(.he,.sub-he,[lang="h
 .card details p{margin:6px 0 0;overflow-wrap:anywhere}
 .card .cmeta{font:12px/1.5 var(--os-sans)}
 .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:14px !important;font:15px/1.4 var(--os-sans)}
+
+/* a reader's own sticky bar under the site strip: a clear edge of its own */
+html.os-has-bar :is(.bar,nav.where){box-shadow:0 2px 8px rgba(0,0,0,.08)}

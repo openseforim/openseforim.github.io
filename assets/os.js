@@ -146,8 +146,14 @@
     });
     row('Hebrew font').appendChild(fg);
   }
+  function placePanel() {  // the panel is fixed, under the button, wherever the button is (strip or reader bar)
+    var r = disp.getBoundingClientRect();
+    panel.style.top = Math.round(r.bottom + 6) + 'px';
+    panel.style.right = Math.max(8, Math.round(document.documentElement.clientWidth - r.right)) + 'px';
+  }
   function openPanel(open) {
     if (open && !ownPalette) HEFONTS.forEach(function (f) { fontLink(f[3]); });  // load the samples
+    if (open) placePanel();
     panel.hidden = !open;
     disp.setAttribute('aria-expanded', String(open));
   }
@@ -168,6 +174,29 @@
   for (var j = 0; j < own.length; j++) {
     var s = own[j], wrap = s.closest('label') || s;
     wrap.classList.add('os-hidden');
+  }
+  window.addEventListener('resize', function () { if (!panel.hidden) placePanel(); });
+  window.addEventListener('scroll', function () { if (!panel.hidden) placePanel(); }, { passive: true });
+
+  // ---- floating header ----
+  // A reader with its own sticky bar (Emden .bar, Lewysohn nav.where) gets the Display button in that bar, so it
+  // stays in reach while reading: where the reader's old theme select was, or at the end. Other pages: the strip
+  // itself floats (html.os-float). Decided once, at load (Emden's bar is not sticky on a phone).
+  var sticky = null;
+  Array.prototype.some.call(document.querySelectorAll('body > .bar, .bar, nav.where'), function (b) {
+    var p = getComputedStyle(b).position;
+    if ((p === 'sticky' || p === 'fixed') && b.offsetParent !== null) { sticky = b; return true; }
+    return false;
+  });
+  if (sticky) {
+    var oldSel = sticky.querySelector('select#theme');
+    disp.classList.add('os-disp-inbar');
+    var before = sticky.querySelector('form[role="search"]') || (oldSel && (oldSel.closest('label') || oldSel));
+    if (before) before.parentNode.insertBefore(disp, before);
+    else (sticky.querySelector('.barin') || sticky).appendChild(disp);
+    root.classList.add('os-has-bar');
+  } else if (!ownPalette) {
+    root.classList.add('os-float');
   }
 
   // ---- footer from work.json ----

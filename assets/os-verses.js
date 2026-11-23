@@ -84,6 +84,7 @@
       last = FIND.lastIndex; n++;
     }
     if (n) span.innerHTML = out + esc(text.slice(last));
+    if (n && text.length < 30) span.style.whiteSpace = "nowrap"; // keep "[Gen 24:14]" whole, no lone bracket
   });
   // 2. a.ref with a Sefaria URL ("Psalms.68.31", "I_Samuel.2.3"): Bible books get the Bible versions
   var BOOKS_FULL = new RegExp("^(" + Object.keys(BOOKS).map(function (k) { return BOOKS[k].replace(/ /g, "[ _]"); }).join("|") + ")[ ._]\\d");

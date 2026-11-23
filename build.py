@@ -124,7 +124,7 @@ def load_candidates():
 
 def cand_card(c):
     he = f'\n      <div class="he" lang="he" dir="rtl">{e(c["title_he"])}</div>' if c.get("title_he") else ""
-    meta = " · ".join(e(x) for x in (c.get("published"), c.get("language")) if x)
+    meta = " · ".join(md_inline(x) for x in (c.get("published"), c.get("language")) if x)
     rows = []
     for key, label in (("scans", "Scans"), ("existing", "Existing work"), ("reason", "Set aside because")):
         if c.get(key):

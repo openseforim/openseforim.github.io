@@ -1,6 +1,6 @@
 """Make the site icons and the social-card image for openseforim.org.
 
-py -3.13 tools/make_images.py   -> favicon.ico, favicon.svg, apple-touch-icon.png, assets/og.png
+py -3.13 tools/make_images.py   -> favicon.ico, favicon.svg, assets/logo-512.png, apple-touch-icon.png, assets/og.png
 Uses Windows fonts (Frank Ruehl for the Hebrew letter, Georgia for the Latin text).
 """
 import sys
@@ -26,6 +26,7 @@ def mark(size):
 
 
 big = mark(512)
+big.save(HERE / "assets" / "logo-512.png")  # GitHub org avatar
 big.save(HERE / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
 big.resize((180, 180), Image.LANCZOS).convert("RGB").save(HERE / "apple-touch-icon.png")
 (HERE / "favicon.svg").write_text(

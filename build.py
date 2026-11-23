@@ -44,13 +44,16 @@ def ital(s):
 
 
 def card(w):
-    he = f'\n      <div class="he" lang="he">{e(w["title_he"])}</div>' if w.get("title_he") else ""
-    meta = ""  # the title already names the author
-    return f'''    <a class="card" href="/{w["slug"]}/">
-      <span class="badge">{e(w.get("status_label", ""))}</span>
-      <h3>{ital(w["title"])}</h3>{he}{meta}
-      <p>{ital(w.get("summary", ""))}</p>
-    </a>'''
+    """One row: plain-text title (selectable, copyable), Hebrew title, summary, status, and a separate link."""
+    he = f'\n        <div class="he" lang="he" dir="rtl">{e(w["title_he"])}</div>' if w.get("title_he") else ""
+    badge = f'<span class="badge">{e(w["status_label"])}</span>' if w.get("status_label") else ""
+    return f'''    <article class="work">
+      <div class="work-main">
+        <h3>{ital(w["title"])}</h3>{he}
+        <p>{ital(w.get("summary", ""))}</p>
+      </div>
+      <div class="work-side">{badge}<a class="open" href="/{w["slug"]}/">Open<span class="vh"> {e(re.sub(r"[*]", "", w["title"]))}</span> →</a></div>
+    </article>'''
 
 
 def landing(works):
@@ -58,7 +61,7 @@ def landing(works):
     for kind, label in SECTIONS:
         ws = [w for w in works if w.get("kind") == kind]
         if ws:
-            parts.append(f'  <h2 class="sect">{label}</h2>\n  <section class="grid">\n'
+            parts.append(f'  <h2 class="sect">{label}</h2>\n  <section class="works">\n'
                          + "\n".join(card(w) for w in ws) + "\n  </section>")
     sections = "\n".join(parts)
     return f'''<!doctype html>
@@ -75,7 +78,7 @@ def landing(works):
 </head><body class="os-landing">
 <main class="wrap" id="works">
   <section class="hero">
-    <h1>Open Seforim</h1>
+    <h1><img class="logo" src="/apple-touch-icon.png" alt="" width="40" height="40">Open Seforim</h1>
     <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated. <a href="/about/">How the editions are made →</a></p>
   </section>
 {sections}

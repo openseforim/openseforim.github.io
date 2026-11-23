@@ -326,6 +326,14 @@
     bar.appendChild(x);
     document.body.appendChild(bar);
   }
+  // references in [gray brackets] or Sefaria links: a click shows the text (assets/os-verses.js, loaded only when needed)
+  if (document.querySelector('span.ref, a.ref[href*="sefaria.org/"]')) {
+    var vs = document.createElement('script');
+    vs.src = '/assets/os-verses.js';
+    vs.defer = true;
+    document.head.appendChild(vs);
+  }
+
   window.addEventListener('hashchange', showPassage);
   document.addEventListener('click', function (e) {
     var l = e.target.closest && e.target.closest('a[href^="#"]');

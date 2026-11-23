@@ -80,14 +80,99 @@ def landing(works):
     <p>Open readers for Hebrew and Judaica texts. Each work gives the source text, links to the page scans, and an English translation, with its sources and method stated. <a href="/about/">How the editions are made →</a></p>
   </section>
 {sections}
+  <p class="next-link"><a href="/next/">Planned and proposed works →</a></p>
 </main>
-<footer class="os-foot"><div class="os-foot-in"><div class="os-brand"><p>Open Seforim — open readers for Hebrew and Judaica texts, by Ezra Brand · <a href="/about/">About</a> · <a href="https://www.ezrabrand.com/">ezrabrand.com</a> · <a href="https://github.com/openseforim">GitHub</a></p></div></div></footer>
+{FOOT}
+</body></html>
+'''
+
+
+FOOT = ('<footer class="os-foot"><div class="os-foot-in"><div class="os-brand"><p>Open Seforim — open readers for Hebrew '
+        'and Judaica texts, by Ezra Brand · <a href="/about/">About</a> · <a href="/next/">Planned works</a> · '
+        '<a href="https://www.ezrabrand.com/">ezrabrand.com</a> · <a href="https://github.com/openseforim">GitHub</a></p></div></div></footer>')
+
+# ---- /next/: planned and proposed works, from the openseforim/candidates repo (local clone ..\openseforim-candidates)
+CANDIDATES = ROOT / "openseforim-candidates"
+CAND_REPO = "https://github.com/openseforim/candidates"
+STATES = [("researched", "Researched", "Scans and existing work checked; ready for a pilot."),
+          ("proposed", "Proposed", "Not checked yet: the details come from memory or a reader's suggestion and must be verified."),
+          ("started", "Started", "Now a reader on this site."),
+          ("set-aside", "Set aside", "Not a target for now, for the reason given.")]
+
+
+def md_inline(s):
+    """*italics*, **bold** and [links](url) in candidate files, after escaping."""
+    s = e(s, quote=False)
+    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}" rel="noopener">{m.group(1)}</a>', s)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
+    return re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<i>\1</i>", s)
+
+
+def load_candidates():
+    out = []
+    for p in sorted((CANDIDATES / "candidates").glob("*.md")):
+        t = p.read_text(encoding="utf-8")
+        m = re.match(r"---\n(.*?)\n---\n?(.*)", t, re.S)
+        if not m:
+            continue
+        c = dict(line.split(": ", 1) for line in m.group(1).splitlines() if ": " in line)
+        c["slug"], c["notes"] = p.stem, m.group(2).strip()
+        out.append(c)
+    return out
+
+
+def cand_card(c):
+    he = f'\n      <div class="he" lang="he" dir="rtl">{e(c["title_he"])}</div>' if c.get("title_he") else ""
+    meta = " · ".join(e(x) for x in (c.get("published"), c.get("language")) if x)
+    rows = []
+    for key, label in (("scans", "Scans"), ("existing", "Existing work"), ("reason", "Set aside because")):
+        if c.get(key):
+            rows.append(f'<p><b>{label}:</b> {md_inline(c[key])}</p>')
+    if c.get("notes"):
+        rows.append(f'<p>{md_inline(c["notes"])}</p>')
+    rows.append(f'<p class="cmeta">Checked: {e(c.get("checked", "not checked"))} · added {e(c.get("added", ""))} · '
+                f'<a href="{CAND_REPO}/blob/main/candidates/{c["slug"]}.md">Source file</a></p>')
+    details = f'\n      <details><summary>Details</summary>{"".join(rows)}</details>'
+    link = (f'\n      <a class="open" href="{e(c["reader"])}">Open the reader →</a>' if c.get("reader") else "")
+    return f'''    <article class="card" id="{c["slug"]}">
+      <h3>{md_inline(c["title"])}</h3>{he}
+      <div class="meta">{meta}</div>
+      <p>{md_inline(c.get("why", ""))}</p>{details}{link}
+    </article>'''
+
+
+def next_page(cands):
+    parts = []
+    for key, label, note in STATES:
+        cs = [c for c in cands if c.get("status") == key]
+        if cs:
+            parts.append(f'  <h2 class="sect">{label} <span class="count">{len(cs)}</span></h2>\n  <p class="sect-note">{note}</p>\n'
+                         f'  <section class="grid">\n' + "\n".join(cand_card(c) for c in cs) + "\n  </section>")
+    return f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planned and proposed works · Open Seforim</title>
+<meta name="description" content="Works that could become new Open Seforim readers: what they are, where the scans are, and what is already translated.">
+<link rel="canonical" href="https://openseforim.org/next/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/os.css">
+<script src="/assets/os.js" defer></script>
+</head><body class="os-landing">
+<main class="wrap">
+  <section class="hero">
+    <h1>Planned and proposed works</h1>
+    <p>Works that could become new readers: the source text from page scans, checked against the scans, with an English translation. Each must be in the public domain, and should not already have a good open translation.</p>
+    <p class="hero-actions"><a class="open" href="{CAND_REPO}/issues/new?template=suggest-a-work.yml">Suggest a work</a> <a href="{CAND_REPO}">The list on GitHub</a></p>
+  </section>
+{chr(10).join(parts)}
+</main>
+{FOOT}
 </body></html>
 '''
 
 
 def sitemap(works):
-    urls = ["https://openseforim.org/", "https://openseforim.org/about/"]
+    urls = ["https://openseforim.org/", "https://openseforim.org/about/", "https://openseforim.org/next/"]
     for w in works:
         base = w["_base"]
         pages = sorted(p for p in base.rglob("*.html")
@@ -113,6 +198,10 @@ if __name__ == "__main__":
     (HERE / "works.json").write_text(json.dumps([{k: v for k, v in w.items() if not k.startswith("_")} for w in ws],
                                                 ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"index.html: {len(ws)} works", flush=True)
+    cands = load_candidates()
+    (HERE / "next").mkdir(exist_ok=True)
+    (HERE / "next" / "index.html").write_text(next_page(cands), encoding="utf-8")
+    print(f"next/index.html: {len(cands)} candidates", flush=True)
     import subprocess
     # downloads: plain text, TEI and EPUB of every text work (tools/export.py), in downloads/<slug>/
     if "--no-export" not in sys.argv:

@@ -25,6 +25,8 @@
     // a site with its own palette (Defus) has no paper colours: show it light
     if (v === 'paper' && root.classList.contains('os-own-palette')) v = 'light';
     if (!v || v === 'auto') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', v);
+    var m = document.querySelector('meta[name="color-scheme"]');  // written by the early script in <head>
+    if (m) m.content = v === 'dark' ? 'dark' : (!v || v === 'auto') ? 'light dark' : 'light';
   }
   apply(theme);
 
@@ -57,19 +59,27 @@
   // ---- strip ----
   var strip = el('div', { 'class': 'os-strip', role: 'navigation', 'aria-label': 'Open Seforim' });
   var inner = el('div', { 'class': 'os-strip-in' });
-  inner.appendChild(el('a', { 'class': 'os-home', href: '/' }, 'Open Seforim'));
+  var brandBox = el('div', { 'class': 'os-brandbox' });
+  var home = el('a', { 'class': 'os-home', href: '/', 'aria-label': 'Open Seforim, home' });
+  home.appendChild(el('img', { src: '/apple-touch-icon.png', alt: '', width: '26', height: '26' }));
+  home.appendChild(el('span', {}, 'Open Seforim'));
+  brandBox.appendChild(home);
+  inner.appendChild(brandBox);
   var workLink = null;
   // a reader with its own top bar (a.brand) already names the work: the strip does not repeat it
   var ownBar = document.querySelector('a.brand');
   if (slug && !ownBar) {
-    inner.appendChild(el('span', { 'class': 'os-sep', 'aria-hidden': 'true' }, '/'));
+    brandBox.appendChild(el('span', { 'class': 'os-sep', 'aria-hidden': 'true' }, '/'));
     workLink = el('a', { href: base, 'class': 'os-work' });
     workLink.innerHTML = ital(TITLES[slug] || slug);
-    inner.appendChild(workLink);
+    brandBox.appendChild(workLink);
   }
   inner.appendChild(el('span', { 'class': 'os-sp' }));
-  inner.appendChild(el('a', { href: '/#works' }, 'All works'));
-  inner.appendChild(el('a', { href: '/about/', 'class': 'os-about' }, 'About'));
+  var nav = el('div', { 'class': 'os-nav' });
+  nav.appendChild(el('a', { href: '/#works' }, 'All works'));
+  nav.appendChild(el('a', { href: '/next/', 'class': 'os-about' }, 'Planned'));
+  nav.appendChild(el('a', { href: '/about/', 'class': 'os-about' }, 'About'));
+  inner.appendChild(nav);
   // ---- display panel: theme, text size, Hebrew font (one choice for all works) ----
   // The choice is applied before the page paints by the early script that tools/postbuild.py writes in <head>.
   var SIZES = [['s', 'A−', 'Smaller'], ['', 'A', 'Normal'], ['l', 'A+', 'Larger'], ['xl', 'A++', 'Largest']];

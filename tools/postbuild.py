@@ -18,15 +18,21 @@ SITE = "https://openseforim.org"
 OG_IMAGE = SITE + "/assets/og.png"
 SKIP_DIRS = {"pipeline", "node_modules", ".git", "scans", "data", ".venv"}
 BLOCK = re.compile(r"\n?<!--os:seo-->.*?<!--/os:seo-->\n?", re.S)
-# applies the saved text size and Hebrew font before the page paints; keys and fonts match assets/os.js
-# (Bochart's old 'bh-size' choice is taken over once)
-EARLY = ("<script>(function(){try{var d=document.documentElement,L=localStorage,s=L.getItem('os-size'),"
+EARLY_BLOCK = re.compile(r"<!--os:early-->.*?<!--/os:early-->\n?", re.S)
+# First thing in <head>, before any stylesheet: applies the saved theme (with a matching color-scheme meta, so the
+# blank page before the first paint is not in the device's colours), text size and Hebrew font.
+# Keys and fonts match assets/os.js. Bochart's old 'bh-size' choice is taken over once.
+EARLY = ("<!--os:early--><script>(function(){try{var d=document.documentElement,L=localStorage,"
+         "t=L.getItem('os-theme')||'auto';if(t==='paper'&&d.classList.contains('os-own-palette'))t='light';"
+         "if(t!=='auto')d.setAttribute('data-theme',t);var m=document.createElement('meta');m.name='color-scheme';"
+         "m.content=t==='dark'?'dark':t==='auto'?'light dark':'light';document.head.appendChild(m);"
+         "var s=L.getItem('os-size'),"
          "h=L.getItem('os-he'),b=L.getItem('bh-size');if(s===null&&b){s=b;L.setItem('os-size',b)}"
          "if(s)d.setAttribute('data-os-size',s);"
          "var F={frank:'Frank+Ruhl+Libre:wght@400;600',david:'David+Libre:wght@400;500'};"
          "if(h){d.setAttribute('data-os-he',h);if(F[h]){var l=document.createElement('link');l.rel='stylesheet';"
          "l.setAttribute('data-os-font',F[h]);l.href='https://fonts.googleapis.com/css2?family='+F[h]+'&display=swap';"
-         "document.head.appendChild(l)}}}catch(e){}})()</script>")
+         "document.head.appendChild(l)}}}catch(e){}})()</script><!--/os:early-->")
 
 HE = re.compile(r"[֐-׿]")
 SYR = re.compile(r"[܀-ݏ]")
@@ -121,6 +127,8 @@ def process(page, root, slug, work):
         return False
     orig = t
     t = BLOCK.sub("\n", t, count=1)
+    t = EARLY_BLOCK.sub("", t, count=1)
+    t = re.sub(r"(?i)(<head\b[^>]*>)", lambda m: m.group(1) + EARLY, t, count=1)
     rel = page.relative_to(root).as_posix()
     path = rel[:-len("index.html")] if rel.endswith("index.html") else rel
     url = f"{SITE}/{slug + '/' if slug else ''}{path}"
@@ -174,7 +182,6 @@ def process(page, root, slug, work):
         if "Noto+Serif:" not in head:
             tags.insert(0, '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400'
                            '&family=Noto+Serif+Hebrew:wght@400;600&display=swap">')
-        tags.insert(0, EARLY)
     block = "<!--os:seo-->\n" + "\n".join(x for x in tags if x) + "\n<!--/os:seo-->\n"
 
     head = re.sub(r'(href|src)="([^"]+\.(?:css|js))"', lambda m: stamp(m, page.parent), head)

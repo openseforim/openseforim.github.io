@@ -1,12 +1,3436 @@
 Judah al-Ḥarizi, Taḥkemoni
 
-The Hebrew maqamat that were the model for Immanuel's Maḥberot, with an English translation line by line. Pilot: the debate of the pen and the sword.
+The Hebrew maqamat that were the model for Immanuel's Maḥberot, with an English translation line by line: the author's introduction, and the debate of the pen and the sword.
 
 Source text: Maḥbarot le-Sifrut with Mosad ha-Rav Kook, Tel Aviv; text from Project Ben-Yehuda
 Licence: CC BY-SA 4.0
 Online: https://openseforim.org/tahkemoni/ (Open Seforim)
 
 ============================================================
+
+Introduction
+------------
+https://openseforim.org/tahkemoni/gate-00.html
+
+נְאֻם גֶּבֶר אֲשֶׁר עָלָה וְיָרַד בְּחוּג הַשִּׁיר, וְאִם שִׂיאוֹ בְּמוֹרָד.
+
+Thus says a man who rose and went down in the circle of song, though his height lay on the downward slope.
+
+
+וְהִתְלַקַּח יְקֹד מִלָּיו בְּסִפְרוֹ כְּהִתְלַקַּח יְקֹד לַהַב בְּבָרָד.
+
+The coals of his words were kindled in his book as the flame is kindled amid the hail [Exod 9:24].
+
+
+וְצֵל הַמַּעֲלוֹת הֵשִׁיב לְאָחוֹר, בְּאוֹרוֹ אַחֲרֵי היּוֹם מְאֹד רַד.
+
+He turned back the shadow on the steps [Isa 38:8] by his light, when the day had far declined [Judg 19:11].
+
+
+וְחִבֵּר מַחְבְּרוֹת מוּסָר חֲמִשִּׁים, בְּכָל עִנְיָן מְחֻבָּר אוֹ מְפֹרָד.
+
+He composed fifty maḥberot of instruction, on every subject, joined together or apart.
+
+
+וְאָסַף כָּל־פְּזוּרֵי הַמְּלִיצוֹת, וְאִישׁ מֵהֶם בְּלִי נִמְלַט וְשָׂרָד.
+
+He gathered all the scattered phrases of eloquence, and not one of them escaped or got away [Josh 8:22].
+
+
+וְהַשִּׁיר הוּא לְעֶבֶד נֶאֱמָן לוֹ וְאִם קָשַׁר עֲלֵי בִלְתּוֹ וּמָרָד
+
+Song is a faithful servant to him, though it conspired and rebelled against all but him.
+
+
+וְשִׁבֵּץ מִשְׁבְּצוֹת מִלִּים אֲרוּגִים בְּשֵׂכֶל לֹא בְאַרְגָּמָן וּבִשְׂרָד.
+
+He set settings of woven words [Exod 28:17] with understanding, not with purple and with woven cloth [Exod 31:10].
+
+
+בְּאַרְצוֹ רָם לְרוּם עֻזּוֹ וְהוֹדוֹ, וְאוּלָם בַּנְּדוֹד שָׁפַל וְהוּרָד,
+
+In his land he was raised high, to the height of his strength and splendor; but in wandering he was brought low and cast down.
+
+
+וְשִׂיאוֹ עַד תְּהוֹם שָׁפַל, וְאֶתְמוֹל לְרוּם גָּבַר וְעִם אֵל וֶאֱנוֹשׁ רָד
+
+His height was brought low to the deep, and yesterday he prevailed on high, and with God and men he ruled [Hos 12:1; Gen 32:29].
+
+
+וְהָיָה כַעֲנָק לַשִּׁיר – וְאוּלָם בְּקוֹרוֹת הַנְּדוֹד נִתַּק וְנִפְרָד.
+
+He was like a necklace to song, but in the events of wandering it was snapped and parted.
+
+
+וְאַרְצוֹ הָיְּתָה גַּן הָאֱלֹהִים וְגָלָה מִנְּאוֹתֶיהָ וְנִטְרָד.
+
+His land was the garden of God [Ezek 28:13], and he was exiled from its pastures and driven out.
+
+
+וְעָזַב מִשְׁכְּנוֹת אֶרֶץ מְגוּרָיו, וְאֶל אֶרֶץ אֲדֹנָי רָץ וְחָרָד.
+
+He left the dwellings of the land of his sojournings [Gen 37:1], and to the land of the Lord he ran in trembling.
+
+
+שְׁמוֹ נוֹדַע יְהוּדָה בֶן־שְׁלֹמֹה, וְשֵׁם אַרְצוֹ וּמוֹלַדְתּוֹ סְפָרָד.
+
+His name is known: Judah son of Solomon; and the name of his land and his birthplace is Sefarad.
+
+
+בְּשֵׁם הַמְלַמֵּד אָדָם דַּעַת
+
+In the name of Him who teaches man knowledge [Ps 94:10].
+
+
+הַחָכְמָה תָּעֹז לְחָכָם בְּאֹרַח חַיִּים תַּנְחֵהוּ.
+
+Wisdom gives strength to the wise [Eccl 7:19]; in the path of life it leads him [Prov 6:22],
+
+
+וּמֵעֲמָלוֹ תְּנִיחֵהוּ.
+
+and from his toil it gives him rest.
+
+
+בְּשָכְבוֹ תִשְׁמֹר עָלָיו וְלֹא תַנִּיחֵהוּ.
+
+When he lies down it keeps watch over him and will not leave him [Prov 6:22],
+
+
+וּבַהֲקִיצוֹ הִיא תְשִׂיחֵהוּ.
+
+and when he wakes, it talks with him [Prov 6:22].
+
+
+וְהִיא תַזְהִירֵנוּ.
+
+And it warns us
+
+
+לָשׂוּם תְּחִלַּת אֲמָרֵינוּ.
+
+to make the start of our sayings
+
+
+תְּהִלַּת יוֹצְרֵנוּ.
+
+the praise of our Maker,
+
+
+וּפֶתַח דְּבָרֵינוּ.
+
+and the opening of our words
+
+
+שֶׁבַח לְצוּרֵנוּ.
+
+praise to our Rock,
+
+
+עָשָׂה שָׁמַיִם.
+
+who made the heavens
+
+
+בְּלִי עֲמַל יָדַיִם.
+
+without labor of hands
+
+
+וּבְלֹא מִבְטָא שְׂפָתַיִם.
+
+and without utterance of lips;
+
+
+אֲחוּזִים בְּלִי כַפַּיִם.
+
+held up without palms,
+
+
+תְּלוּיִם כְּמֹאזְנַיִם.
+
+hung like scales,
+
+
+מְסוֹבְבִים כְּרֵחַיִם.
+
+turning like millstones.
+
+
+צִוָּה אוֹתָם וְנִבְרָאוּ.
+
+He commanded, and they were created [Ps 148:5];
+
+
+וּקְרָאָם וְנִמְצָאוּ.
+
+He called them, and they were there.
+
+
+וְחַיּוֹת מֶרְכָּבָה לָשֵׂאת כִּסְאוֹ נִצְבָּאוּ.
+
+And the living creatures of the chariot were mustered to bear His throne,
+
+
+כִּי עֲבוֹדַת הַקֹּדֶשׁ עֲלֵיהֶם בְּכָתֵף יִשָּׂאוּ.
+
+for the holy service is theirs: they carry it on the shoulder [Num 7:9].
+
+
+הוּא הַנִּמְצָא וְעַיִן לֹא תִרְאֶנּוּ.
+
+He is the One who exists, and no eye sees Him;
+
+
+וְהוּא הַנֶּעְלָם וְכָל דּוֹרְשׁוֹ יִמְצָאֶנּוּ.
+
+He is the hidden One, and all who seek Him find Him.
+
+
+הוּא הַקָּרוֹב וְגַלְגַּלֵּי מַעְלָה לֹא יֵדְעוּ מְכוֹנוֹ.
+
+He is near, yet the spheres on high do not know His place;
+
+
+וְהוּא הָרָחוֹק וּבְתוֹךְ הַלֵּב מִשְׁכָּנוֹ.
+
+He is far, yet His dwelling is within the heart.
+
+
+הַבּוֹרֵא גַלְגַּלֵּי שְׁחָקִים.
+
+He created the spheres of the skies,
+
+
+כִּרְאִי מוּצָק חֲזָקִים.
+
+strong as a molten mirror [Job 37:18],
+
+
+וַעֲלֵיהֶם כִּסֵּא הַכָּבוֹד.
+
+and above them is the Throne of Glory
+
+
+וְחֶבְיוֹן הַהוֹד.
+
+and the hiding place of splendor [Hab 3:4].
+
+
+וְשָׁם נְוֵה הַשְּׂרָפִים וְהַתַּרְשִׁישִׁים.
+
+There is the abode of the seraphim and the tarshishim,
+
+
+וְהַנְּשָׁמוֹת אֲשֶׁר לָאֵל מְשַׁבְּחִים וּמַקְדִּישִׁים.
+
+and of the souls that praise God and sanctify Him,
+
+
+וּבָתֵּי הַנֶּפֶשׁ וְהַלְּחָשִׁים.
+
+and the houses of the soul, and the amulets [Isa 3:20].
+
+
+וְשָׁם יְסוֹד כָּל סוֹד.
+
+There is the foundation of every secret,
+
+
+וְעָדָיו יַגִּיעַ שֵׂכֶל כָּל מַשְׂכִּיל וְיַעֲמֹד.
+
+and up to there the mind of every thinker reaches, and there it stands.
+
+
+וְאִם יִרְצֶה עַל הַכָּבוֹד הָעֶלְיוֹן לְהַשְקִיף.
+
+And if it wishes to look out upon the supreme Glory,
+
+
+דְּלָתָיו בְּפָנָיו יָגִיף.
+
+He shuts its doors in its face,
+
+
+וְיֹאמַר לוֹ: עַד פֹּה תָבוֹא וְלֹא תוֹסִיף.
+
+and says to it: "Thus far shall you come, and no further [Job 38:11];
+
+
+וְאֵין לְךָ רְשׁוּת לָדַעַת אֲשֶׁר בְּקִרְבִּי.
+
+you have no leave to know what is within me,
+
+
+וְלֹא תַעֲבֹר בִּי.
+
+and you shall not pass through me [Num 20:18]."
+
+
+וְנִשְׁמוֹת הַצַּדִּיקִים בְּעוֹדָם בְּגוּפוֹתֵיהֶם.
+
+The souls of the righteous, while they are still in their bodies,
+
+
+יִרְצוּ לָעוּף אֶל הַכָּבוֹד הַהוּא כְּיוֹנִים אֶל אֲרֻבּוֹתֵיהֶם.
+
+long to fly to that Glory as doves to their windows [Isa 60:8];
+
+
+אֲבָל בְּכֹבֶד הַגּוּף תִּרְפֶּינָה כַנְפֵיהֶם.
+
+but under the weight of the body their wings grow slack.
+
+
+וּבְצֵאתָם מִן הַגּוּף אֶל הֶחָצֵר הַחִיצוֹנָה יִפְשְׁטוּ אֶת בִּגְדֵיהֶם.
+
+And when they go out of the body to the outer court, they put off their garments
+
+
+אֲשֶׁר הֵמָּה מְשָׁרְתִים בָּהֶם.
+
+in which they minister [Ezek 44:19];
+
+
+וּמִבֵּית גִּנְזֵי הַמֶּלֶךְ.
+
+and from the house of the king's treasures
+
+
+יָבִיאוּ לְבוּשׁ מַלְכוּת אֲשֶׁר לָבַשׁ בּוֹ הַמֶּלֶךְ.
+
+they bring royal apparel which the king has worn [Esth 6:8].
+
+
+וּבְבוֹאָם אֶל בֵּית הַמֶּלֶךְ בִּגְדֵי קֹדֶשׁ יִלְבָּשׁוּ.
+
+And when they come to the king's house they put on holy garments,
+
+
+וְהַנִּגָּשִׁים אֶל ה' יִתְקַדָּשׁוּ.
+
+and those who come near to the Lord sanctify themselves [Exod 19:22],
+
+
+לְפָאֵר לְיוֹצְרָם.
+
+to glorify their Maker
+
+
+וּלְרוֹמֵם לְבוֹרְאָם.
+
+and exalt their Creator.
+
+
+הוּא הָאֵל הַבּוֹרֵא נְשָׁמָה טְהוֹרָה.
+
+He is the God who creates the pure soul,
+
+
+מִבּוֹר הַבּוֹר נֻקָּרָה.
+
+dug from the hollow of the pit,
+
+
+וּמִצּוּר הַצּוּר נִגְזָרָה.
+
+hewn from the Rock of rocks [Isa 51:1].
+
+
+חָצַב אוֹתָהּ מִן הַיְסוֹד הַקַּדְמוֹן.
+
+He hewed it from the first element,
+
+
+וַתִּהְיֶה אֶצְלֹו אָמוֹן.
+
+and it was beside Him as a nursling [Prov 8:30],
+
+
+עַד עֵת בּוֹא דְבָרָהּ.
+
+until the time that its word came [Ps 105:19].
+
+
+אָז רָאָהּ וַיְסַפְּרָהּ.
+
+Then He saw it and declared it;
+
+
+הֱכִינָהּ וְגַם חֲקָרָהּ.
+
+He established it, yes, and searched it out [Job 28:27].
+
+
+וַיִּמְצָאָהּ מַלְאַךְ ה' עַל עֵין הַחָכְמָה בְּדֶרֶךְ שׁוּר.
+
+And the angel of the Lord found it by the spring of wisdom, on the way to Shur [Gen 16:7],
+
+
+אֲשֶׁר מֵרֹאשׁ אֲמָנָה תָשׁוּר.
+
+that looks from the top of Amana [Song 4:8].
+
+
+וַיֹאמֶר לָהּ מַלְאַךְ ה': עִזְבִי יְסוֹדֵךְ אֲשֶׁר מִשָּׁם חֲצַבְתִּיךְ.
+
+And the angel of the Lord said to it: "Leave your element, from which I hewed you,
+
+
+וְשִׁכְחִי עַמֵּךְ וּבֵית אָבִיךְ.
+
+and forget your people and your father's house [Ps 45:11],
+
+
+וִהְיִי לַגּוּף שִׁפְחָה נֶחֱרֶפֶת לוֹ.
+
+and be to the body a handmaid betrothed to him [Lev 19:20],
+
+
+כִּי הוּא אֲדוֹנַיִךְ וְהִשְׁתַּחֲוִי לוֹ.
+
+for he is your lord, and bow down to him [Ps 45:12]."
+
+
+וַתֵּלֶךְ וַתֵּשֶׁב לָהּ מִנֶּגֶד.
+
+And she went and sat down over against him [Gen 21:16],
+
+
+עַד נִבְרָא הַגּוּף וַתִּלְבַּשׁ אוֹתוֹ כַבֶּגֶד.
+
+until the body was created, and she put it on like a garment.
+
+
+וְהֵפִיצָה חֹם יְקוֹדָהּ בַּבָּשָׂר וּבַגֶּלֶד.
+
+She spread the heat of her fire through flesh and skin,
+
+
+וַיָּחָם בְּשַׂר הַיֶּלֶד.
+
+and the flesh of the child grew warm [2 Kgs 4:34].
+
+
+כִּי בְחֹם הַנְּשָׁמָה יָצָא הָאָדָם מֵאַיִן וַיְהִי יֵשׁ.
+
+For by the heat of the soul man came forth from nothing and became something,
+
+
+מִפְּנֵי אֲשֶׁר יָרַד עָלָיו ה' בָּאֵשׁ.
+
+because the Lord came down upon him in fire [Exod 19:18].
+
+
+וְהַנֶּפֶשׁ מִגִּזְרָה טְהוֹרָה נֶחְצֶבֶת.
+
+The soul is hewn from a pure block of stone [Lam 4:7],
+
+
+וּבְרֹאשׁ הַגּוּף כְּצוֹפָה נִצֶּבֶת.
+
+and stands at the head of the body like a watchman;
+
+
+כִּי בֵיתָהּ בְּקִיר הַחוֹמָה וּבַחוֹמָה הִיא יוֹשֶׁבֶת.
+
+for her house is in the town wall, and she dwells upon the wall [Josh 2:15].
+
+
+זָרְחָה בַגּוּף כְּכוֹכָב.
+
+She shone in the body like a star,
+
+
+וְלָקְחָה אוֹתוֹ לְמֶרְכָּב.
+
+and took it for her chariot.
+
+
+מִפִּתּוֹ תֹאכַל וּמִכּוֹסוֹ תִשְׁתֶּה וּבְחֵיקוֹ תִשְׁכָּב.
+
+She eats of its bread and drinks of its cup, and lies in its bosom [2 Sam 12:3].
+
+
+וְנִבְרְאוּ מִצֵּל מְאוֹרָהּ שְׁתֵּי נְפָשׁוֹת חַיָּה וְצוֹמַחַת.
+
+And from the shadow of her light two souls were created, the living and the growing,
+
+
+חוֹבְרוֹת אַחַת אֶל אַחַת.
+
+joined one to another [Exod 26:3];
+
+
+וּשְׁתֵּיהֶם לְשָׁרֵת הַנֶּפֶשׁ הָעֶלְיוֹנָה תִּלָּוֶינָה.
+
+and both cleave to the higher soul, to serve her.
+
+
+וַתִּגַּשְׁןָ הַשְּׁפָחוֹת הֵנָּה וְיַלְדֵיהֶן וַתִּשְׁתַּחֲוֶינָה.
+
+Then the handmaids came near, they and their children, and bowed down [Gen 33:6].
+
+
+וְהַשֵּׂכֶל נָתַן לְמַעְלָה מִן הַנֶּפֶשׁ מְעוֹנָתוֹ.
+
+And the intellect was given its dwelling above the soul,
+
+
+וּתְשׁוּבָתוֹ הָרָמָתָה כִּי שָׁם בֵּיתוֹ.
+
+and its return is to Ramah, for there is its house [1 Sam 7:17].
+
+
+וְהוּא כְחָתָן יוֹצֵא מֵחֻפָּתוֹ.
+
+It is like a bridegroom coming out of his chamber [Ps 19:6],
+
+
+וְכֶל חֶפְצוֹ וּתְשׁוּקָתוֹ.
+
+and all its wish and its longing
+
+
+לְהִצָּמֵד עִם הַנֶּפֶשׁ חֲשׁוּקָתוֹ.
+
+is to be joined with the soul, its beloved.
+
+
+וְהוּא אוֹהֵב אוֹתָהּ כְּבִתּוֹ.
+
+It loves her like a daughter [2 Sam 12:3],
+
+
+כַּאֲשֶׁר הָיְתָה בְאַמְנָה אִתּוֹ.
+
+as when she was brought up with it [Esth 2:20].
+
+
+וִאם תִּהְיֶה טְהוֹרָה וּקְדוֹשָׁה.
+
+And if she is pure and holy,
+
+
+מָהֹר יִמְהָרֶנָּה לוֹ לְאִשָּׁה.
+
+it will surely pay her bride-price, to be its wife [Exod 22:15];
+
+
+וְעַל עֶרֶשׂ אֲהָבִים יִתְעַלֵּס בִּנְעִימָה.
+
+on the couch of love it takes delight in sweetness [Prov 7:18],
+
+
+וּתְפָשָׂהּ וְשָׁכַב עִמָּהּ.
+
+it lays hold on her and lies with her [Deut 22:28].
+
+
+וְאָז הַיֵּצֶר יְהִי נִרְדָּם וְלֹא יֵדַע בְּשִׁכְבָהּ וּבְקוּמָהּ.
+
+And then the evil impulse is in a deep sleep, and knows not when she lay down or when she rose [Gen 19:33].
+
+
+וְהַשֵּׂכֶל יוֹרֶנָּה דַרְכֵי אֱלֹהִים.
+
+The intellect teaches her the ways of God,
+
+
+וִירִימֶנָּה מִן הֶעָפָר לְמַעֲלַת גְּבוֹהִים.
+
+and raises her from the dust to the rank of the high ones.
+
+
+וּבוֹ תִנָּצֵל מֵרֶדֶת שִׁאוֹלָה.
+
+Through it she is saved from going down to Sheol,
+
+
+וְתַעֲלֶה אֶל הַמַּעֲלָה הַגְּדוֹלָה.
+
+and goes up to the great height.
+
+
+וְזֹאת תּוֹרַת הָעוֹלָה.
+
+And this is the law of the burnt offering, the one that goes up [Lev 6:2].
+
+
+כִּי אִם תִּהְיֶה נְקִיָּה.
+
+For if she is clean
+
+
+בְּצֵאתָהּ מִן הַגְּוִיָּה.
+
+when she leaves the body,
+
+
+וְתָעוּף לְקִנָּהּ וְקוֹנָהּ בְּלִי כְנָפַיִם.
+
+she flies to her nest and her Owner without wings,
+
+
+גַּם חֲסִידָה בַשָּׁמָיִם.
+
+yes, as the stork in the heavens [Jer 8:7].
+
+
+וְאִם תֶּחֱטָא תֵּשֵׁב בִּשְׁאוֹל גַּלְמוּדָה וְסוּרָה.
+
+But if she sins, she sits in Sheol, lonely and turned aside [Isa 49:21];
+
+
+בְּכָל קֹדֶשׁ לֹא תִגַּע וְאֶל הַמִּקְדָּשׁ לֹא תָבוֹא עַד מְלֹאת יְמֵי טָהֳרָהּ.
+
+she shall touch no holy thing, nor come into the sanctuary, until the days of her purifying are fulfilled [Lev 12:4].
+
+
+וְשָׁם תְּקַבֵּל גְמוּלוֹת עָנְשָׁהּ הָרְאוּיוֹת לָהּ מִבֵּית הַמֶּלֶךְ.
+
+There she receives from the king's house the punishment that is her due,
+
+
+עַל אֲשֶׁר לֹא עָשְׂתָה אֶת מַאֲמַר הַמֶּלֶךְ.
+
+because she did not do the bidding of the king [Esth 1:15];
+
+
+וְלֹא תָבוֹא עוֹד אֶל הַמֶּלֶךְ.
+
+and she shall not come again to the king,
+
+
+כִּי אִם חָפֵץ בָּהּ הַמֶּלֶךְ.
+
+unless the king delights in her [Esth 2:14],
+
+
+כְּשֹׁךְ חֲמַת הַמֶּלֶךְ.
+
+when the wrath of the king has abated [Esth 2:1].
+
+
+וּבָזֶה הַנַּעֲרָה בָאָה אֶל הַמֶּלֶךְ.
+
+And so the maiden comes to the king [Esth 2:13].
+
+
+וְעַל כֵּן שָׁלַח אֱלֹהִים הַשֵּׂכֶל אֵלֶיהָ.
+
+Therefore God sent the intellect to her,
+
+
+לִפְרֹשׂ כְּנָפָיו עָלֶיהָ.
+
+to spread its wings over her [Ruth 3:9],
+
+
+וּלְהָאִיר בְּאוֹרוֹ עִוְרוֹנֶיהָ.
+
+to light her blindness with its light,
+
+
+וּלְרַוּוֹת בְּמֵימָיו צִמְאוֹנֶיהָ.
+
+and to quench her thirst with its waters.
+
+
+וַיִּפְקַח אֱלֹהִים אֶת עֵינֵיהָ.
+
+And God opened her eyes,
+
+
+וַתֵּרֶא בְּאֵר מַיִם.
+
+and she saw a well of water [Gen 21:19]
+
+
+מְשִׁיבֵי נֶפֶשׁ מְאִירֵי עֵינָיִם.
+
+that restores the soul and gives light to the eyes [Ps 19:8–9],
+
+
+וְתָמִיד תִּשְׁאַב מִמְּקוֹרוֹ סוֹד אֱלוֹהַּ מִמַּעַל.
+
+and she always draws from its spring the secret of God above.
+
+
+וַתֵּרֵד הָעַיְנָה וַתְּמַלֵּא כַדָּהּ וַתָּעַל.
+
+And she went down to the spring, and filled her jar, and came up [Gen 24:16].
+
+
+כִּי הַשֵּׂכֶל יְרַוֵּנוּ מִמְּקוֹר הַחַיִּים.
+
+For the intellect gives her drink from the source of life,
+
+
+מַעְיַן גַּנִּים בְּאֵר מַיִם חַיִּים.
+
+a fountain of gardens, a well of living waters [Song 4:15].
+
+
+וְהוּא יִפְקַח עֵינֵי לִבּוֹתֵינוּ.
+
+And it opens the eyes of our hearts
+
+
+לִרְאוֹת הָאוֹר הָעֶלְיוֹן בְּמַחְשְׁבוֹתֵינוּ.
+
+to see the supreme light in our thoughts,
+
+
+וּלְהִתְעַדֵּן בִּפְרִי עֵץ הַדַּעַת נִשְׁמוֹתֵינוּ.
+
+and lets our souls delight in the fruit of the tree of knowledge,
+
+
+לְטוֹב לָנוּ כָּל הַיָּמִים לְחַיּוֹתֵנוּ.
+
+for our good always, to keep us alive [Deut 6:24].
+
+
+וְעַל כָּל אֵלֶּה הַטּוֹבוֹת הַגְּדוֹלוֹת.
+
+And for all these great goods
+
+
+חוֹבָה עָלֵינוּ לַעֲרֹךְ תְּהִלּוֹת.
+
+we are bound to set out praises
+
+
+לְנוֹרָא עֲלִילוֹת.
+
+to Him who is terrible in His deeds [Ps 66:5],
+
+
+וְלֵאמֹר לְפָנָיו: ה' גָּדוֹל אַתָּה וְגָדוֹל שְׁמֶךָ.
+
+and to say before Him: "Lord, You are great, and great is Your name [Jer 10:6],
+
+
+וּמֶרְחֲבֵי הָעוֹלָם לֹא יְכִילוּן תַּעֲצוּמֶךָ.
+
+and the expanses of the world cannot contain Your might.
+
+
+כִּי אַתָּה מְקוֹם עוֹלָמֶךָ.
+
+For You are the place of Your world,
+
+
+וְאֵין עוֹלָמְךָ מְקוֹמֶךָ.
+
+and Your world is not Your place [Gen. Rab. 68:9].
+
+
+בְּטֶרֶם הָרִים יֻלָּדוּ.
+
+Before the mountains were born [Ps 90:2],
+
+
+וְעַמּוּדֵי שָׁמַיִם עָמָדוּ.
+
+and before the pillars of heaven stood [Job 26:11],
+
+
+מוֹשַׁב אֱלֹהִים יָשַׁבְתָּ.
+
+You sat in the seat of God [Ezek 28:2],
+
+
+וּבְאֵין מָקוֹם נִצַּבִתָּ.
+
+and stood where there was no place.
+
+
+וְהַשֵּׂכֶל הָעֶלְיוֹן אֲשֶׁר מִצּוּר כְּבוֹדְךָ חָצַבְתָּ.
+
+And the supreme intellect, which You hewed from the rock of Your glory,
+
+
+כְּבֵן יַקִּיר אֵלֶיךָ הִקְרַבְתָּ.
+
+You brought near to You like a dear son [Jer 31:20],
+
+
+וּלְמֶלֶךְ עַל כָּל בְּרוּאֶיךָ הִצַּבְתָּ.
+
+and set up as king over all Your creatures:
+
+
+אֶת בִּנְךָ יְחִידְךָ אֲשֶׁר אָהָבְתָּ.
+
+Your son, Your only one, whom You love [Gen 22:2].
+
+
+וּבוֹ יָצַרְתָּ אֶרֶץ וְעֶרֶץ.
+
+By it You formed earth and awe,
+
+
+כְּמוֹ שֶׁנֶּאֱמַר: ה' בְּחָכְמָה יָסַד אָרֶץ.
+
+as it is said: 'The Lord by wisdom founded the earth' [Prov 3:19].
+
+
+וּבוֹ בָרָאת עוֹלָמְךָ בְּשֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה.
+
+By it You created Your world in the six days of making,
+
+
+וְנָתַתָּה אֶרֶץ לִבְנֵי אִישׁ לְמַחֲסֶה.
+
+and gave the earth to the sons of men for a refuge.
+
+
+וְכוֹנַנְתָּ בַּשַּׁחַק חֶבְיוֹן הַמִּכְסֶה וְהַכִּסֵּא.
+
+You set firm in the sky the hiding place of the covering and the throne,
+
+
+אֲשֶׁר נִסְתַּרְתָּ שָׁם בְּיוֹם הַמַּעֲשֶׂה.
+
+where You were hidden on the day of making.
+
+
+וְכָל נֶפֶשׁ מַשְׂכֶּלֶת תִכְסֹף לְהַשִּׂיג סוֹדְךָ אֲבָל תִּלְאֶה.
+
+Every thinking soul longs to reach Your secret, but grows weary;
+
+
+אֶפֶס קָצֵהוּ תִרְאֶה.
+
+it sees only the edge of it,
+
+
+וְכֻלּוֹ לֹא תִרְאֶה.
+
+and does not see the whole [Num 23:13].
+
+
+וְהַחוֹשְׁבִים לְהָבִין סוֹדוֹת שְׁמֵי עֶרֶץ.
+
+Those who think to understand the secrets of the heavens of awe
+
+
+נְבוּכִים הֵם בָּאָרֶץ.
+
+are entangled in the land [Exod 14:3];
+
+
+וְשַׁתּוּ בַשָּׁמַיִם פִּיהֶם וּלְשׁוֹנָם תִּהֲלַךְ בָּאָרֶץ.
+
+they set their mouth against the heavens, and their tongue walks through the earth [Ps 73:9].
+
+
+וּבְסוֹדְךָ נִלְאוּ רַעְיוֹנֵינוּ לַעֲמֹד, כִּי עָצַמְתָּ מִמֶּנּוּ מְאֹד.
+
+Our thoughts are too weary to stand in Your secret, for You are much too mighty for us [Gen 26:16].
+
+
+וַאֲשֶׁר מֵהֶם נֶעְלַמְתָּ בְּעֵין לִבָּם רָאוּךָ, וּבְקִרְבָּם מְצָאוּךָ.
+
+And those from whom You are hidden have seen You with the eye of their heart, and found You within them;
+
+
+כִּי אַתָּה קָרוֹב לִמְבַקְשֶׁיךָ.
+
+for You are near to those who seek You,
+
+
+וְנִמְצָא לְדוֹרְשֶׁיךָ.
+
+and found by those who inquire of You.
+
+
+וְעַתָּה אֲלֹהֵינוּ, בּוֹרְאֵנוּ.
+
+And now, our God, our Creator,
+
+
+הִמָּצֵא לָנוּ בְּכָל קָרְאֵנוּ.
+
+be found by us whenever we call [Deut 4:7],
+
+
+וְאַל נִכָּשֵׁל בְּכָל אֲשֶׁר נְחַבֵּר.
+
+and let us not stumble in anything we compose;
+
+
+וֶהְיֵה עִם פִּינוּ בְּכָל אֲשֶׁר נְדַבֵּר.
+
+be with our mouth in all that we speak [Exod 4:12],
+
+
+וְאַל תְּבִישֵׁנוּ מֵאֲשֶׁר נְשַׂבֵּר.
+
+and do not put us to shame for what we hope [Ps 119:116].
+
+
+וּנְצֹר רַעְיוֹנֵינוּ.
+
+Guard our thoughts
+
+
+מִשְּׁגִיאוֹת הֶגְיוֹנֵינוּ.
+
+from the errors of our musings;
+
+
+שְׁמֹר דְּרָכֵינוּ.
+
+keep our ways
+
+
+מֵחֲטוֹא בִלְשׁוֹנֵנוּ.
+
+from sinning with our tongue [Ps 39:2],
+
+
+עַד נִהְיֶה מִן הַמּוֹצְאִים חֵן בְּעֵינֶיךָ.
+
+until we are among those who find favor in Your eyes.
+
+
+וְאַל תְּשִׂימֵנוּ מַטָּרָה לְחִצֵּי חֲרוֹנֶךָ.
+
+Do not make us a target for the arrows of Your wrath [Lam 3:12],
+
+
+וְהַסְתִּירֵנוּ מֵרֻכְסֵי אִישׁ בְּסֵתֶר פָּנֶיךּ.
+
+but hide us from the plots of man in the covert of Your presence [Ps 31:21],
+
+
+וּבְמַחֲשַׁכִּים נְסָה עָלֵינוּ אוֹר פָּנֶיךָ.
+
+and in dark places lift up upon us the light of Your face [Ps 4:7],
+
+
+וְנִהְיֶה מֵרְצוּיֶיךָ וְיִרְאֵי שְׁמֶךָ.
+
+and let us be among those who please You and fear Your name."
+
+
+נְאֻם יְהוּדָה בַּר שְׁלֹמֹה (בֶּן אַלְחֲרִיזִי) זַ"ל: ה' אֱלֹהִים נָתַן לִי לְשׁוֹן לִמּוּדִים.
+
+Thus says Judah son of Solomon (son of al-Ḥarizi), of blessed memory: The Lord God has given me the tongue of the learned [Isa 50:4],
+
+
+לְמַלֹּאות עִנְיָנִים חֲמוּדִים.
+
+to set lovely matters like stones in their settings [Exod 28:17],
+
+
+בְּיַד הַשֵּׂכֶל צְמוּדִים.
+
+bound fast by the hand of the intellect,
+
+
+וְהָיוּ לַאֲחָדִים.
+
+that they may become one [Ezek 37:17],
+
+
+לִקְשֹׁר מִפְּנִינֵי מִלֵּיהֶם לְצַוְּארֵי הַנְּגִידִים.
+
+to tie, from the pearls of their words, on the necks of princes
+
+
+רְבִידִים.
+
+chains [Gen 41:42],
+
+
+וּבִזְרוֹעוֹת הַיְדִידִים צְמִידִים.
+
+and on the arms of friends bracelets;
+
+
+בְּשַׁעֲשׁוּעֵיהֶם יִשְׂמְחוּ מְרוּדִים.
+
+that the wretched may rejoice in their delights,
+
+
+וּבְעִנְיְנֵיהֶם יַעְלְזוּ חֲסִידִים.
+
+and the pious exult in their matters;
+
+
+וּבְכָל מְדִינָה וּמְדִינָה מַגִּיעַ שִׂמְחָה וְשָׂשׂוֹן לַיְהוּדִים:
+
+and in every province where it comes, gladness and joy for the Jews [Esth 8:17].
+
+
+(וָאֶשָּׂא מְשָׁלִי):
+
+(And I took up my parable [Num 23:7]):
+
+
+אֲחַבֵּר חֲמוּדוֹת, מְשָׁלִים וְחִידוֹת, וְעֶדְרֵי תְעוּדוֹת, אֲשׁוֹבֵב לְמַרְבֵּץ.
+
+I shall compose lovely things, parables and riddles, and bring the flocks of testimonies back to their fold.
+
+
+וְהַשִּׁיר אֲרִימוֹ, וּמֶלֶךְ אֲשִׂימוֹ, אֲכַס מַעֲרֻמּוֹ, בְּרִקְמָה וְתַשְׁבֵּץ.
+
+I shall raise up song and make it king; I shall cover its nakedness with embroidery and checker-work [Exod 28:4].
+
+
+וְיִטְוֶה לְשׁוֹנִי, פְּתִיל רַעְיוֹנִי, וּבִגְדֵי זְמַנִּי, בְּשִׁירַי אֲשַׁבֵּץ.
+
+My tongue shall spin the thread of my thoughts, and I shall weave the garments of my time in my songs.
+
+
+וְנִדְּחֵי מְלִיצוֹת, אֲשִׁיבֵם קְבוּצוֹת, וּמֵהֶם נְפוּצוֹת יְהוּדָה יְקַבֵּץ.
+
+The outcasts of eloquence I shall bring back gathered, and its dispersed ones Judah shall gather [Isa 11:12].
+
+
+אֲנִי יָשֵׁן וְלִבִּי עֵר.
+
+I sleep, but my heart wakes [Song 5:2],
+
+
+וּבְיָם הַתְּשׁוּקָה סוֹעֵר וּבוֹעֵר.
+
+storming and burning in the sea of longing.
+
+
+וַיְעִירֵנִי מִשְּׁנַת סִבְלִי, שִׂכְלִי.
+
+And my intellect wakes me from the sleep of my burden,
+
+
+וַיּוֹרֵנִי וַיֹּאמֶר לִי: אַתָּה בֶן אָדָם.
+
+and teaches me, and says to me: "You, son of man,
+
+
+מַה לְּךָ נִרְדָּם.
+
+what do you mean, sleeper [Jonah 1:6]?
+
+
+פְּקַח עֵינֵי רַעְיוֹנֶיךָ.
+
+Open the eyes of your thoughts,
+
+
+וְהַצְבֵּא גְּדוּדֵי הֶגְיוֹנֶיךָ.
+
+muster the troops of your musings
+
+
+וַחֲלוּצֵי לְשׁוֹנֶךָ.
+
+and the vanguard of your tongue;
+
+
+וְאַתָּה תֶאְזֹר מָתְנֶיךָ.
+
+and you, gird up your loins [Jer 1:17],
+
+
+וּלְבַשׁ קְנָאוֹת.
+
+and put on zeal [Isa 59:17]
+
+
+לֵאלֹהֵי הַצְּבָאוֹת.
+
+for the God of hosts [1 Kgs 19:10],
+
+
+וְלִלְשׁוֹן הַקֹּדֶשׁ אֲשֶׁר הִיא לְשׁוֹן הַנְּבוּאוֹת.
+
+and for the holy tongue, the tongue of the prophecies,
+
+
+הַיּוֹרֶדֶת פְּלָאוֹת.
+
+which has come down wondrously [Lam 1:9].
+
+
+וְחַדֵּשׁ כַּנֶּשֶׁר נְעוּרֶיהָ.
+
+Renew her youth like the eagle's [Ps 103:5],
+
+
+וּרְפָא שְׁבָרֶיהָ.
+
+heal her breaches [Ps 60:4],
+
+
+וּשְׁבֹר מַלְתְּעוֹת כְּפִירֶיהָ.
+
+and break the jaw-teeth of the young lions [Ps 58:7]
+
+
+הַנּוֹשְׁכִים אוֹתָהּ בְּשִׁנֵּיהֶם.
+
+that bite her with their teeth [Mic 3:5]
+
+
+וְהַפּוֹעֲרִים עָלֶיהָ פִּיהֶם.
+
+and open their mouths wide against her [Lam 2:16];
+
+
+וְהַצֵּל טַרְפָּהּ מִבֵּין שִׁנֵּי אֲרָיוֹת.
+
+rescue her, their prey, from between two lions [Amos 3:12]
+
+
+וּפְרִיצֵי חַיּוֹת.
+
+and violent beasts [Isa 35:9]."
+
+
+וָאֹמַר: אֲהָהּ אֲדֹנִי.
+
+And I said: "Ah, Lord God [Jer 1:6]!
+
+
+הַנְּדוֹד בָּלַל שְׂפָתַי וְהֶגְיוֹנִי.
+
+Wandering has confounded my speech and my musing [Gen 11:9],
+
+
+וְהִדְבִּיק לְחִכִּי לְשׁוֹנִי.
+
+and made my tongue cleave to my palate [Ps 137:6].
+
+
+וּמִי אָנֹכִי כִּי אַצִּיל שֶׂה פְּזוּרָה מִבֵּין שִׁנֵּי כְפִירִים.
+
+Who am I, that I should rescue a scattered sheep [Jer 50:17] from between two young lions,
+
+
+וְכִי אוֹצִיא לְשׁוֹן הַקֹּדֶשׁ מִבֵּין הַמְּצָרִים.
+
+and bring the holy tongue out from between the straits [Lam 1:3]?"
+
+
+וַיֹּאמֶר לִי: כִּי אֶהְיֶה עִמְּךָ.
+
+And he said to me: "Certainly I will be with you [Exod 3:12],
+
+
+וּזְרוֹעִי תְּאַמֶּצְךָ בֵּין בְּנֵי עַמְּךָ.
+
+and my arm shall strengthen you among the sons of your people;
+
+
+וְרָאָה כָל הָעָם אֲשֶׂר אַתָּה בְקִרְבּוֹ אֶת מַעֲשֵׂה ה' כִּי נוֹרָא הוּא אֲשֶׁר אֲנִי עוֹשֶׂה עִמָּךְ.
+
+and all the people among whom you are shall see the work of the Lord, that it is a terrible thing that I do with you [Exod 34:10]."
+
+
+וַיִּשְׁלַח הַשֵּׂכֶל אֶת יָדוֹ וַיַּגַּע עַל פִּי.
+
+And the intellect put forth his hand and touched my mouth [Jer 1:9],
+
+
+וְקָדַח לַהֲבֵי רִשְׁפִּי.
+
+and kindled the flames of my sparks;
+
+
+וַיֹּאמֶר לִי: הִנֵּה נָתַתִּי דְבָרִי בְּפִיךָ.
+
+and he said to me: "Behold, I have put my words in your mouth [Jer 1:9],
+
+
+וּבַחֲזוֹן הַשִּׁיר נָבִיא לַגּוֹיִם נְתַתִּיךָ.
+
+and in the vision of song I have appointed you a prophet to the nations [Jer 1:5].
+
+
+רְאֵה הִפְקַדְתִּיךָ עַל בָּתֵּי הַסִּכְלוּת לִנְתוֹץ וְלִפְצֹעַ.
+
+See, I have set you over the houses of folly, to break down and to bruise,
+
+
+וְעַל בָּתֵּי הַמְּלִיצוֹת לִבְנוֹת וְלִנְטֹעַ.
+
+and over the houses of eloquence, to build and to plant [Jer 1:10]."
+
+
+וַיָּעַר אֱלֹהִים אֶת רוּחִי לְהַעֲלוֹת מִזִּיו הַשְּׁכִינָה לִלְשׁוֹן הַקֹּדֶשׁ מְנוֹרוֹת.
+
+And God stirred up my spirit [Ezra 1:5] to raise up lamps for the holy tongue from the radiance of the Presence,
+
+
+לִפְקֹחַ עֵינַיִם עִוְרוֹת.
+
+to open blind eyes [Isa 42:7];
+
+
+וְהָיוּ לִמְאוֹרוֹת.
+
+and let them be for lights [Gen 1:15],
+
+
+לְמַעַן דַּעַת כָּל עַמֵּי הָאָרֶץ כִּי לְשׁוֹן הַקֹּדֶשׁ אֵין עֲרוֹך אֵלֶיהָ.
+
+that all the peoples of the earth may know [1 Kgs 8:60] that nothing can be compared with the holy tongue
+
+
+בְּצַחוֹת מִלֶּיהָ וְנֹעַם מְשָׁלֶיהָ.
+
+in the purity of its words and the sweetness of its parables.
+
+
+כִּי הִיא כַכַּלָּה תַּעְדֶּה כֵּלֶיהָ.
+
+For she is like a bride adorned with her jewels [Isa 61:10];
+
+
+הַמְּלִיצוֹת מְעִילֶיהָ.
+
+eloquent phrases are her robes,
+
+
+וְרֶקַח הַמּוֹר בְּשׁוּלֶיהָ.
+
+and the perfume of myrrh is on her skirts.
+
+
+וּבְעֵת תָּסִיר צְעִיפָהּ מֵעָלֶיהָ.
+
+And when she takes her veil from upon her [Gen 38:19],
+
+
+כָּל עַיִן תְּלוּיָה אֵלֶיהָ.
+
+every eye hangs on her,
+
+
+וְכָל לֵב קָשׁוּר בַּחֲבָלֶיהָ.
+
+and every heart is bound in her cords.
+
+
+וּבְנֵי עֲנָק אֲסִירֵי כְבָלֶיהָ.
+
+The sons of Anak are prisoners in her fetters,
+
+
+וְגִבּוֹרֵי קְרָב חֲלָלֶיהָ.
+
+and the warriors of battle are her slain.
+
+
+וְהִיא כְעֵץ חַיִּים תְּרוּפָה בְּעָלֶיהָ.
+
+She is a tree of life [Prov 3:18], and her leaves are for healing [Ezek 47:12],
+
+
+וְהַחָכְמָה תְּחַיֶּה לֵב בְּעָלֶיהָ.
+
+and wisdom gives life to those who have it [Eccl 7:12].
+
+
+וּמִימֵי קֶדֶם הָיוּ חֲסִידֵי עוֹלָם בִּלְשׁוֹן הַקֹּדֶשׁ שְׂמֵחִים.
+
+From days of old the pious of the world rejoiced in the holy tongue;
+
+
+וְהַיּוֹם פָּרִיצֵי עַמֵּנוּ הֶנֶּאֱלָחִים.
+
+but today the vile and violent ones of our people
+
+
+דְּקָרוּהָ מִצּוּר לְשׁוֹנָם בַּחֲרָבוֹת וּבִרְמָחִים.
+
+have stabbed her with the flint of their tongue, with swords and spears.
+
+
+וְצֶדֶק יָלִין בָּהּ וְעַתָּה מְרַצְּחִים.
+
+Righteousness lodged in her, but now murderers [Isa 1:21].
+
+
+וְכָל בָּנֶיהָ עָזְבוּ לְשׁוֹנָם וְשָׁבוּ עִלְּגִים.
+
+All her sons have left their tongue and become stammerers,
+
+
+וְכַסְפָּם הָיָה לְסִיגִים.
+
+and their silver has become dross [Isa 1:22].
+
+
+וְהִיא בְּכָל יוֹם בִּבְכִי מְמָרֶרֶת.
+
+And every day she weeps bitterly,
+
+
+וְעַל אֹזֶן סֹגֶרֶת וּמְסֻגֶּרֶת.
+
+and at every ear, shut up and barred [Josh 6:1],
+
+
+אֲמָרֶיהָ אוֹמֶרֶת.
+
+she utters her words [Prov 1:21],
+
+
+לֵאמֹר: מַה מְּצָאתֶם עָוֶל בְּמִפְעָלַי,כִּי רְחַקְתֶּם מֵעָלָי.
+
+saying: "What wrong did you find in my deeds, that you have gone far from me [Jer 2:5]?
+
+
+הֲלֹא בְיוֹם דִּבֶּר ה' עִם אֲבוֹתֵיכֶם, אָנֹכִי עָמַדְתִּי בֵּין ה' וּבֵינֵיכֶם.
+
+Was it not on the day the Lord spoke with your fathers that I stood between the Lord and you [Deut 5:5]?
+
+
+וְלוּחֹות הַבְּרִית הֲלֹא בְרוּחַ פִּי נִכְתָּבוּ, וּמִצּוּר לְשׁוֹנִי נֶחְצֶבוּ.
+
+Were not the tablets of the covenant written by the breath of my mouth, and hewn from the rock of my tongue?
+
+
+וְכָל הַיָּמִים אֲשֶׁר שָׁכַן כְּבוֹד הָאֵל בְּהֵיכָלוֹ.
+
+And all the days that the glory of God dwelt in His temple,
+
+
+אֲנִי הָיִיתִי כְשֵׁגָל יוֹשֶׁבֶת אֶצְלוֹ.
+
+I was like the queen, sitting beside Him [Neh 2:6],
+
+
+לְהַגִּיד לָכֶם סוֹדוֹ.
+
+to tell you His secret
+
+
+וְלָתֵת עֲלֵיכֶם הוֹדוֹ.
+
+and to put His majesty upon you [Num 27:20].
+
+
+וּבְנֵיכֶם מְאָסוּנִי וְחִבְּקוּ לְשׁוֹן זָרִים.
+
+But your sons have despised me and embraced the tongue of strangers;
+
+
+אֲשֶׁר עֲזָבוּנִי וַיְקַטְּרוּ לֵאלֹהִים אֲחֵרִים.
+
+they have forsaken me and burned incense to other gods [2 Kgs 22:17].
+
+
+הֶעֱבִידוּ לִלְשׁוֹן קֵדָר לְשׁוֹן יִשְׂרְאֵלִים.
+
+They made the tongue of the Israelites a servant to the tongue of Kedar,
+
+
+וְאָמְרוּ: לְכוּ וְנִמְכְּרֶנּוּ לַיִּשְׁמְעֵאלִים.
+
+and said: Come, let us sell him to the Ishmaelites [Gen 37:27].
+
+
+וְאָמְרוּ לוֹ: שְׁחֵה וְנַעֲבוֹרָה.
+
+They said to it: Bow down, that we may pass over [Isa 51:23];
+
+
+וַיִּקָּחוּהוּ וַיַּשְׁלִיכוּ אוֹתוֹ הַבּוֹרָה.
+
+and they took him and cast him into the pit [Gen 37:24],
+
+
+עַד אָבַד בְּתוֹכָם וּלְשׁוֹן קֵדָר הִקְדִּירַתְהוּ.
+
+until it was lost among them and the tongue of Kedar darkened it.
+
+
+וְכָאֲרִי טְרָפַתְהוּ.
+
+Like a lion it has torn it;
+
+
+חַיָּה רָעָה אֲכָלַתְהוּ.
+
+an evil beast has devoured it [Gen 37:33].
+
+
+וְכֻלָּם מָאֲסוּ לְשׁוֹן עִבְרִיָּה.
+
+All of them despised the Hebrew tongue
+
+
+וְחָשְׁקוּ לְשׁוֹן הַגְרִיָּה.
+
+and desired the tongue of Hagar;
+
+
+וְחִבְּקוּ חֵיק נָכְרִיָּה.
+
+they embraced the bosom of a foreign woman [Prov 5:20],
+
+
+וּבְאֵשֶׁת זָרִים חָשָׁקוּ.
+
+they lusted after the wife of strangers,
+
+
+וְחֵיקָהּ נָשָׁקוּ.
+
+and kissed her bosom;
+
+
+כִּי מַיִם גְנוּבִים לָהֶם יִמְתָּקוּ.
+
+for stolen waters are sweet to them [Prov 9:17].
+
+
+וְנִפְתָּה לְבָבָם בִּרְאוֹתָם כַּמָּה מְלִיצָה יְקָרָה.
+
+Their heart was enticed when they saw how precious the eloquence was
+
+
+אֲשֶׁר יָלְדָה הָגָר הַמִּצְרִית שִׁפְחַת שָׂרָה.
+
+that Hagar the Egyptian, Sarah's handmaid, bore [Gen 25:12];
+
+
+וַתְּהִי שָׂרַי עֳקָרָה.
+
+and Sarai was barren [Gen 11:30]."
+
+
+בְּנַפְשִׁי עָבְרָה רוּחַ קְנָאוֹת לְחָכְמָה נֶעְדְּרָה מֶנּוּ וְסָרָה;
+
+A spirit of zeal passed through my soul for wisdom that was lacking among us and had gone,
+
+
+בְּשׁוּרִי, יָלְדָה הָגָר יְלָדִים חֲמוּדִים וַתְּהִי שָׂרַי עֲקָרָה;
+
+when I saw that Hagar had borne lovely children, and Sarai was barren.
+
+
+וְעַל כֵּן הִתְעוֹרַרְתִּי.
+
+Therefore I roused myself,
+
+
+וְעֹז הִתְאַזַּרְתִּי.
+
+and girded myself with strength [Ps 93:1],
+
+
+לְהָשִׁיב עֲקֶרֶת הַבֵּיִת אֵם הַבָּנִים שְׂמֵחָה.
+
+to make the barren woman of the house a joyful mother of children [Ps 113:9],
+
+
+וְלָתוּר לָהּ מְנוּחָה.
+
+to seek out a resting place for her [Num 10:33],
+
+
+וְלִשְׁאֹב מִמְּקוֹרָהּ הַמְרַוֶּה צְמֵאִים.
+
+and to draw from her spring, which gives the thirsty their fill,
+
+
+כִּי מֵימָיו מִן הַמִּקְדָּשׁ הֵמָּה יוֹצְאִים.
+
+for its waters come out from the sanctuary [Ezek 47:12].
+
+
+וָאָבוֹא הַיּוֹם אֶל הָעַיִן.
+
+And I came this day to the spring [Gen 24:42],
+
+
+לִרְווֹת מִדּוֹדֵי הַחָכְמָה הַטּוֹבִים מִיָּיִן.
+
+to drink my fill of the loves of wisdom, which are better than wine [Song 1:2].
+
+
+וְאָמַרְתִּי: אָנָּא אֵל אָיֹם.
+
+And I said: "Please, O awesome God,
+
+
+הַקְרֵה נָא לְפָנַי הַיּוֹם.
+
+send me good speed this day [Gen 24:12]
+
+
+בְּנוֹת הַבִּינוֹת.
+
+among the daughters of understanding
+
+
+וְעַלְמוֹת הַתַּעֲלוּמוֹת.
+
+and the maidens of hidden things.
+
+
+הִנֵּה אָנֹכִי נִצָּב עַל עֵין הַמַּיִם וְהָיָה הַנַּעֲרָה.
+
+Behold, I stand by the spring of water; let it be that the maiden [Gen 24:43]
+
+
+הַיּוֹצֵאת הַשַּׁעְרָה.
+
+who comes out to the gate,
+
+
+וְאָמַרְתִּי אֵלֶיהָ הַשְׁקִינִי נָא מִנּוֹזְלֵי מְלִיצוֹתַיִךְ.
+
+to whom I say: Let me drink, I pray, from the streams of your eloquence
+
+
+הַנּוֹטְפִים מִבֵּין שִׂפְתוֹתַיִךְ.
+
+that drip from between your lips,
+
+
+וְאָמְרָה: שְׁתֵה.
+
+and who says: "Drink,
+
+
+וְאֵשׁ לְהָבִים מִבֵּין שְׂפָתַי חֲתֵה.
+
+and scoop up fire of flames from between my lips [Isa 30:14]",
+
+
+אוֹתָהּ לְעַבְדְּךָ הוֹכַחְתָּ, וּבָהּ אֵדַע כִּי חֶסֶד עָלַי גָּמַלְתָּ.
+
+she is the one You have appointed for Your servant; and by her I shall know that You have shown me kindness [Gen 24:14]."
+
+
+אֲנִי טֶרֶם אֲכַלֶּה לְדַבֵּר אֶל לִבִּי.
+
+Before I had finished speaking in my heart [Gen 24:45],
+
+
+וָאֲצַפֶּה לִרְאוֹת מַה־יְדַבֶּר־בִּי.
+
+while I watched to see what it would speak in me [Hab 2:1],
+
+
+וְהִנֵּה עַלְמָה.
+
+behold, a maiden,
+
+
+בָּרָה כַּחַמָּה.
+
+clear as the sun [Song 6:10],
+
+
+מִבְּנוֹת הַחָכְמָה.
+
+of the daughters of wisdom,
+
+
+יוֹצֵאת לִשְׁאוֹב מַיִם וְכַדָּהּ עַל שִׁכְמָהּ.
+
+coming out to draw water with her jar on her shoulder [Gen 24:15].
+
+
+טֶרֶם קְרָאתִיהָ עָנַתְנִי.
+
+Before I called her she answered me [Isa 65:24],
+
+
+וּבְצוּף שְׂפָתֶיהָ הִרְוַתְנִי.
+
+and with the honeycomb of her lips she gave me drink.
+
+
+וַתֹּאמֶר לִי: שְׁתֵה אֲדוֹנִי.
+
+She said to me: "Drink, my lord [Gen 24:18],
+
+
+מִנּוֹזְלֵי הֶגְיוֹנִי.
+
+from the streams of my musings,
+
+
+כִּי דְבַשׁ וְחָלָב תַּחַת לְשׁוֹנִי.
+
+for honey and milk are under my tongue [Song 4:11]."
+
+
+וָאֶשְׁאַל אוֹתָהּ וָאֹמַר: בַּת מִי אָתְּ.
+
+And I asked her and said: "Whose daughter are you [Gen 24:23],
+
+
+וּמֵאֵיזֶה מַחְצָב חֻצָּבְתְּ? אָמְרָה: אֲנִי יְתוֹמָה וְאָבִי חָי.
+
+and from what quarry were you hewn?" She said: "I am an orphan, and my father is alive.
+
+
+וְנִחֲרוּ בִי בְּנֵי אִמִּי וְאֶחָי.
+
+The sons of my mother were angry with me [Song 1:6], and my brothers.
+
+
+אֲנִי הָיִיתִי כֶּתֶר מְלוּכָה.
+
+I was a royal crown,
+
+
+וְהִנְנִי הַיּוֹם לְכָל רֶגֶל דְּרוּכָה.
+
+and today I am trodden down by every foot.
+
+
+אֲנִי לְשׁוֹן הַקֹּדֶשׁ גְּבִרְתֶּךָ.
+
+I am the holy tongue, your mistress.
+
+
+וְאִם אִיטַב בְּעֵינֶיךָ אֶהְיֶה חֲבֶרְתֶּךָ.
+
+And if I am pleasing in your eyes, I will be your companion,
+
+
+אַךְ לְמַעַן תְּקַנֵּא לְשֵׁם הָאֵל.
+
+only so that you be zealous for the name of God,
+
+
+וְקִדַּשְׁתָּ אֶת שְׁמִי הַגָּדוֹל אֲשֶׁר חִלְּלוּהוּ בֵּית יִשְׂרָאֵל.
+
+and sanctify my great name, which the house of Israel has profaned [Ezek 36:23],
+
+
+וְהָיִיתָ לִי לְגוֹאֵל.
+
+and be my redeemer
+
+
+מִכָּל מְגָאֵל וּמִתְגָּאֵל.
+
+from all who defile and are defiled."
+
+
+וָאֶקֹּד וָאֶשְׁתַּחֲוֶה לָאֵל.
+
+And I bowed my head and worshipped God [Gen 24:26],
+
+
+כִּי מָצָאתִי חֵן בְּעֵינֶיהָ.
+
+for I had found favor in her eyes;
+
+
+וְשַׂמְתִּי נִזְמֵי תְהִלּוֹתַי בְּאָזְנֶיהָ.
+
+and I put the rings of my praises in her ears [Gen 24:47],
+
+
+וַעֲנַק מְלִיצוֹתַי בְּצַוְּרוֹנֶיהָ.
+
+and the necklace of my eloquence on her neck.
+
+
+וְאֵרַשְׂתִּיהָ לִי בְּצֶדֶק וּבְיִרְאָה.
+
+And I betrothed her to me in righteousness and in fear [Hos 2:21],
+
+
+מִבְּלִי שְׁטָר וּבִיאָה.
+
+without a deed and without lying together.
+
+
+וָאֶקְרַב אֶל הַנְּבִיאָה.
+
+And I went in to the prophetess [Isa 8:3],
+
+
+וַתַּהַר וַתֵּלֶד בֵּן בִּדְמוּת אֱלֹהִים וְצַלְמוֹ.
+
+and she conceived and bore a son in the likeness and image of God [Gen 5:3],
+
+
+וַתְּהִי הַמִּשְׂרָה עַל שִׁכְמוֹ.
+
+and the government was upon his shoulder [Isa 9:5],
+
+
+וַתָּחֶל רוּחַ ה' לְפַעֲמוֹ.
+
+and the spirit of the Lord began to move him [Judg 13:25],
+
+
+וַיֶּאֱסֹף אֵלָיו כָּל עַמּוֹ.
+
+and all his people were gathered to him.
+
+
+וַיַּעַל לָצוּר עַל מִבְצְרֵי הַמְּזִמּוֹת הָרָמוֹת.
+
+And he went up to besiege the fortresses of lofty designs,
+
+
+וְלִלְכֹּד מְצָדוֹת הַתְּעוּדוֹת.
+
+and to capture the strongholds of testimonies,
+
+
+בְּמַחֲשָׁבוֹת.
+
+with thoughts
+
+
+חֲצוּבֵי לֶהָבוֹת.
+
+hewn from flames,
+
+
+לְטוּשֵׁי חֲרָבוֹת.
+
+sharpened swords,
+
+
+וְשִׂיחִים.
+
+and with speeches
+
+
+מְרוּקֵי שְׁלָחִים.
+
+of burnished darts,
+
+
+אֲחוּזֵי רְמָחִים.
+
+holding spears;
+
+
+וְלָשׁוֹן רַכָּה.
+
+and with a soft tongue
+
+
+לֵב הָאֲרִי מְדַכָּה.
+
+that crushes the lion's heart,
+
+
+וְתִמְשֹׁךְ לִוְיָתָן בְּחַכָּה.
+
+draws out Leviathan with a hook [Job 40:25],
+
+
+וּבְשׁוֹט חֲמָתָהּ מַכָּה.
+
+and strikes with the whip of its wrath,
+
+
+תָּשֵׁב אֱנוֹש עַד דַּכָּא.
+
+turning man back to dust [Ps 90:3].
+
+
+תְּלַבֵּב לְבָאִים.
+
+It takes the heart of lions [Song 4:9],
+
+
+וְתִכְבּשׁ פְּרָאִים.
+
+subdues wild asses,
+
+
+וְתַפִּיל רְפָאִים.
+
+fells the giants,
+
+
+וְתָקִים רְפָאִים.
+
+and raises the shades [Isa 26:19],
+
+
+בְּנִיבִים.
+
+with words
+
+
+מִיקֹד לַהַב חֲצוּבִים.
+
+hewn from the blaze of the flame
+
+
+וּמִמְּקוֹר עֵדֶן שְׁאוּבִים.
+
+and drawn from the spring of Eden:
+
+
+פַּעַם יָפִיצוּ שְׁבִיבִים.
+
+at one time they scatter sparks,
+
+
+וּפַעַם יַטִּיפוּ רְבִיבִים.
+
+and at another they drip showers.
+
+
+וְעִנְיָנִים כֻּלָּם גִּבּוֹרִים חֲלוּצֵי צָבָא.
+
+And the subjects are all mighty men, armed for war [Num 32:27];
+
+
+אֶחָד יִרְדֹּף אֶלֶף וּשְׁנַיִם יָנִיסוּ רְבָבָה.
+
+one pursues a thousand, and two put ten thousand to flight [Deut 32:30].
+
+
+וְהָעִנְיָן אֲשֶׁר הֵעִיר אֶת רוּחִי לְחַבֵּר הַסֵּפֶר הַזֶּה, כִּי אִישׁ חָכָם מֵחַכְמֵי יִשְׁמְעֵאלִים.
+
+And the matter that stirred my spirit to compose this book was this: a wise man, one of the wise men of the Ishmaelites
+
+
+וּמִמִּבְחַר הַמַּשְׂכִּילִים.
+
+and of the choicest of the learned,
+
+
+לְשׁוֹנוֹ בִמְלִיצוֹת עֲרָב נִמְרָץ.
+
+whose tongue is forceful in the eloquence of Arabic,
+
+
+וְעַל פִּיו חֲזוֹן הַשִּׁיר נִפְרָץ.
+
+and through whom the vision of song spread abroad [1 Sam 3:1],
+
+
+וְנוֹדַע שְׁמוֹ אַלְחֳרִירִי.
+
+known by the name al-Ḥariri,
+
+
+וְכָל אֲבִי מְלִיצוֹת זוּלָתוֹ הוֹלֵךְ עֲרִירִי.
+
+beside whom every other master of eloquence goes childless [Gen 15:2],
+
+
+חִבֵּר בִּלְשׁוֹן עֲרָב סֵפֶר.
+
+composed a book in the Arabic tongue
+
+
+נוֹתֵן אִמְרֵי שֶׁפֶר.
+
+that gives goodly words [Gen 49:21],
+
+
+אַף עַל פִּי שֶׁעִנְיָנָיו מִלְשׁוֹן הַקֹּדֶשׁ גְּזוּרִים.
+
+though its matters are cut from the holy tongue,
+
+
+וְכָל מְשָׁלָיו הַיְקָרִים.
+
+and all its precious parables
+
+
+מִסְּפָרֵינוּ לְקוּחִים וּמְסוּרִים.
+
+are taken and handed down from our books.
+
+
+וְאִם תִּשְׁאַל לְכָל מְלִיצָה מִמְּלִיצוֹתָם מִי הֱבִיאֵךְ לִלְשׁוֹן הַגְרִים.
+
+And if you ask any phrase of their eloquence, "Who brought you into the tongue of the strangers?",
+
+
+תֹּאמַר כִּי גֻנֹּב גֹּנַּבְתִּי מֵאֶרֶץ הָעִבְרִים.
+
+it will say: "For I was stolen away out of the land of the Hebrews [Gen 40:15]."
+
+
+וּבִרְאוֹתִי הַסֵּפֶר הַהוּא נָגֹלּוּ כַסֵּפֶר שְׁמֵי גִילִי.
+
+When I saw that book, the heavens of my joy were rolled up like a scroll [Isa 34:4],
+
+
+וְנָזֹלוּ יִבְלֵי אֶבְלִי.
+
+and the streams of my mourning flowed [Isa 30:25].
+
+
+יַעַן כָּל עַם וָעָם נִזְהָרִים בְּהֶגְיוֹנָם.
+
+For every nation takes care in its thinking
+
+
+נִשְמָרִים מֵחֲטוֹא בִלְשׁוֹנָם.
+
+and guards against sinning with its tongue [Ps 39:2];
+
+
+וּלְשׁוֹנֵנוּ אֲשֶׁר הָיָה מַחְמָד לְכָל עַיִן.
+
+but our tongue, which was the delight of every eye [1 Kgs 20:6],
+
+
+נֶחְשָׁב כַּאֲחִי קַיִן.
+
+is reckoned like Cain's brother.
+
+
+וְשָׁב הַיֹפִי דֹּפִי.
+
+Its beauty has turned to blemish,
+
+
+וְהַנֹּעַם זַעַם.
+
+and its pleasantness to wrath;
+
+
+וּכְבוֹדוֹ נֶעְדָּר וְאוֹרוֹ קָדָר.
+
+its glory is gone and its light darkened;
+
+
+וְלֹא תֹאַר לוֹ וְלֹא הָדָר.
+
+it has no form nor comeliness [Isa 53:2].
+
+
+כִּי בְנֵי עַמֵּנוּ דִבְּרוּ עָתָק עָלָיו.
+
+For the sons of our people have spoken arrogantly against it [Ps 31:19],
+
+
+וְהוֹרוּ חֵץ הַלַּעַג אֵלָיו וּפִלְּחוּ כְּסָלָיו.
+
+shot the arrow of mockery at it, and cleft its loins [Job 16:13].
+
+
+וְאָמְרוּ כִּי לְשׁוֹנֵנוּ קְצֵרָה.
+
+They say that our tongue is short,
+
+
+וּמְלִיצָתָהּ חֲסֵרָה.
+
+and its eloquence lacking;
+
+
+וְהֵם לֹא יָדְעוּ כִּי הַחֶסְרוֹן מֵהֶם אֲשֶׁר לֹא יָבִינוּ אִמְרוֹתֶיהָ.
+
+and they do not know that the lack is in them, who do not understand its sayings
+
+
+וְלֹא יַכִּירוּ חֲמוּדוֹתֶיהָ.
+
+and do not recognize its treasures;
+
+
+כְּמוֹ מִי שֶׁיֵּשׁ לוֹ חֳלִי בְּעֵינָיו.
+
+like one who has a disease in his eyes,
+
+
+וְתֶחֱשַׁךְ לוֹ הַשֶּׁמֶשׁ הַמְּאִירָה לְפָנָיו.
+
+and the shining sun grows dark for him,
+
+
+וְהוּא חוֹשֵׁב כִּי בַשֶּׁמֶשׁ מִקְרֶה אוֹ פֶגַע.
+
+and he thinks that the sun has met with some accident or mishap [1 Kgs 5:18],
+
+
+וְלֹא יָדַע כִּי בְּעֵינָיו עָמַד הַנֶּגַע.
+
+and does not know that the plague has stayed in his eyes [Lev 13:5].
+
+
+וְכֵן רֹב בְּנֵי עַמֵּנוּ יִבְזוּ לְשׁוֹן הַקֹּדֶשׁ כִּי עִנְיָנָיו מֵהֶם נִפְלָאוּ.
+
+So most of the sons of our people scorn the holy tongue, for its matters are too wonderful for them;
+
+
+וְעֵינַיִם לָהֶם וְאוֹרוֹ לֹא רָאוּ.
+
+they have eyes, and have not seen its light [Ps 115:5];
+
+
+וְהַמָּן לִפְנֵיהֶם וַיֵּצְאוּ לִלְקֹט וְלֹא מָצָאוּ.
+
+the manna is before them, and they went out to gather and found none [Exod 16:27];
+
+
+וְנַהֲרֵי עֵדֶן לִפְנֵיהֶם וְהֵם יִצְמָאוּ.
+
+the rivers of Eden are before them, and they thirst.
+
+
+אוֹי עַל פְּתָאִים כַּפְּרָאִים יֶהֱמוּ, אֶצְלָם מְקורֹ עֵדֶן וְהֵם יִצְמָאוּ.
+
+Woe for the simple who roar like wild asses: beside them is the spring of Eden, and they thirst.
+
+
+הַמָּן לְעֵינֵיהֶם וְעֵינָם נִסְגְּרָה וַיֵּצְאוּ לִלְקֹט וְלֹא מָצָאוּ.
+
+The manna is before their eyes, but their eye is shut, and they went out to gather and found none.
+
+
+עַל כֵּן חִבַּרְתִּי הַסֵּפֶר הַזֶּה לְהַרְאוֹת כֹּחַ לְשׁוֹן הַקֹּדֶשׁ.
+
+Therefore I composed this book, to show the power of the holy tongue
+
+
+לְעַם הַקֹּדֶשׁ.
+
+to the holy people [Isa 62:12],
+
+
+אֲשֶׁר טַח מֵרְאוֹת עֵינֵיהֶם.
+
+whose eyes are smeared over so that they cannot see [Isa 44:18],
+
+
+מֵהַשְׂכִּיל רַעְיוֹנֵיהֶם.
+
+and their thoughts so that they cannot understand.
+
+
+וְכָל מְבַקֵּשׁ לִרְאוֹת נֹעַם עִנְיָנָיו.
+
+Whoever seeks to see the pleasantness of its matters,
+
+
+וּלְהִשְׁתַּעֲשֵׁעַ בְּגַנֵּי הֶגְיוֹנָיו.
+
+to take delight in the gardens of its musings,
+
+
+וְלִשְׁאֹב מִנּוֹזְלֵי מַעְיָנָיו.
+
+and to draw from the streams of its springs,
+
+
+יִמְצָא בְתוֹכוֹ גַנּוֹת וּפַרְדֵּסִים.
+
+will find in it gardens and orchards [Eccl 2:5],
+
+
+וַעֲרוּגוֹת הֲדַסִּים.
+
+and beds of myrtles,
+
+
+וְנִטְפֵי רְסִיסִים.
+
+and drops of dew [Song 5:2],
+
+
+וְתוֹרִים וְסִיסִים.
+
+turtledove and swallow [Jer 8:7],
+
+
+וְכוֹסוֹת עֲסִיסִים.
+
+and cups of sweet wine,
+
+
+כַּמַּיִם לַיָּם מְכַסִּים.
+
+as the waters cover the sea [Isa 11:9];
+
+
+וּבָתֵּי מִדּוֹת.
+
+and spacious houses [Jer 22:14],
+
+
+וְשִׁדָּה וְשִׁדּוֹת.
+
+and a lady, and ladies [Eccl 2:8]:
+
+
+זֹאת מְנַגֶּנֶת.
+
+this one plays,
+
+
+וְזֹאת מְרַנֶּנֶת.
+
+this one sings,
+
+
+וְזֹאת תַּעִיר אֲהָבִים.
+
+this one awakens love [Song 2:7],
+
+
+וְזאֹת תַּבְעִיר בַּקְּרָבִים לְהָבִים.
+
+this one kindles flames within,
+
+
+בְּשִׁירֵי עֲגָבִים.
+
+with songs of desire
+
+
+וְנִיבִים עֲרֵבִים.
+
+and sweet words
+
+
+מִסַּלְעֵי צְלָעַי חֲצוּבִים.
+
+hewn from the crags of my sides
+
+
+וּמֵעֲצֵי עֲצָתִי קְצוּבִים.
+
+and cut from the trees of my counsel;
+
+
+וּבִמְלִיצוֹת בְּתוּלוֹת.
+
+and with phrases that are virgins,
+
+
+לֹא הָיוּ לְאִישׁ בְּעוּלוֹת.
+
+never married to any man,
+
+
+וְזָר לֹא עָלָה עַל עֶרֶשׂ יְצוּעָם.
+
+on whose couch no stranger has gone up [Gen 49:4],
+
+
+וְאִישׁ לֹא יְדָעָם.
+
+and no man has known them [Gen 24:16].
+
+
+יָשִׁיבוּ הַנְּפָשׁוֹת בְּרוּחָם וְרֵיחָם.
+
+They restore souls with their breath and their scent,
+
+
+וִיחַיּוּ הַלְּבָבוֹת בְּלִקְחָם וְרִקְחָם.
+
+and revive hearts with their teaching and their perfume,
+
+
+וְיָעִירוּ לֵב נִרְדָּם בְּנִרְדָּם.
+
+and wake the sleeping heart with spikenard.
+
+
+וְכָלַלְתִּי בַּסֵּפֶר הַזֶּה מְשָׁלִים רַבִּים.
+
+And I have included in this book many parables
+
+
+וְעִנְיָנִים עֲרֵבִים.
+
+and sweet matters:
+
+
+בָּם מִינֵי מְלִיצוֹת.
+
+kinds of eloquence,
+
+
+וְחִידוֹת נִמְרָצוֹת.
+
+and forceful riddles,
+
+
+וְדִבְרֵי תְעוּדוֹת.
+
+and words of testimony,
+
+
+וְשִׁירֵי יְדִידוֹת.
+
+and songs of friendship,
+
+
+וּמִשְׁלֵי נְכוֹחוֹת.
+
+and proverbs of uprightness,
+
+
+וּמִלֵּי תוֹכָחוֹת.
+
+and words of rebuke,
+
+
+וְקוֹרוֹת זְמַנִּים.
+
+and the events of the times,
+
+
+וִחִדּוּשֵׁי הַשָּׁנִים.
+
+and the new things of the years,
+
+
+וְזִכְרוֹן הַמָּוֶת.
+
+and the remembrance of death,
+
+
+וּמְקוֹם הַצַּלְמָוֶת.
+
+and the place of the shadow of death,
+
+
+וְדִבְרֵי תְשׁוּבוֹת.
+
+and words of repentance,
+
+
+וּסְלִיחַת הַחוֹבוֹת.
+
+and the pardon of debts,
+
+
+וְתַעֲנוּגֵי אֲהָבִים.
+
+and the delights of love,
+
+
+וְשִׁירֵי עֲגָבִים.
+
+and songs of desire,
+
+
+וְנִשּׂוּאֵי נָשִׁים וְחֻפָּה וְקִדּוּשִׁים.
+
+and the marrying of women, with canopy and betrothal
+
+
+(וְעִנְיְנֵי גֵרוּשִׁים).
+
+(and matters of divorce),
+
+
+וְשִׁכְרוּת שִׁכּוֹרִים.
+
+and the drunkenness of drunkards,
+
+
+וּנְזִירוּת נְזִירִים.
+
+and the vows of Nazirites,
+
+
+וּמִלְחֲמוֹת הַגִּבּוֹרִים.
+
+and the wars of the mighty,
+
+
+וְקוֹרוֹת מְלָכִים.
+
+and the events of kings,
+
+
+וַהֲלִיכוֹת דְּרָכִים.
+
+and the ways of travel,
+
+
+וְשִׁירֵי תְהִלּוֹת.
+
+and songs of praise,
+
+
+וְתַחֲנוּנֵי תְפִלוֹת.
+
+and supplications in prayer,
+
+
+וּמוּסַר חֲכָמִים.
+
+and the instruction of the wise,
+
+
+וְחֶבְרַת תְּמִימִים.
+
+and the company of the blameless,
+
+
+וְחֵשֶׁק עֳפָרִים.
+
+and the desire for fawns,
+
+
+וְגַנִּים וּכְפָרִים.
+
+and gardens and villages [Song 7:12],
+
+
+וְדִבְרֵי נְגִידִים.
+
+and the words of princes,
+
+
+וְשִׂיחַת יְלָדִים.
+
+and the talk of children,
+
+
+וְצֵיד הַצַּיָּדִים.
+
+and the hunting of hunters,
+
+
+וְעָרְמַת הָרַמָּאִים.
+
+and the cunning of cheats,
+
+
+וְסִכְלוּת הַפְּתָאִים.
+
+and the folly of the simple,
+
+
+וְחֵרוּף הַמְחָרְפִים.
+
+and the taunts of taunters,
+
+
+וְגִדּוּף הַמְגַדְּפִים.
+
+and the reviling of revilers,
+
+
+וְשִׁירִים נִפְלָאִים.
+
+and wonderful songs,
+
+
+וְאִגְּרוֹת מִלִּים נוֹרָאִים.
+
+and letters of awesome words;
+
+
+לְמַעַן יִהְיֶה הַסֵּפֶר הַזֶּה כְּגַנָּה אֲשֶׁר בָּהּ כָּל מִינֵי מַעֲדַנִּים.
+
+so that this book may be like a garden that has every kind of dainty
+
+
+וְנִטְעֵי נַעֲמָנִים.
+
+and pleasant plants [Isa 17:10],
+
+
+וּבוֹ יִמְצָא כָל שׁוֹאֵל מִשְׁאָלוֹ.
+
+and every seeker will find in it what he asks,
+
+
+וְיַשִּׂיג מִתַּאֲוָתוֹ דֵּי מַחֲסוֹרוֹ אֲשֶׁר יֶחְסַר לוֹ.
+
+and get of his desire enough for his need, whatever he lacks [Deut 15:8].
+
+
+וַהֲכִינוֹתִי בוֹ לְכָל אִישׁ מְכוֹנוֹ וּמִקְרָאוֹ.
+
+And I have prepared in it for every man his place and his reading,
+
+
+אִישׁ אִישׁ עַל עֳבוֹדָתוֹ וְעַל מַשָּׂאוֹ.
+
+every man to his service and to his burden [Num 4:19].
+
+
+הַיָּרֵא אֶת דְּבַר ה'.
+
+He who fears the word of the Lord [Exod 9:20]
+
+
+יִמְצָא בוֹ תוֹכָחוֹת וּתְפִלּוֹת וְיִרְאַת ה'.
+
+will find in it rebukes and prayers and the fear of the Lord;
+
+
+אֲשֶׁר לֹא שָׂם לִבּוֹ אֶל דְּבַר ה' יִמְצָא בוֹ תַעֲנוּגֵי עוֹלָם וְטוֹבוֹתָיו וְנָהֲרוּ אֶל טוּב ה'.
+
+he who did not take the word of the Lord to heart [Exod 9:21] will find in it the delights and good things of the world, and they shall flow to the goodness of the Lord [Jer 31:12].
+
+
+וְכָל כְּסִיל וּבַעַר.
+
+Every fool and brute,
+
+
+יָשִׁישׁ אוֹ נַעַר.
+
+old man or youth,
+
+
+יִלְמַד מִמֶּנּוּ חָכְמָה.
+
+will learn wisdom from it,
+
+
+לָתֵת לִפְתָאִים עָרְמָה.
+
+to give prudence to the simple,
+
+
+לְנַעַר דַּעַת וּמְזִמָּה.
+
+to the youth knowledge and discretion [Prov 1:4];
+
+
+וְכַל חֲכַם לֵב אִם עֵינָיו עָלָיו יִפְקַח.
+
+and every wise of heart, if he opens his eyes upon it,
+
+
+יִשְׁמַע חָכָם וְיוֹסִיף לֶקַח.
+
+the wise man will hear and increase in learning [Prov 1:5].
+
+
+וְכָל מְבַקֵּשׁ לִלְמֹד דֶּרֶך אֶרֶץ בּוֹ יַשְׂכִּיל בְּכָל אֲשֶׁר יִפְנֶה.
+
+Whoever seeks to learn good conduct will prosper by it wherever he turns [Prov 17:8],
+
+
+וְנָבוֹן תַּחְבּוּלוֹת יִקְנֶה.
+
+and the man of understanding will acquire wise counsel [Prov 1:5].
+
+
+וְכָל הַמְחַבֵּר שִׁירִים וְיַחְצֹב בּוֹרוֹת נִשְׁבָּרִים.
+
+And everyone who composes poems and hews out broken cisterns [Jer 2:13]
+
+
+וּמֵימֵיהֶם מָרִים.
+
+whose waters are bitter [Exod 15:23]
+
+
+בַּסֵּפֶר הַזֶּה יִפְקַח עֵינַיִם.
+
+will have his eyes opened by this book;
+
+
+וְיֹרֵהוּ ה' עֵץ וְיַשְׁלֵךְ אֶל הַמַּיִם.
+
+and the Lord will show him a tree, and he will cast it into the water [Exod 15:25],
+
+
+וְיִמְתְּקוּ הַמָּיִם.
+
+and the waters will be made sweet [Exod 15:25].
+
+
+וְכָל אִישׁ אֲשֶׁר תִּרְעַב נַפְשׁוֹ לְלֶחֶם חֲמוּדוֹת.
+
+And every man whose soul hungers for the bread of delights,
+
+
+וּמַטְעַמֵּי שִׁיר יְדִידוֹת.
+
+and the dainties of friendly song,
+
+
+וּמַמְתַּקֵּי מְשָׁלִים וְחִידוֹת.
+
+and the sweets of parables and riddles,
+
+
+יִמְצָא בַסֵּפֶר הַזֶּה עֶשֶׂר יָדוֹת.
+
+will find in this book ten portions [2 Sam 19:44],
+
+
+כַּד וְצַפַּחַת.
+
+a jar and a cruse [1 Kgs 17:12],
+
+
+וּבָהֶם בִּרְכַּת ה' פּוֹרַחַת.
+
+and the blessing of the Lord blossoming in them.
+
+
+וְאִם יִקַּח מֵהֶם שֵׂכֶל וּמוּסָר.
+
+And if he takes understanding and instruction from them,
+
+
+כַּד הַקֶּמַח לֹא תִּכְלֶה וְצַפַּחַת הַשֶּׁמֶן לֹא תֶחְסָר.
+
+the jar of meal shall not be spent, nor the cruse of oil fail [1 Kgs 17:14].
+
+
+כִּי שֻׁלְחָנוֹ לְכָל בָּא עָרוּךְ.
+
+For its table is set for all who come,
+
+
+וּבֵיתוֹ לְעוֹלָם בָּרוּךְ.
+
+and its house is blessed forever,
+
+
+וְלַחְמוֹ בְּכָל פֶּה אָכוּל.
+
+and its bread is eaten in every mouth,
+
+
+וְכָל מַאן דִּכְפִין יֵיתֵי וְיֵיכוּל.
+
+and "let all who are hungry come and eat" [Passover Haggadah].
+
+
+וְכַמָּה יוֹעִיל הַסֵּפֶר הַזֶּה לְאַנְשֵׁי כָל מְדִינָה.
+
+And how much this book will help the people of every province
+
+
+אֲשֶׁר מִמִּצְרַיִם וְעַד עֲדִינָה.
+
+from Egypt to Adina,
+
+
+אֲשֶׁר רַבִּים מֵהֶם לְשׁוֹנָם לְדַבֵּר בִּלְשׁוֹן הַקֹּדֶשׁ צוֹלֵעָה.
+
+many of whom limp when their tongue would speak the holy tongue,
+
+
+וּקְרִיאָתָם גְרוּעָה וְרָעָה.
+
+and whose reading is poor and bad;
+
+
+כִּי בַּסֵּפֶר הַזֶּה דַּרְכֵיהֶם יַיְשִׁירוּ.
+
+for by this book they will make their ways straight,
+
+
+וּנְכוֹחוֹת יְדַבֵּרוּ.
+
+and speak right things,
+
+
+וְהֵיטִיבוּ אֲשֶׁר דִּבֵּרוּ.
+
+and have spoken well in what they have spoken [Deut 5:25].
+
+
+וּבוֹ יָקִיצוּ מִשְּׁנַת הַסִּכְלוּת רַעְיוֹנֵיהֶם.
+
+By it their thoughts will wake from the sleep of folly,
+
+
+וְתִפָּקַחְנָה עֵינֵיהֶם.
+
+and their eyes will be opened,
+
+
+וְיֵדְעוּ כִּי עֲרֻמִּים הֵם.
+
+and they will know that they are naked [Gen 3:7],
+
+
+וְיִתְפְּרוּ עֲלֵה מְלִיצוֹת וְשִׁירוֹת.
+
+and they will sew together leaves of eloquence and songs
+
+
+וְיַעֲשׂוּ לָהֶם חֲגוֹרוֹת.
+
+and make themselves girdles [Gen 3:7].
+
+
+וּבְכָל־הַדְּבָרִים אֲשֶׁר בַּסֵּפֶר הַזֶּה זָכַרְתִּי, דָּבָר מִסֵּפֶר הַיִּשְׁמְעֵלִי לֹא לָקַחְתִּי.
+
+Of all the things that I have recorded in this book, I took nothing from the Ishmaelite's book,
+
+
+לְבַד אִם שָׁכַחְתִּי.
+
+unless I forgot,
+
+
+אוֹ אִם בָּאוּ לְיָדַי דְּבָרִים בְּמִקְרֶה וְאָנֹכִי לֹא יָדַעְתִּי.
+
+or things came into my hand by chance and I did not know it.
+
+
+אַךְ כָּל עִנְיְנֵי הַסֵּפֶר הַזֶּה מִלְבָבִי נִבְרָאוּ.
+
+But all the matters of this book were created from my own heart;
+
+
+חֲדָשִׁים מִקָרוֹב בָּאוּ.
+
+new things, lately come [Deut 32:17],
+
+
+וּמִמֵּי יְהוּדָה יָצָאוּ.
+
+and they came forth from the waters of Judah [Isa 48:1].
+
+
+וְרַבִּים מִיְּשֵׁנֵי אַדְמַת הַסִּכְלוּת הֵקִיצוּ.
+
+Many of those who sleep in the land of folly have woken [Dan 12:2],
+
+
+וְרִכְבֵי לְשׁוֹנָם בִּרְחוֹב הַשִּׁיר הֵרִיצוּ.
+
+and raced the chariots of their tongue in the street of song,
+
+
+וְחָשְׁבוּ לַהֲפֹךְ סֵפֶר הַיִּשְׁמְעֵאלִי הַזֶּה מִלְּשׁוֹן עֲרָב לִלְשׁוֹן הַקֹּדֶשׁ.
+
+and thought to turn this Ishmaelite book from the Arabic tongue into the holy tongue;
+
+
+וּבָאוּ בְּבִגְדֵי חֹל לְשָׁרֵת בַּקֹּדֶשׁ.
+
+they came in profane garments to minister in the holy place,
+
+
+וּבְצֵאתָם לְמִלְחֶמֶת הַמְּלִיצוֹת חֲמוּשִׁים.
+
+and when they went out armed to the war of eloquence,
+
+
+לֹא שָׁלְלוּ כִּי אִם אֶחָד אָחוּז מִן הַחֳמִשִּׁים.
+
+they took as spoil only one portion out of fifty [Num 31:30].
+
+
+כְּי לְחֹזֶק מְלִיצוֹת הַסֵּפֶר נִבְהֲלוּ וַיִּבָּעֵתוּ.
+
+For they were terrified and dismayed at holding fast to the eloquence of the book,
+
+
+וּלְקוֹל רְעָמָיו וְאַבְנֵי אֶלְגְּבִישָׁיו גָּוְעוּ וַיִּצָּמֵתוּ.
+
+and at the sound of its thunders and its hailstones they perished and were cut off,
+
+
+וַיֵּרֶד עֲלֵיהֶם הַבָּרָד וָמֵתוּ.
+
+and the hail came down upon them, and they died [Exod 9:19].
+
+
+וּבְעֵת לִרְדֹּף אַחֲרָיו נִצְבָּאוּ.
+
+And when they mustered to pursue it,
+
+
+דָּפְקוּ שְׁעָרָיו וּבָהֶם לֹא בָאוּ.
+
+they knocked at its gates but did not get in;
+
+
+וַיְהִי הַשַּׁעַר לִסְגֹּר בַּחשֶׁךְ וְהָאֲנָשִׁים יָצָאוּ.
+
+and when the gate was to be shut at dark, the men went out [Josh 2:5],
+
+
+וַיְבַקְשׁוּ הָרוֹדְפִים בְּכָל הַדֶּרֶך וְלֹא מָצָאוּ.
+
+and the pursuers sought them all along the way, and did not find them [Josh 2:22];
+
+
+עַד שַׁקַּמְתִּי.
+
+until I arose [Judg 5:7]
+
+
+וּמַחְלְצוֹתָיו רָקַמְתִּי.
+
+and embroidered its robes.
+
+
+הֶעְתַּקְתִּי כָּל הַסֵּפֶר בְּמִלִּים נְכֹחִים.
+
+I translated the whole book in plain words,
+
+
+וְשִׁירִים כִּבְדֹלָחִים.
+
+and songs like bdellium [Num 11:7],
+
+
+טְהוֹרִים מְמֻלָּחִים.
+
+pure and well salted [Exod 30:35],
+
+
+יַשְׁכִּיבוּ כָל הַמְשׁוֹרְרִיִם הַצַּחִים.
+
+that lay all the polished poets down
+
+
+תַּחַת אַחַד הַשִּׂיחִים.
+
+under one of the shrubs [Gen 21:15].
+
+
+וְקָרָאתִילִמְרוֹם הַשֵּׂכֶל וְנִפְתְּחוּ שָׁמָיו.
+
+And I called to the height of the intellect, and its heavens were opened,
+
+
+וַיֵּרְדוּ גְשָׁמָיו.
+
+and its rains came down,
+
+
+וְרָווּ תְלָמָיו.
+
+and its furrows were watered [Ps 65:11],
+
+
+וְהֵפִיחוּ בְשָׂמָיו.
+
+and its spices breathed forth [Song 4:16];
+
+
+וְדִבַּרְתִּי אֶל סֶלַע הַשִּׁיר וְנָתַן מֵימָיו.
+
+and I spoke to the rock of song, and it gave forth its waters [Num 20:8].
+
+
+כִּי נְדִיבֵי סְפָרַד בְּשָׁמְעָם דִּבְרֵי סֵפֶר הַיִּשְׁמְעֵאלִי תָּמְהוּ עֲלֵיהֶם.
+
+For the nobles of Sefarad, when they heard the words of the Ishmaelite's book, were amazed at them,
+
+
+וּבִקְשׁוּ מִמֶּנִּי בִּהְיוֹתִי בֵינֵיהֶם.
+
+and asked me, when I was among them,
+
+
+לְהַעְתִּיק הַסֵּפֶר הַזֶּה לָהֶם.
+
+to translate this book for them;
+
+
+וְלֹא יָכֹלְתִּי לְהָשִׁיב אֶת פְּנֵיהֶם.
+
+and I could not refuse them [1 Kgs 2:16].
+
+
+וְכַאֲשֶׁר חֶפְצָם הִשְׁלַמְתִּי.
+
+And when I had done what they wished
+
+
+וְהַסֵּפֶר הֶעְתַּקְתִּי.
+
+and translated the book,
+
+
+בֵּיתִי נָטַשְׁתִּי.
+
+I left my house,
+
+
+וּדְרָכִים אָרַחְתִּי.
+
+and journeyed on roads,
+
+
+וָאֳנִיּוֹת רָכַבְתִּי.
+
+and rode in ships,
+
+
+וְיַמִּים עָבַרְתִּי.
+
+and crossed seas;
+
+
+וּמִמַּעֲרָב בָּרַחְתִּי.
+
+I fled from the West,
+
+
+וּבְמִזְרָח זָרַחְתִּי.
+
+and in the East I shone.
+
+
+וָאֵרָא כִּי הִסְכַּלְתִּי עֲשׂוֹ.
+
+And I saw that I had acted foolishly [1 Sam 26:21],
+
+
+וְגָדַל עֲוֹנִי מִנְּשׂוֹא.
+
+and my iniquity was greater than I could bear [Gen 4:13],
+
+
+בְּעָזְבִי לְחַבֵּר סֵפֶר מְלִיצוֹתֵינוּ.
+
+in that I had neglected to compose a book of our own eloquence
+
+
+וְהָלַכְתִּי לְהַעְתִּיק סֵפֶר זוּלַתֵנוּ.
+
+and had gone to translate the book of others,
+
+
+כְּאִלּוּ אֵין דִּבְרֵי אֱלֹהִים חַיִּים בֵּינוֹתֵינוּ.
+
+as though the words of the living God were not among us;
+
+
+וְכֶרֶם זָרִים לִנְטֹר מִהַרְתִּי.
+
+I hurried to keep the vineyard of strangers,
+
+
+וְכַרְמִי שֶׁלִּי לֹא נָטָרְתִּי.
+
+but my own vineyard I did not keep [Song 1:6].
+
+
+וְעַל כֵּן חִבַּרְתִּי הַסֵּפֶר הַזֶּה בִּמְלִיצוֹת חֲדָשׁוֹת.
+
+And therefore I composed this book in new phrases,
+
+
+מִלְּשׁוֹן הַקֹּדֶשׁ קְדוֹשׁוֹת.
+
+holy ones, from the holy tongue,
+
+
+וְעִנְיָנִים חֲדָשִׁים יְחַוּוּ הַנְּפָשׁוֹת.
+
+and in new matters that will revive souls
+
+
+וְיַחֲלִיצוּ הָעֲצָמוֹת הַיְבֵשׁוֹת.
+
+and strengthen the dry bones [Isa 58:11; Ezek 37:4].
+
+
+וְחִלַּקְתִּים לַחֲמִשִּׁים מַחְבֶּרֶת.
+
+And I divided them into fifty maḥberot,
+
+
+כָּל אַחַת מֵהֶם כְּאַבְקַת רוֹכֵל מְקֻטֶּרֶת.
+
+each of them perfumed with all the powders of the merchant [Song 3:6],
+
+
+וּבִלְשׁוֹן נְבוּאוֹת מְדַבֶּרֶת.
+
+and speaking in the tongue of prophecies.
+
+
+וְכָל דִּבְרֵי הַסֵּפֶר הַזֶּה בִּלְשׁוֹן הֵימָן הָאֶזְרָחִי עֲשִׂיתִים.
+
+All the words of this book I made in the tongue of Heman the Ezrahite [Ps 88:1],
+
+
+וְעַל שֵׁם חֶבֶר הַקֵּינִי יְסַדְתִּים וּבְנִיתִים.
+
+and I founded and built them on the name of Ḥever the Kenite [Judg 4:11],
+
+
+וְאַף עַל פִּי שֶׁאֶחָד מֵהֶם בְּדוֹרֵנוּ לֹא הָיָה.
+
+although neither of them lived in our generation,
+
+
+וְכָל אֲשֶׁר דִּבַּרְתִי בִּשְׁמָם לֹא הָיָה וְלֹא נִבְרָא אֶלָּא מָשָׁל הָיָה.
+
+and all that I said in their names never was and never was created, but was a parable [b. B. Bat. 15a].
+
+
+וַאֲנִי מְחַלֶּה פְּנֵי כָל קוֹרֵא בוֹ בְּמָצְאוֹ דְבַר חֵטְא וְחוֹבָה.
+
+And I entreat every reader of it, when he finds a thing of sin and guilt,
+
+
+יָדִין אוֹתִי לְטוֹבָה.
+
+to judge me favorably [m. Avot 1:6],
+
+
+וְעַל כָּל פְּשָׁעִים תְּכַסֶּה אַהֲבָה.
+
+for love covers all transgressions [Prov 10:12];
+
+
+וְאַל תְּהִי בְלִבּוֹ חַטַּאת יְהוּדָה כְתוּבָה.
+
+and let not the sin of Judah be written in his heart [Jer 17:1].
+
+
+כִּי אֵין אָדָם אֲשֶׁר לֹא יֶחֱטָא.
+
+For there is no man who does not sin [1 Kgs 8:46],
+
+
+בְּמִפְעָל אוֹ בְּמִבְטָא.
+
+in deed or in utterance.
+
+
+כִּי הַחֵטְא מָצוּי בְּסִפְרֵי הַגְּאוֹנִים בְּעֵת יִבָּחֲנוּ.
+
+For error is found in the books of the Geonim when they are tested;
+
+
+וְהִנֵּה הַמְּלָכִים לֹא עָמְדוּ לְפָנָיו וְאֵיְך נַעֲמֹד אֲנַחְנוּ.
+
+behold, the kings did not stand before him; how then shall we stand [2 Kgs 10:4]?
+
+
+וְאִם הַגִּבּוֹרִים יִכָּשְׁלוּ בְדִבְרֵיהֶם.
+
+And if the mighty stumble in their words,
+
+
+וְלֹא יִפָּלְטוּ מִשְּׁגִיאוֹת סִפְרֵיהֶם.
+
+and do not escape the errors of their books,
+
+
+מַה יַּעֲשֶׂה נָעוּר וְרֵק מִכָּל חָכְמָה כָּמוֹנִי.
+
+what shall one do who is shaken out and empty of all wisdom [Neh 5:13], like me?
+
+
+וְאִם אֵשׁ הַשְּׁגִיאוֹת נָפְלָה בְּכָל אֶרֶז אַדִּיר.
+
+And if the fire of errors has fallen on every mighty cedar,
+
+
+מַה יַעֲשׂוּ אֲזוֹבֵי קִיר.
+
+what shall the hyssops on the wall do [1 Kgs 5:13; b. Mo'ed Qat. 25b]?
+
+
+וְהָאֵל הַמְלַמֵּד אָדָם דַּעַת לְדִבְרֵי ישֶׁר יְזַכֵּנוּ.
+
+May God, who teaches man knowledge, grant us words of uprightness,
+
+
+וּמִשְּגִיאוֹת יְנַקֵּנוּ.
+
+and clear us of errors [Ps 19:13],
+
+
+וְיִהְיֶה עִם פִּינוּ בְּכָל דְבָרֵינוּ.
+
+and be with our mouth in all our words,
+
+
+וְיִשְׁלַח מִקֹּדֶשׁ עֶזְרֵנוּ.
+
+and send our help from the sanctuary [Ps 20:3],
+
+
+וִימַלֵּא מִשְׁאֲלוֹתֵינוּ.
+
+and fulfil our requests [Ps 20:6].
+
+
+אָמַר הַמְחַבֵּר בִּרְאוֹתִי הַסֵּפֶר הַזֶּה נִפְלָא בְעֶרְכּוֹ.
+
+Says the author: When I saw that this book was wonderful in its worth,
+
+
+וְהַטּוֹעֵם אוֹתוֹ יִמְצָא נֹפֶת מָתוֹק עַל חִכּוֹ.
+
+and that he who tastes it will find the sweet honeycomb on his palate [Prov 24:13],
+
+
+בִּקַּשְׁתִּי נְדִיבֵי תֵבֵל.
+
+I sought among the nobles of the world,
+
+
+אֲשֶׁר מִמִּצְרַיִם וְעַד בָּבֶל.
+
+from Egypt to Babylon,
+
+
+אִישׁ אֲשֶׁר אֲפָאֵר הַסֵּפֶר בִּשְׁמוֹ וְיִהְיֶה חָתוּם בְּחוֹתָמוֹ.
+
+a man in whose name I might adorn the book, that it should be sealed with his seal.
+
+
+וּבְעֵת בּוֹאִי בְּאַלְפֵי הַזְּמַן דְּרַשְׁתִּיהוּ.
+
+And when I came among the thousands of the time, I inquired after him;
+
+
+בִּקַּשְׁתִּיהוּ וְלֹא מְצָאתִיהוּ.
+
+I sought him, but I found him not [Song 3:1],
+
+
+וְלֹא עָנָנִי אִישׁ בְּעֵת קְרָאתִיהוּ.
+
+and no man answered me when I called him [Song 5:6].
+
+
+כִּמְעַט שֶׁעָבַרְתִּי מֵהֶם עַד שֶׁמָּצָאתִי אֵת שֶׁאָהֲבָה נַפְשִׁי.
+
+It was but a little that I had passed from them, when I found him whom my soul loves [Song 3:4]:
+
+
+אִישׁ אֲשֶׁר בָּחַר בּוֹ ה' הַשַּׂר הַיָּחִיד בְּדוֹרוֹ.
+
+a man whom the Lord has chosen, the prince unique in his generation;
+
+
+הַחֶסֶד אֲזוֹרוֹ.
+
+kindness is his loincloth,
+
+
+וְהַיֹּשֶׁר חֲגוֹרוֹ.
+
+and uprightness his girdle [Isa 11:5],
+
+
+וְהַחָכְמָה פְאֵרוֹ.
+
+and wisdom his headdress;
+
+
+כַּשֶּׁמֶשׁ בְּצֵאתוֹ.
+
+like the sun when it goes forth [Judg 5:31],
+
+
+וְכַיָּם נִדְבָתוֹ.
+
+and like the sea in his generosity,
+
+
+וְכָעֹפֶר בִּנְעִימָתוֹ.
+
+and like dust in his gentleness,
+
+
+וְכָאֲרִי בְּאֵימָתוֹ.
+
+and like a lion in the awe he inspires,
+
+
+וּכְיוֹסֵף בְּיִרְאָתוֹ.
+
+and like Joseph in his fear of God,
+
+
+וְדָוִד בְּצִדְקָתוֹ.
+
+and David in his righteousness,
+
+
+וְקֹהֶלֶת בְּחָכְמָתוֹ.
+
+and Kohelet in his wisdom.
+
+
+אִם יִפְתַּח פִּיו יְסַכֵּל חֲכָמִים.
+
+If he opens his mouth, he makes the wise foolish [Isa 44:25],
+
+
+וְיָשִׁיב בַּעֲלֵי לָשׁוֹן נֶאֱלָמִים.
+
+and makes the masters of language dumb.
+
+
+וְאִם יִתְיַחֵס יַעֲזֹב כָּל בַּעֲלֵי הַיַּחַס שְׁפָלִים.
+
+If he tells his lineage, all men of lineage are left low;
+
+
+יִתְנַדֵּב יָשִׂים הַנְּדִיבִים נְבָלִים.
+
+if he gives, he makes the generous into churls [Isa 32:5].
+
+
+אֹסֵף הַמִּדּוֹת הַחֲמוּדוֹת הוּא הַגְּבִיר הַנֶּאְדָּר.
+
+He has gathered the lovely virtues, he the glorious lord,
+
+
+הַכְּרוּב הַנֶּהְדָּר.
+
+the splendid cherub [Ezek 28:14],
+
+
+פְּאֵר דּוֹרֵנוּ.
+
+the glory of our generation,
+
+
+וְהַדְרַת גְּבִירֵנוּ.
+
+and the splendor of our lords,
+
+
+רוּחֶ אַפֵּינוּ.
+
+the breath of our nostrils [Lam 4:20],
+
+
+וְאוֹר עַפְעַפֵּינוּ.
+
+and the light of our eyelids,
+
+
+וְכוֹכַב נִשְׁפֵּנוּ.
+
+and the star of our evening.
+
+
+יָדוֹ וּבֵיתוֹ פָתוּחַ לִרְוָחָה.
+
+His hand and his house are open wide [Deut 15:8]
+
+
+לְקַבֵּל כָּל אוֹרֵחַ בְּשִׂמְחָה.
+
+to receive every guest with joy.
+
+
+הוּא הַשַּר הַגָּדוֹל.
+
+He is the great prince
+
+
+אֲשֶׁר הוּקַם בְּיִשְׂרָאֵל חוֹמָה וּמִגְדּוֹל.
+
+who has been raised up in Israel as a wall and a tower,
+
+
+הַגְּבִיר הַמְעֻלֶּה רַבִּי שְׁמוּאֵל בֶּן אַלְבַּרְקוֹלִי זצ"ל.
+
+the exalted lord, Rabbi Samuel ben al-Barqūlī, the memory of the righteous be for a blessing.
+
+
+מִצְרַיִם תִּתְאַוֶּה לִהְיוֹת מִדְרַךְ אַדְמָתוֹ.
+
+Egypt longs to be the ground his feet tread [Deut 2:5],
+
+
+וְדַמֶּשֶׂק מְנוּחָתוֹ.
+
+and Damascus his resting place [Zech 9:1];
+
+
+וְצוֹבָא תְקַנֵּא בִּשְׁמוּעָתוֹ.
+
+Zoba envies his fame,
+
+
+וְאַשּׁוּר תָּעִיד גְּדֻלָּתוֹ.
+
+Assyria testifies to his greatness,
+
+
+וַעֲדִינָה תִתְפָּאֵר כִּי הִיא אֲמָתוֹ.
+
+and Adina boasts that she is his handmaid.
+
+
+וּבִרְאוֹתִי כִּי הוּא יָחִיד בְּעַמּוֹ.
+
+And when I saw that he was unique among his people,
+
+
+וַתְּהִי הַמִּשְׂרָה עַל שִׁכְמוֹ.
+
+and the government was upon his shoulder [Isa 9:5],
+
+
+עָשִׂיתִי הַסֵּפֶר הַזֶּה עַל שְׁמוֹ.
+
+I made this book in his name,
+
+
+וַחֲתַמְתִּיו בְּחוֹתָמוֹ.
+
+and sealed it with his seal [Esth 8:8],
+
+
+וְשַׂמְתִּיו כְּמוֹ רְבִיד הַזָּהָב עַל צַוָּארוֹ.
+
+and set it like a chain of gold about his neck,
+
+
+וְהִלְבַּשְׁתִּיו מְעִיל פְּאֵרוֹ.
+
+and clothed him in the robe of his glory,
+
+
+וְהִרְכַּבְתִּיו עַל סוּס הֲדָרוֹ.
+
+and set him on the horse of his splendor,
+
+
+וְקָרָאתִי לְפָנָיו: כָּכָה יֵעָשֶׂה לָאִישׁ אֲשֶׁר הַמֶּלֶךְ חָפֵץ בִּיקָרוֹ.
+
+and proclaimed before him: Thus shall it be done to the man whom the king delights to honor [Esth 6:11].
+
+
+כִּי יְדַעְתִּיו כִּי בִרְאוֹתוֹ יְלָדַי.
+
+For I knew that when he saw my children,
+
+
+מַעֲשֵׂי יָדָי.
+
+the work of my hands [Isa 29:23],
+
+
+בִּידֵי אַהֲבָה יִסְמְכֵנִי.
+
+he would hold me up with hands of love,
+
+
+וְעַל בָּמֳתֵי שַׁחַק יַדְרִיכֵנִי.
+
+and make me tread on the high places of the sky [Hab 3:19],
+
+
+וּלְזוּלָתוֹ לֹא יַצְרִיכֵנִי.
+
+and would not make me need any other.
+
+
+הָאֵל יַעֲמִיד הוֹדוֹ.
+
+May God establish his splendor,
+
+
+וּבְדוֹר דּוֹרִים כְּבוֹדוֹ.
+
+and his glory to all generations;
+
+
+וְהוּא מְרוֹמִים יִשְׁכֹּן.
+
+may he dwell on high [Isa 33:16],
+
+
+כְּיָרֵחַ יִכּוֹן.
+
+established like the moon [Ps 89:38];
+
+
+לְפָנָיו יַעֲמֹד זִכְרוֹ הַטּוֹב לְדוֹר אַחֲרוֹן.
+
+may his good memory stand before Him to the last generation,
+
+
+וְכָל הַשּׁוֹמֵעַ אוֹתוֹ יָרֹן.
+
+and all who hear it shall sing;
+
+
+וְיִהְיֶה בּוֹ לִבְעָלָיו תַּגְמוּל וְיִתְרוֹן.
+
+and may it bring its owner reward and profit.
+
+
+כִּי זֶה הַסֵּפֶר הוּא כַעֲנָק לֹא יִתְיַפֶּה אֶלָּא עַל גְּרוֹנוֹ.
+
+For this book is like a necklace that is beautiful only on his throat,
+
+
+וְלֹא יִתְכַּבֵּד רַק עַל צַוְּרוֹנוֹ.
+
+and honored only on his neck.
+
+
+כִּי הוּא בְשִׂכְלוֹ יֵדַע מַעֲלַת הַחָכְמָה וִיכַבְּדֶנָּה.
+
+For he in his understanding knows the rank of wisdom and honors her,
+
+
+וּמִנְּעוּרָיו הִיא לוֹ גְבֶרֶת וְתָמִיד יַעַבְדֶנָּה.
+
+and from his youth she has been his mistress, and he always serves her;
+
+
+כִּי בָהּ תִּגְדַּל מַעֲלָתוֹ.
+
+for by her his rank grows,
+
+
+וְתִנַּשֵּׂא מַלְכוּתוֹ.
+
+and his kingship is lifted up.
+
+
+וּבַסֵּפֶר הַזֶּה יַאֲמִינוּ בִשְׁבָחָיו כָּל שׁוֹמְעָיו.
+
+And through this book all who hear of him will believe his praises,
+
+
+וְיוֹסִיפוּ בוֹ אַהֲבָה כָל יוֹדְעָיו.
+
+and all who know him will love him the more.
+
+
+וְכַאֲשֶׁר יֵיטִיב אַחֲרִיתוֹ בּוֹרְאוֹ.
+
+And when his Creator makes his end good,
+
+
+וּבָנָיו יֵשְׁבוּ עַל כִּסְאוֹ.
+
+and his sons sit on his throne,
+
+
+יִהְיֶה הַסֵּפֶר הַזֶּה לָהֶם.
+
+this book will be for them
+
+
+עֵד נֶאֱמָן עַל גְּדֻלַּת אֲבִיהֶם.
+
+a faithful witness to the greatness of their father.
+
+
+כִּי זֶה הַסֵּפֶר יִפְקַח לַעִוְרִים עֵינָיִם.
+
+For this book will open the eyes of the blind [Isa 35:5],
+
+
+וְיַרְנִין לָאִלְּמִים שְׂפָתָיִם.
+
+and make the lips of the dumb sing,
+
+
+לְשַׁבֵּחַ פְּעֻלּוֹתָיו.
+
+to praise his deeds,
+
+
+וּלְסַפֵּר תְּהִלּוֹתָיו.
+
+and tell his praises,
+
+
+וְלָשִׂיחַ בְנִפְלְאוֹתָיו.
+
+and speak of his wonders.
+
+
+וּשְׁנֵי אֶחָיו הַשַּׂר הַנִּכְבָּד רַבִּי יוֹסֵף וְהַשַּׂר הַנֶּחְמָד רַבִּי עֶזְרָא יְהִי בְעֶזְרָם רוֹכֵב שָׁמַיִם.
+
+And his two brothers, the honored prince Rabbi Joseph and the pleasant prince Rabbi Ezra, may He who rides the heavens be their help [Deut 33:26]:
+
+
+שְׁנֵיהֶם לְבֵית הַמִּשְׂרָה עַמּוּדִים שְׁנַיִם.
+
+both of them are two pillars for the house of rule,
+
+
+כְּאִלּוּ הַתּוֹרָה אָרוֹן וְהֵם שְׁנֵי כְרוּבִים פּוֹרְשֵׂי כְנָפַיִם.
+
+as though the Torah were an ark and they two cherubim spreading their wings [Exod 25:20],
+
+
+אוֹ הַמִּשְׂרָה צוּרָה וְהֵם לָהּ שְׁתֵּי עֵינַיִם.
+
+or rule were a face and they its two eyes.
+
+
+גַּם הֵם לָבְשׁוּ לְבוּשׁ הָעֲנָוָה.
+
+They too have put on the garment of humility,
+
+
+וּפָשְׁטוּ כְסוּת הַגַּאֲוָה.
+
+and put off the cloak of pride,
+
+
+וְרָחֲקוּ מִכָּל דִּבָּה וּמַעֲוָה.
+
+and kept far from all slander and perversity,
+
+
+וְאָסְפוּ כָּל מִדָּה נָאוָה.
+
+and gathered every comely virtue,
+
+
+עַד יָצְאוּ כְּכֶסֶף צָרוּף תַּאֲוָה לָעֵינַיִם.
+
+until they came out like refined silver, a delight to the eyes [Gen 3:6],
+
+
+מְזֻקָּק שִׁבְעָתַיִם.
+
+purified seven times [Ps 12:7].
+
+
+הָאֵל יָאִיר נֵרָם.
+
+May God light their lamp [Ps 18:29]
+
+
+וְיַזְרִיחַ אוֹרָם.
+
+and make their light shine.
+
+
+וּבַמָּקוֹם הַזֶּה אֶחְתֹּם דְּבָרַי.
+
+And at this place I seal my words
+
+
+וְאֲסַיֵּם אֲמָרַי.
+
+and end my sayings.
+
+
+וְהָאֵל יוֹדִיעֵנוּ אֹרַח חַיִּים.
+
+And may God make known to us the path of life [Ps 16:11],
+
+
+כִּי מִמֶּנּוּ תּוֹצְאוֹת חַיִּים:
+
+for from Him are the issues of life [Prov 4:23].
+
 
 The Fortieth Gate
 -----------------

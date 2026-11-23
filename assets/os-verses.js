@@ -213,8 +213,17 @@
         '<p class="os-vpop-src">' + esc([d.heT, d.enT].filter(Boolean).join(" · ")) +
         ' · <a href="' + link + '" target="_blank" rel="noopener">Sefaria ↗</a></p>';
       place(btn);
-      var body = pop.querySelector(".os-vpop-body"), mk = pop.querySelector("mark");
-      if (body && mk && body.scrollHeight > body.clientHeight) body.scrollTop = mk.offsetTop - 40;
+      // a long text (a Talmud page): scroll to the densest group of marked words, not to the first one
+      var body = pop.querySelector(".os-vpop-body"), mks = pop.querySelectorAll("mark");
+      if (body && mks.length && body.scrollHeight > body.clientHeight) {
+        var best = 0, bestN = 0;
+        for (var i = 0; i < mks.length; i++) {
+          var n = 0;
+          for (var j = i; j < mks.length && mks[j].offsetTop - mks[i].offsetTop < 90; j++) n++;
+          if (n > bestN) { bestN = n; best = i; }
+        }
+        body.scrollTop = mks[best].offsetTop - 40;
+      }
     }).catch(function (e) {
       if (!pop || openBtn !== btn) return;
       pop.querySelector(".os-vpop-msg").innerHTML = "Could not load the text from Sefaria (" + esc(e.message) + "). " +

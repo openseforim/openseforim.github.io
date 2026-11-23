@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader><fileDesc>
+<titleStmt><title>Judah al-Ḥarizi, Taḥkemoni</title>
+<author>Judah al-Ḥarizi</author>
+<editor>Ezra Brand</editor></titleStmt>
+<publicationStmt><publisher>Open Seforim</publisher>
+<pubPlace>https://openseforim.org/tahkemoni/</pubPlace>
+<availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+</publicationStmt>
+<sourceDesc><bibl>Maḥbarot le-Sifrut with Mosad ha-Rav Kook, Tel Aviv; text from Project Ben-Yehuda <ref target="https://archive.org/details/tahkemoni00hari">scans</ref></bibl></sourceDesc>
+</fileDesc>
+<encodingDesc><p>Line-aligned Hebrew and English, one English line for each rhyme unit or verse line. Each source segment (ab) is followed by its English translation (ab type="translation", corresp).</p></encodingDesc>
+</teiHeader>
+<text><body>
+<div type="chapter" n="1" facs="https://openseforim.org/tahkemoni/gate-40.html"><head>The Fortieth Gate</head>
+<ab xml:id="s1" xml:lang="he">נְאֻם הֵימָן הָאֶזְרָחִי: הָיִיתִי בַלַּיְלָה שׁוֹכֵב עַל מִטָּתִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s1">Thus says Heman the Ezrahite: I lay one night upon my bed,</ab>
+<ab xml:id="s2" xml:lang="he">וְנָדְדָה מֵעֵינַי שְׁנָתִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s2">and sleep from my eyes had fled [Gen 31:40].</ab>
+<ab xml:id="s3" xml:lang="he">וּבְעוֹדִי מִתְחוֹלֵל בְּצִירִי וְנִגְעִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s3">While I was writhing in my pangs and my plague,</ab>
+<ab xml:id="s4" xml:lang="he">וּמִתְגּוֹלֵל עַל יְצוּעִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s4">and tossing on my couch,</ab>
+<ab xml:id="s5" xml:lang="he">שָׁמַעְתִּי קוֹל דּוֹפֵק.</ab>
+<ab type="translation" xml:lang="en" corresp="#s5">I heard a voice that knocked [Song 5:2],</ab>
+<ab xml:id="s6" xml:lang="he">וְעַל הַדֶּלֶת מִתְדַּפֵּק.</ab>
+<ab type="translation" xml:lang="en" corresp="#s6">beating at the door,</ab>
+<ab xml:id="s7" xml:lang="he">וְאֵינוֹ מִתְאַפֵּק.</ab>
+<ab type="translation" xml:lang="en" corresp="#s7">and would not hold back any more.</ab>
+<ab xml:id="s8" xml:lang="he">אָמַרְתִּי: מִי הַקּוֹרֵא בְּאִישׁוֹן לַיְלָה וַאֲפֵלָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s8">I said: &quot;Who calls in the black of night and the dark [Prov 7:9]?&quot;</ab>
+<ab xml:id="s9" xml:lang="he">אָמַר לִי: אִישׁ תּוֹעֶה מִן הַמְּסִלָּה וּמִקֹּצֶר יָדוֹ יְסַלֵּד בְּחִילָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s9">He said to me: &quot;A man who has strayed from the highway; for want of means he shrinks in his pain [Job 6:10].&quot;</ab>
+<ab xml:id="s10" xml:lang="he">וּכְשָׁמְעִי לְשׁוֹנוֹ מְלֻטָּשׁ כַּתַּעַר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s10">When I heard his tongue, whetted like a razor [Ps 52:4],</ab>
+<ab xml:id="s11" xml:lang="he">קָרָאתִי אֶל הַנַּעַר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s11">I called to the lad</ab>
+<ab xml:id="s12" xml:lang="he">לִפְתֹּחַ הַשַּׁעַר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s12">to open the gate.</ab>
+<ab xml:id="s13" xml:lang="he">וְכַאֲשֶׁר בָּא הָאִישׁ בְּמִשְׁעַנְתּוֹ וְכֵלָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s13">And when the man came in with his staff and his gear,</ab>
+<ab xml:id="s14" xml:lang="he">וּבְגָדִים בְּלוּיִם עָלָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s14">in worn-out clothes,</ab>
+<ab xml:id="s15" xml:lang="he">הִתְבּוֹנַנְתִּי אֵלָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s15">I looked at him closely,</ab>
+<ab xml:id="s16" xml:lang="he">וְהִנֵּה הוּא חֲבֵרֵנוּ הָרַב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s16">and behold, it was our friend the Rabbi.</ab>
+<ab xml:id="s17" xml:lang="he">וְשָׂמַחְתִּי בוֹ כְּמוֹצֵא שָׁלָל רָב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s17">I rejoiced in him as one who finds great spoil [Ps 119:162];</ab>
+<ab xml:id="s18" xml:lang="he">וְסָר יְגוֹנִי וְעָרַב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s18">my grief went, and sweet it grew;</ab>
+<ab xml:id="s19" xml:lang="he">וְגָדַל שְשׂוֹנִי וְקָרַב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s19">my joy was great, and near it drew.</ab>
+<ab xml:id="s20" xml:lang="he">וְשַׂמְתִּי לְפָנָיו הַנִּמְצָא בְּבֵיתִי לֶאֹכל.</ab>
+<ab type="translation" xml:lang="en" corresp="#s20">I set before him what there was in my house to eat,</ab>
+<ab xml:id="s21" xml:lang="he">וְהֵבֵאתִי לוֹ וַיֹּאכַל מִכָּל.</ab>
+<ab type="translation" xml:lang="en" corresp="#s21">I brought it, and he ate of all.</ab>
+<ab xml:id="s22" xml:lang="he">וְכַאֲשֶׁר כִּלָּה אֲכִילָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s22">And when he had finished his meal,</ab>
+<ab xml:id="s23" xml:lang="he">וְעָרַךְ לָאֵל תְּהִלָּתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s23">and set out to God his praise,</ab>
+<ab xml:id="s24" xml:lang="he">הֵחֵל לְסַפֵּר מַחְמַדֵּי מְלִיצָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s24">he began to recount the delights of his eloquence,</ab>
+<ab xml:id="s25" xml:lang="he">וּפָתַח גִּנְזֵי חָכְמָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s25">and opened the treasuries of his wisdom.</ab>
+<ab xml:id="s26" xml:lang="he">וָאֶקַּח הַדְּיוֹ וְהַסֵּפֶר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s26">I took the ink and the book,</ab>
+<ab xml:id="s27" xml:lang="he">לִכְתֹּב מִפִּיו אִמְרֵי שֶׁפֶר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s27">to write from his mouth goodly words [Gen 49:21].</ab>
+<ab xml:id="s28" xml:lang="he">וְכַאֲשֶׁר הַחִלּוֹתִי לִכְתֹּב נִשְׁבַּר הָעֵט בְּיָדִי וְהֶחְלַפְתִּיהוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s28">When I began to write, the pen broke in my hand, and I changed it;</ab>
+<ab xml:id="s29" xml:lang="he">וְנִשְׁבַּר פַּעַם שֵׁנִית עַד הִשְׁלַכְתִּיהוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s29">it broke a second time, until I threw it away.</ab>
+<ab xml:id="s30" xml:lang="he">אָמַר לִי חֶבֶר הַקֵּינִי: לָמָּה תַשְלִיכֵהוּ וְהָאֵל בָּחַר בּוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s30">Ḥever the Kenite said to me: &quot;Why do you throw it away, when God has chosen it?</ab>
+<ab xml:id="s31" xml:lang="he">אַל תַּשְׁחִיתֵהוּ כְּי בְרָכָה בּוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s31">Do not destroy it, for there is a blessing in it [Isa 65:8].</ab>
+<ab xml:id="s32" xml:lang="he">אִלּוּ יָדַעְתָּ מַעֲלָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s32">If you knew its worth,</ab>
+<ab xml:id="s33" xml:lang="he">לֹא הִשְׁלַכְתָּ אוֹתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s33">you would not have thrown it away.</ab>
+<ab xml:id="s34" xml:lang="he">הֲלֹא יָדַעְתָּ נֹעַם חִידָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s34">Do you not know the charm of its riddle,</ab>
+<ab xml:id="s35" xml:lang="he">וְאִמְרֵי תְעוּדָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s35">and the words of its testimony?</ab>
+<ab xml:id="s36" xml:lang="he">וְאִם תִּרְצֶה לְךָ אַגִּידֶנָּה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s36">If you wish, I will tell it to you,</ab>
+<ab xml:id="s37" xml:lang="he">וּמִמְּךָ לֹא אַכְחִידֶנָּה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s37">and from you I will not hide it.&quot;</ab>
+<ab xml:id="s38" xml:lang="he">אָמַרְתִּי: הִנֵּה אָזְנִי לְדֶלֶת נִיבְךָ רְצוּעָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s38">I said: &quot;Here is my ear, bored through at the door of your speech [Exod 21:6],</ab>
+<ab xml:id="s39" xml:lang="he">וְעֵינִי בְּפוּךְ מֹרְךָ קְרוּעָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s39">and my eye opened wide with the kohl of your myrrh [Jer 4:30].&quot;</ab>
+<ab xml:id="s40" xml:lang="he">אָמַר: הִתְוַכְּחוּ בִימֵי קֶדֶם סופְרֵי הַמֶּלֶךְ הַגְּדוֹלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s40">He said: &quot;In days of old, the great scribes of the king contended</ab>
+<ab xml:id="s41" xml:lang="he">עִם שָׂרֵי הַחֲיָלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s41">with the captains of the hosts.</ab>
+<ab xml:id="s42" xml:lang="he">וַיַּעֲנוּ סוֹפְרֵי הַמֶּלֶךְ וַיֹּאמְרוּ: אֲנַחְנוּ גִבּוֹרֵי הַמְּלִיצוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s42">The king&#x27;s scribes answered and said: &#x27;We are the heroes of eloquence;</ab>
+<ab xml:id="s43" xml:lang="he">וְלָנוּ דֵעוֹת וְעֵצוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s43">counsel and knowledge are ours.</ab>
+<ab xml:id="s44" xml:lang="he">יָפִיצוּ מִפִּינוּ אִמְרֵי תְעוּדוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s44">From our mouths go out words of testimony;</ab>
+<ab xml:id="s45" xml:lang="he">שַׂמְנוּם לַמְּלוּכָה יְסוֹדוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s45">we have made them foundations for the kingship,</ab>
+<ab xml:id="s46" xml:lang="he">וּלְקַרְשֵׁי הַגְּדֻלָּה יָדוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s46">and tenons for the boards of greatness [Exod 26:17].</ab>
+<ab xml:id="s47" xml:lang="he">וּבְיָדֵינוּ הָעֵט הַנֶּחְמָד.</ab>
+<ab type="translation" xml:lang="en" corresp="#s47">In our hands is the lovely pen,</ab>
+<ab xml:id="s48" xml:lang="he">אֲשֵׁר אֵין לְפָנָיו מַעֲמָד.</ab>
+<ab type="translation" xml:lang="en" corresp="#s48">before which none can stand.</ab>
+<ab xml:id="s49" xml:lang="he">יַפִּיל רְפָאִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s49">It fells giants,</ab>
+<ab xml:id="s50" xml:lang="he">וְיַחְכִּים פְּתָאִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s50">and makes the simple wise [Ps 19:8].</ab>
+<ab xml:id="s51" xml:lang="he">וְהוּא קְצַר קוֹמָה וְנִבְזֶה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s51">It is short of stature and despised,</ab>
+<ab xml:id="s52" xml:lang="he">וְחַלָּשׁ וְרָזֶה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s52">weak and lean;</ab>
+<ab xml:id="s53" xml:lang="he">אֲבָל הוּא רָם וְרֹאשׁוֹ בַשָּׁמַיִם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s53">yet it is high, and its head is in the heavens [Gen 28:12],</ab>
+<ab xml:id="s54" xml:lang="he">וּבוֹ מַחְמַד עֵינַיִם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s54">and in it is the delight of the eyes.</ab>
+<ab xml:id="s55" xml:lang="he">יָשִׁיב לְאָחוֹר כָּל שׁוֹלְפֵי זַיִן.</ab>
+<ab type="translation" xml:lang="en" corresp="#s55">It turns back all who draw the sword,</ab>
+<ab xml:id="s56" xml:lang="he">וְהוּא הַנּוֹתֵן רוֹזְנִים לָאָיִן.</ab>
+<ab type="translation" xml:lang="en" corresp="#s56">and it brings princes to nothing [Isa 40:23].&#x27;</ab>
+<ab xml:id="s57" xml:lang="he">וַיִּשְׂאוּ מְשָׁלָם וַיֹּאמְרוּ:</ab>
+<ab type="translation" xml:lang="en" corresp="#s57">And they took up their parable and said:</ab>
+<ab xml:id="s58" xml:lang="he">אֲנַחְנוּ לַיְּקָר עַמּוּד. וְתָמִיד בְּעֵטֵנוּ נְפָאֵר הַמְּלוּכָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s58">We are a pillar to glory, and always with our pen we adorn the kingship.</ab>
+<ab xml:id="s59" xml:lang="he">וְלָנוּ הַגְּדֻלָּה הַגְּדוֹלָה אֲשֶׁר עַל כּוֹכְבֵי שַׁחַק נְסוּכָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s59">Ours is the greatness, the great one, poured out over the stars of the sky.</ab>
+<ab xml:id="s60" xml:lang="he">וּבַעְלֵי הַקְּרָב לָנוּ עֲבָדִים וְתוֹךְ לִבָּם חֲנִיתֵנוּ מְעוּכָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s60">The men of battle are our slaves, and our spear is thrust into their heart.</ab>
+<ab xml:id="s61" xml:lang="he">וַיַּעֲנוּ חֲלוּצֵי הַצָּבָא וַיֹּאמְרוּ: אֲנַחְנוּ כְפִירֵי קְרָבוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s61">Then the champions of the army answered and said: &#x27;We are young lions of battle,</ab>
+<ab xml:id="s62" xml:lang="he">וְאַמִּיצֵי לְבָבוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s62">and stout of heart.</ab>
+<ab xml:id="s63" xml:lang="he">נַחְצֹב מִצּוּר הַחֲרָבוֹת לֶהָבוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s63">We hew flames [Ps 29:7] from the flint of the blades [Josh 5:2],</ab>
+<ab xml:id="s64" xml:lang="he">וְנַעֲזֹב הָאֲרָצוֹת מִפַּחְדֵּנוּ חֲרֵבוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s64">and lands are left waste from fear of us,</ab>
+<ab xml:id="s65" xml:lang="he">עַד יִבְרְחוּ שׁוֹכְנֵיהֶם בִּנְפָשׁוֹת עֲצוּבוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s65">until those who dwell in them flee with grieving souls,</ab>
+<ab xml:id="s66" xml:lang="he">וְלֹא הִפְנוּ בָנִים אֶל אָבוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s66">and the children do not turn back to the fathers [Jer 47:3].</ab>
+<ab xml:id="s67" xml:lang="he">וְלָנוּ הַחֶרֶב אֲשֶׁר תַּבִּיעַ בְּלִי לָשׁוֹן.</ab>
+<ab type="translation" xml:lang="en" corresp="#s67">Ours is the sword, which speaks without a tongue,</ab>
+<ab xml:id="s68" xml:lang="he">וְתַשְׁגִּיחַ בְּלִי אִישׁוֹן.</ab>
+<ab type="translation" xml:lang="en" corresp="#s68">and keeps watch without an eye,</ab>
+<ab xml:id="s69" xml:lang="he">וְתִגְרֹף כְּנַחַל קִישׁוֹן וּפִישׁוֹן.</ab>
+<ab type="translation" xml:lang="en" corresp="#s69">and sweeps away like the brook Kishon [Judg 5:21] and Pishon [Gen 2:11].</ab>
+<ab xml:id="s70" xml:lang="he">וּבְהִקָּרֵא אֲצִילֵי הַמְּלוּכָה אֶל עָל הִיא תַעֲבֹר רִאשׁוֹן.</ab>
+<ab type="translation" xml:lang="en" corresp="#s70">When the nobles of the kingdom are called up on high [Hos 11:7], it goes over first,</ab>
+<ab xml:id="s71" xml:lang="he">כִּי הִיא כֶתֶר לַמְּלָכִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s71">for it is a crown to kings,</ab>
+<ab xml:id="s72" xml:lang="he">וַעֲטֶרֶת לַנְּסִיכִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s72">and a diadem to princes.</ab>
+<ab xml:id="s73" xml:lang="he">וְהִיא שׁוֹמֶרֶת מִכָּל נֵזֶק בְּעָלֶיהָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s73">It guards its masters from every harm,</ab>
+<ab xml:id="s74" xml:lang="he">וּכְחוֹל הַיָּם חֲלָלֶיהָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s74">and its slain are as the sand of the sea.&#x27;</ab>
+<ab xml:id="s75" xml:lang="he">וַיִּשְׂאוּ מְשָׁלָם וַיֹּאמְרוּ:</ab>
+<ab type="translation" xml:lang="en" corresp="#s75">And they took up their parable and said:</ab>
+<ab xml:id="s76" xml:lang="he">אֲנַחְנוּ יַד יְקָר נָנִיף תְּנוּפָה וְחַרְבֵּנוּ לְאוֹיְבֵנוּ שְׁלוּפָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s76">We lift up a hand of glory in a wave offering, and our sword is drawn against our foes.</ab>
+<ab xml:id="s77" xml:lang="he">וְעֵת יִתְחַבְּאוּ בַעְלֵי גְבוּרָה זְרוֹעֵנוּ לְהִלָּחֵם חֲשׂוּפָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s77">When the men of might go into hiding, our arm is bared to fight.</ab>
+<ab xml:id="s78" xml:lang="he">וְחַרְבֵּנוּ כְּמוֹ גֶפֶן וְאוּלָם בְּמֵימֵי הַחֲלָלִים הִיא עֲנָפָהּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s78">Our sword is like a vine; but it puts out branches in the waters of the slain [Ezek 19:10].</ab>
+<ab xml:id="s79" xml:lang="he">תְּרוֹצֵץ עַל פְּנֵי אֶרֶץ כְּבָרָק וְאֶל רֹאשׁ אוֹיְבִים חָשָׁה וְעָפָה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s79">It runs to and fro on the face of the earth like lightning, and to the head of the enemy it hastens and flies.</ab>
+<ab xml:id="s80" xml:lang="he">וַיִּוָּעֲדוּ הַחֶרֶב וְהָעֵט שְׁנֵיהֶם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s80">Then the sword and the pen met together,</ab>
+<ab xml:id="s81" xml:lang="he">לַעֲרֹךְ דִּין בֵּינֵיהֶם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s81">to set out a case between them.</ab>
+<ab xml:id="s82" xml:lang="he">וַתַּעַן הַחֶרֶב וַתֹּאמַר: אֲנִי נוֹתֶנֶת כֹּחַ לַגִּבּוֹרִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s82">The sword answered and said: &#x27;I give strength to the mighty;</ab>
+<ab xml:id="s83" xml:lang="he">וּבְיָדִי מִחְיַת הַנְּשָׁרִים וְהַכְּפִירִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s83">in my hand is the food of the eagles and the young lions.</ab>
+<ab xml:id="s84" xml:lang="he">וְכָל הַיָּמִים אֲשֶׁר הַנְּשָׁרִים אוֹתִי יִמְצָאוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s84">All the days that the eagles find me,</ab>
+<ab xml:id="s85" xml:lang="he">לֹא יִרְעֲבוּ וְלֹא יִצְמָאוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s85">they shall not hunger nor thirst [Isa 49:10],</ab>
+<ab xml:id="s86" xml:lang="he">כִּי אֲנִי אַטְרִיפֵם בְּשַׂר גִּבּוֹרִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s86">for I feed them the flesh of the mighty,</ab>
+<ab xml:id="s87" xml:lang="he">וְאַשְׁכִּירֵם בִּדְמֵי אַבִּירִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s87">and make them drunk on the blood of the valiant.</ab>
+<ab xml:id="s88" xml:lang="he">וְאֵיךְ יַעֲרֹךְ הָעֵט אֵלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s88">How can the pen be set against me,</ab>
+<ab xml:id="s89" xml:lang="he">וְהוּא שְׂרֵפָה לְגֶחָלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s89">when it is fuel for my coals,</ab>
+<ab xml:id="s90" xml:lang="he">וּמִדְרָךְ לְרַגְלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s90">and a place for my feet to tread [Deut 2:5]?</ab>
+<ab xml:id="s91" xml:lang="he">וְאֵיךְ יִתְגָּאֶה קָנֶה רָצוּץ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s91">How can a crushed reed [Isa 36:6] be proud,</ab>
+<ab xml:id="s92" xml:lang="he">כְּסִרְפָּד וְנַעֲצוּץ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s92">a briar and a thorn [Isa 55:13]?</ab>
+<ab xml:id="s93" xml:lang="he">אִם תִּגַּע בּוֹ יָד תִּשְׁבְּרֶנּוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s93">If a hand touches it, it breaks it,</ab>
+<ab xml:id="s94" xml:lang="he">וְרוּחַ עָבְרָה בוֹ וְאֵינֶנּוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s94">and a wind passes over it and it is gone [Ps 103:16].&#x27;</ab>
+<ab xml:id="s95" xml:lang="he">וַיַּעַן הָעֵט וַיֹּאמַר: אֲנִי נוֹתַרְתִּי נָבִיא.</ab>
+<ab type="translation" xml:lang="en" corresp="#s95">The pen answered and said: &#x27;I alone am left a prophet [1 Kgs 18:22];</ab>
+<ab xml:id="s96" xml:lang="he">בְּאֹהֶל הַתְּעוּדָה מוֹשָׁבִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s96">in the tent of testimony is my seat.</ab>
+<ab xml:id="s97" xml:lang="he">כִּי אֲנִי אִישׁ תָּם וְיָשָׁר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s97">For I am a man blameless and upright [Job 1:1],</ab>
+<ab xml:id="s98" xml:lang="he">וְכָל תּוֹמְכַי מְאֻשָּׁר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s98">and all who hold me fast are made happy.</ab>
+<ab xml:id="s99" xml:lang="he">אֲבָאֵר רָזֵי הַחָכְמוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s99">I explain the secrets of wisdom,</ab>
+<ab xml:id="s100" xml:lang="he">וַאֲגַלֶּה סוֹדוֹת הַמְּזִמּוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s100">and lay bare the hidden designs.</ab>
+<ab xml:id="s101" xml:lang="he">וְאַבִּיעָה חִידוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s101">I utter riddles,</ab>
+<ab xml:id="s102" xml:lang="he">וְאַגִּיד נִכְבָּדוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s102">and tell of glorious things.</ab>
+<ab xml:id="s103" xml:lang="he">וּבִי מְלָכִים יִמְלֹכוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s103">By me kings reign [Prov 8:15],</ab>
+<ab xml:id="s104" xml:lang="he">וְסוֹפְרִים בְּשֵׁבֶט סוֹפֵר יִמְשֹׁכוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s104">and scribes wield the scribe&#x27;s rod [Judg 5:14].</ab>
+<ab xml:id="s105" xml:lang="he">וּבִי רוֹזְנִים יְחוֹקְקוּ צֶדֶק.</ab>
+<ab type="translation" xml:lang="en" corresp="#s105">By me princes decree justice [Prov 8:15],</ab>
+<ab xml:id="s106" xml:lang="he">וִיחַזְּקוּ כָל בֶּדֶק.</ab>
+<ab type="translation" xml:lang="en" corresp="#s106">and make good every breach [2 Kgs 12:6].</ab>
+<ab xml:id="s107" xml:lang="he">וְלוּלֵי עֵט הַסּוֹפֵר אָבְדוּ כָל הַחָכְמוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s107">Were it not for the scribe&#x27;s pen, all wisdom would be lost,</ab>
+<ab xml:id="s108" xml:lang="he">וְגַם נֶעְדְּרוּ הַחִידוֹת וְכָל הַמְּזִמּוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s108">and the riddles and all the designs would be gone.&#x27;</ab>
+<ab xml:id="s109" xml:lang="he">וַתַּעַן הַחֶרֶב וַתֹּאמַר: אֲנִי מַחֲצֶבֶת רַהַב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s109">The sword answered and said: &#x27;I am the hewer of the proud,</ab>
+<ab xml:id="s110" xml:lang="he">חוֹצֶבֶת לַהַב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s110">hewing out flame [Ps 29:7].</ab>
+<ab xml:id="s111" xml:lang="he">וּמִי מִכָּל אֲצִילֵי עוֹלָם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s111">Who of all the nobles of the world,</ab>
+<ab xml:id="s112" xml:lang="he">וְרוֹזְנֵי תֵבֵל כֻּלָּם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s112">and all the princes of the earth,</ab>
+<ab xml:id="s113" xml:lang="he">אֲשֶׁר יִרְאֶה צִלִּי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s113">sees my shadow</ab>
+<ab xml:id="s114" xml:lang="he">וְלֹא יִפְחַד מִקְּרָב־לִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s114">and does not fear to come near me?</ab>
+<ab xml:id="s115" xml:lang="he">וַהֲלֹא בְצֵאתִי מִתַּעֲרִי לֵב הָאֲרִי יִמַּס.</ab>
+<ab type="translation" xml:lang="en" corresp="#s115">When I come out of my sheath, the lion&#x27;s heart melts [2 Sam 17:10],</ab>
+<ab xml:id="s116" xml:lang="he">וְיָשׁוּבוּ הַגִּבּוֹרִים לְמִרְמָס.</ab>
+<ab type="translation" xml:lang="en" corresp="#s116">and the mighty are trodden down.</ab>
+<ab xml:id="s117" xml:lang="he">וְהַנְּפִילִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s117">The giants</ab>
+<ab xml:id="s118" xml:lang="he">יִפְּלוּ לְפָנַי חֲלָלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s118">fall slain before me,</ab>
+<ab xml:id="s119" xml:lang="he">וְגִבּוֹרִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s119">and the warriors</ab>
+<ab xml:id="s120" xml:lang="he">יִתְחַבְּאוּ בַחוֹרִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s120">hide in holes [Isa 42:22].</ab>
+<ab xml:id="s121" xml:lang="he">וּמִי הוּא הָעֵט כִּי יַעֲמֹד לְפָנַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s121">Who is the pen, that it should stand before me,</ab>
+<ab xml:id="s122" xml:lang="he">אוֹ יִתְיַצֵּב לְנֶגֶד עֵינַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s122">or take its stand before my eyes,</ab>
+<ab xml:id="s123" xml:lang="he">וְיַעֲלֶה שְׁאוֹנוֹ בְאָזְנַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s123">and raise its din in my ears?</ab>
+<ab xml:id="s124" xml:lang="he">וְהוּא קָנֶה נִשְׁבָּר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s124">It is a broken reed,</ab>
+<ab xml:id="s125" xml:lang="he">וְתֶבֶן בְּלִי בָר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s125">and straw without grain,</ab>
+<ab xml:id="s126" xml:lang="he">לֹא לִזְרוֹת וְלֹא לְהָבַר.</ab>
+<ab type="translation" xml:lang="en" corresp="#s126">not for winnowing nor for cleansing [Jer 4:11].</ab>
+<ab xml:id="s127" xml:lang="he">אִם אִישׁ יִמְצָאֵהוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s127">If a man finds it,</ab>
+<ab xml:id="s128" xml:lang="he">בְּכַף רַגְלוֹ יִדְרְכֵהוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s128">he treads it under the sole of his foot,</ab>
+<ab xml:id="s129" xml:lang="he">וְעִם הַדֹּמֶן יַשְׁלִיכֵהוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s129">and throws it out with the dung.</ab>
+<ab xml:id="s130" xml:lang="he">וּמְקוֹמוֹ נוֹדַע בְּתוֹךְ הָאַשְׁפָּה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s130">Its place is known, in the midst of the dunghill,</ab>
+<ab xml:id="s131" xml:lang="he">כִּי כֻלּוֹ בוּז וְחֶרְפָּה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s131">for it is all contempt and shame;</ab>
+<ab xml:id="s132" xml:lang="he">וּמְקוֹמִי בְחֵיק מְלָכִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s132">while my place is in the bosom of kings,</ab>
+<ab xml:id="s133" xml:lang="he">וְעַל צַוְּארֵי נְסִיכִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s133">and on the necks of princes.</ab>
+<ab xml:id="s134" xml:lang="he">וּמֵאֵימָתִי הַגִּבּוֹרִים יִירָאוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s134">For fear of me the mighty are afraid,</ab>
+<ab xml:id="s135" xml:lang="he">וְכָל רוֹאַי מִפָּנַי יִתְחַבָּאוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s135">and all who see me hide from my face.&#x27;</ab>
+<ab xml:id="s136" xml:lang="he">וַיַּעַן הָעֵט וַיֹּאמַר: כֵּן דִּבַּרְתָּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s136">The pen answered and said: &#x27;You have spoken so,</ab>
+<ab xml:id="s137" xml:lang="he">וְצֶדֶק אָמַרְתָּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s137">and said what is true:</ab>
+<ab xml:id="s138" xml:lang="he">כִּי בְצֵאתְךָ מִתַּעַרְךָ כָּל רוֹאֶיךָ יִפְחֲדוּ מִמְּךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s138">when you come out of your sheath, all who see you are afraid of you,</ab>
+<ab xml:id="s139" xml:lang="he">וְאִישׁ לֹא יַעֲמֹד עִמְּךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s139">and no one can stand with you.</ab>
+<ab xml:id="s140" xml:lang="he">כִּי שׁוֹפֵךְ דָּם אַתָּה.</ab>
+<ab type="translation" xml:lang="en" corresp="#s140">For you are a shedder of blood [Gen 9:6],</ab>
+<ab xml:id="s141" xml:lang="he">וְאַכְזָרִי וְעָרִיץ נוֹדַעְתָּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s141">known as cruel and ruthless.</ab>
+<ab xml:id="s142" xml:lang="he">כַּמָּה דָמִים שָׁפַכְתָּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s142">How much blood you have shed,</ab>
+<ab xml:id="s143" xml:lang="he">וְכַמָּה נְקִיִּים הָרַגְתָּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s143">and how many innocents you have killed!</ab>
+<ab xml:id="s144" xml:lang="he">וּמִיּוֹם הֱיוֹתְךָ לֹא תֶחְדַּל לְהַחֲרִיב הָאֲרָצוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s144">Since the day you came to be, you have not stopped laying lands waste,</ab>
+<ab xml:id="s145" xml:lang="he">וּלְמַלֵּא בַחֲלָלִים חוּצוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s145">and filling the streets with the slain,</ab>
+<ab xml:id="s146" xml:lang="he">וּלְהַפְרִיד בָּנִים מֵאֲבוֹתָם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s146">and parting children from their fathers,</ab>
+<ab xml:id="s147" xml:lang="he">וְהַיְלָדִים מֵחֵיק אִמּוֹתָם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s147">and infants from their mothers&#x27; bosom.</ab>
+<ab xml:id="s148" xml:lang="he">וְאִם תִּתְפָּאֵר עָלַי בְּכֹחֲךָ אֵין גְּבוּרָתִי בְכֹחִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s148">If you boast over me of your strength, my might is not in my strength,</ab>
+<ab xml:id="s149" xml:lang="he">כִּי אִם בְּרוּחִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s149">but in my spirit [Zech 4:6].</ab>
+<ab xml:id="s150" xml:lang="he">וְאֵיךְ תַּעֲרֹךְ אֵלַי וַאֲנִי אִישׁ תָּם יוֹשֵׁב אֹהָלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s150">How can you be set against me, when I am a blameless man, dwelling in tents,</ab>
+<ab xml:id="s151" xml:lang="he">וְאַתָּה אִישׁ שָׂדֶה וְרַע מַעֲלָלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s151">and you a man of the field [Gen 25:27], and evil in deeds,</ab>
+<ab xml:id="s152" xml:lang="he">וּמַרְבֶּה חֲלָלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s152">and many are your slain?</ab>
+<ab xml:id="s153" xml:lang="he">וּמְקוֹמְךָ בֶהָרִים הַתְּלוּלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s153">Your place is on the steep mountains,</ab>
+<ab xml:id="s154" xml:lang="he">וְעַל פְּנֵי צוּרֵי הַיְּעֵלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s154">on the rocks of the wild goats [1 Sam 24:3],</ab>
+<ab xml:id="s155" xml:lang="he">וּבְאֶשֶׁד הַנְּחָלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s155">in the cascade of the streams [Num 21:15],</ab>
+<ab xml:id="s156" xml:lang="he">וְהַיְּעָרִים הַגְּדוֹלִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s156">and in the great forests.</ab>
+<ab xml:id="s157" xml:lang="he">כָּל רוֹאֶיךָ מִמְּךָ יִבְרָחוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s157">All who see you flee from you,</ab>
+<ab xml:id="s158" xml:lang="he">וְכָל רוֹאַי בִּי יִשְׂמָחוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s158">but all who see me rejoice in me,</ab>
+<ab xml:id="s159" xml:lang="he">וּבְחֶבְרָתִי יִבְטָחוּ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s159">and trust in my company.</ab>
+<ab xml:id="s160" xml:lang="he">וְאַתָּה חָבֵר לְכָל חָנֵף וּמֵרַע.</ab>
+<ab type="translation" xml:lang="en" corresp="#s160">You are the companion of every flatterer and wrongdoer,</ab>
+<ab xml:id="s161" xml:lang="he">וְחָסֵר וְנִגְרָע.</ab>
+<ab type="translation" xml:lang="en" corresp="#s161">of the lacking and the diminished;</ab>
+<ab xml:id="s162" xml:lang="he">וְלֹא יִדְבַּק בְּךָ כִּי אִם גַּנָּב וְרָשָׁע.</ab>
+<ab type="translation" xml:lang="en" corresp="#s162">none cleaves to you but a thief and a wicked man,</ab>
+<ab xml:id="s163" xml:lang="he">וְכָל אֲשֶׁר מִבֶּטֶן פָּשָׁע.</ab>
+<ab type="translation" xml:lang="en" corresp="#s163">and all who are transgressors from the womb [Isa 48:8].</ab>
+<ab xml:id="s164" xml:lang="he">וַאֲנִי כָל רָע לֹא יְגוּרֵנִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s164">But no evil will dwell with me [Ps 5:5],</ab>
+<ab xml:id="s165" xml:lang="he">וְרָשָׁע לֹא יִתְחַבֵּר אֵלַי וְלֹא יְשׁוּרֵנִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s165">and the wicked will not keep my company, nor look upon me.</ab>
+<ab xml:id="s166" xml:lang="he">הוֹלֵךְ בְּדֶרֶךְ תָּמִים הוּא יְשָׁרְתֵנִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s166">He who walks in a blameless way, he shall serve me [Ps 101:6];</ab>
+<ab xml:id="s167" xml:lang="he">וַחֲסִידִים הֵם אֲשֶׁר בְּיָדָם יַעֲלוּנִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s167">the pious are those whose hands lift me up,</ab>
+<ab xml:id="s168" xml:lang="he">וְנִכְבָּדִים יְכַבְּדוּנִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s168">and the honoured give me honour.</ab>
+<ab xml:id="s169" xml:lang="he">וְלִי יְגַלּוּ הַמְּלָכִים סוֹדוֹתָם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s169">To me kings reveal their secrets,</ab>
+<ab xml:id="s170" xml:lang="he">וּבִי תִשְׁלַם עֲצָתָם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s170">and through me their counsel is fulfilled.</ab>
+<ab xml:id="s171" xml:lang="he">וּבְעֵת אֶתְיַחֵד עִם הַמֶּלֶךְ בְּהֵיכָלוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s171">When I am alone with the king in his palace,</ab>
+<ab xml:id="s172" xml:lang="he">אַתָּה לֹא תִקְרַב לוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s172">you do not come near him.&#x27;</ab>
+<ab xml:id="s173" xml:lang="he">וַתַּעַן הַחֶרֶב וַתֹּאמַר: אֵין לְהָשִׁיב מַעֲנֶה עַל הֶגְיוֹנֶיךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s173">The sword answered and said: &#x27;There is no answering your musings,</ab>
+<ab xml:id="s174" xml:lang="he">וְשִׁקְרֵי לְשׁוֹנֶךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s174">and the lies of your tongue.</ab>
+<ab xml:id="s175" xml:lang="he">כִּי שְׁאַל נָא לְיָמִים רִאשׁוֹנִים אֲשֶׁר הָיוּ לְפָנֶיךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s175">Ask now of the days past, which were before you [Deut 4:32];</ab>
+<ab xml:id="s176" xml:lang="he">הֲלֹא הֵם יוֹרוּךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s176">shall they not teach you,</ab>
+<ab xml:id="s177" xml:lang="he">יֹאמְרוּ לְךָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s177">and tell you [Job 8:10],</ab>
+<ab xml:id="s178" xml:lang="he">כִּי בִי יַכְנִיעַ הַמֶּלֶךְ קָמָיו וּמוֹרְדָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s178">that by me the king subdues his foes and his rebels,</ab>
+<ab xml:id="s179" xml:lang="he">וּבִי יִכְבּשׁ אוֹיְבָיו וּבוֹגְדָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s179">by me he conquers his enemies and his traitors,</ab>
+<ab xml:id="s180" xml:lang="he">וּבִי יִלָּכְדוּ הֶעָרִים הַבְּצוּרוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s180">by me fortified cities are taken,</ab>
+<ab xml:id="s181" xml:lang="he">וְיִפָּתְחוּ הַמִּגְדָּלוֹת הַסְּגוּרוֹת.</ab>
+<ab type="translation" xml:lang="en" corresp="#s181">and barred towers are opened?</ab>
+<ab xml:id="s182" xml:lang="he">וּבִי יִשְׁמֹר הַמֶּלֶךְ מַלְכוּתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s182">By me the king guards his kingdom;</ab>
+<ab xml:id="s183" xml:lang="he">וְלוּלֵי פַחְדִּי לֹא עָמְדָה רֶגַע גְּדֻלָּתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s183">were it not for fear of me, his greatness would not stand a moment.</ab>
+<ab xml:id="s184" xml:lang="he">אֲבָל אֲנִי אֶשְמְרֵהוּ מִמּוֹנָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s184">I guard him from his opponents,</ab>
+<ab xml:id="s185" xml:lang="he">וְאֶת אֵימָתִי אֶשְׁלַח לְפָנָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s185">and send my terror before him [Exod 23:27],</ab>
+<ab xml:id="s186" xml:lang="he">וְהַמּוֹתִי צָרָיו וְכָל גְּדוּדֵיהֶם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s186">and throw into confusion his foes and all their troops,</ab>
+<ab xml:id="s187" xml:lang="he">וְאֶת כָּל הָעָם אֲשֶׁר יָבוֹא בָהֶם.</ab>
+<ab type="translation" xml:lang="en" corresp="#s187">and all the people among whom he shall come [Exod 23:27].</ab>
+<ab xml:id="s188" xml:lang="he">וּבִרְאוֹתָם צוּר חַרְבְּי בְיָדִי נִצָּב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s188">When they see the edge of my sword [Ps 89:44] standing ready in my hand,</ab>
+<ab xml:id="s189" xml:lang="he">מִי זֶה לְפָנַי יִתְיַצָּב.</ab>
+<ab type="translation" xml:lang="en" corresp="#s189">who is this that will stand before me?&#x27;</ab>
+<ab xml:id="s190" xml:lang="he">וְכִשְמֹעַ הָעֵט דִּבְרֵי הַחֶרֶב וּמִלֶּיהָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s190">When the pen heard the words of the sword and her speeches,</ab>
+<ab xml:id="s191" xml:lang="he">הִתְגָּאָה עָלֶיהָ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s191">he rose up proudly over her,</ab>
+<ab xml:id="s192" xml:lang="he">וַיִּשָּׂא מְשָׁלוֹ וַיֹּאמֶר אֵלֶיהָ:</ab>
+<ab type="translation" xml:lang="en" corresp="#s192">and took up his parable and said to her:</ab>
+<ab xml:id="s193" xml:lang="he">אֲנִי מַחְרִישׁ אֲבָל אַחְרִיד בְּמִלַּי מְתֵי גַאְוָה בְּעֵת אַצְבִּיא חֲיָלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s193">I am silent, but I make men tremble with my words, men of pride, when I muster my hosts.</ab>
+<ab xml:id="s194" xml:lang="he">וּמַאְמָרַי פְּאֵר עַל רֹאשׁ מְלָכִים וְשִׂמְחַת הַלְּבָבוֹת טוּב מְשָׁלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s194">My sayings are glory on the head of kings, and the joy of hearts is the goodness of my proverbs.</ab>
+<ab xml:id="s195" xml:lang="he">הֲכִי בִי תַעֲמֹד אֶרֶץ בְּמִשְׁפָּט וְאֵין עָוֶל בְּמַעְשַׂי אוֹ פְעָלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s195">Is it not by me the land is set up in justice [Prov 29:4], and there is no wrong in my deeds or my works?</ab>
+<ab xml:id="s196" xml:lang="he">וּבִי צוּר חַק עֲשֶׂרֶת הַדְּבָרִים וְהִנְחִילָם בְּחוֹרֵב אֶל קְהָלִי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s196">By me the Rock engraved the Ten Words [Exod 32:16], and gave them at Horeb to my congregation as their portion.</ab>
+<ab xml:id="s197" xml:lang="he">וְהַחֶרֶב בְּעֵת תָּרוּם וְתִגְאֶה עֲלֵי רֹאשָׁהּ אֲנִי אָרִים דְּגָלַי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s197">And the sword, when she rises and grows proud, over her head I raise my banners.</ab>
+<ab xml:id="s198" xml:lang="he">וְיוֹם בָּאָה לְמִלְחַמְתִּי בְּגַאְוָה אֲנִי קַמְתִּי וְהִיא כָרְעָה לְרַגְלָי.</ab>
+<ab type="translation" xml:lang="en" corresp="#s198">On the day she came to fight me in her pride, I rose up, and she knelt at my feet.&quot;</ab>
+<ab xml:id="s199" xml:lang="he">אָמַר הַמַּגִּיד: וּכְשָׁמְעִי חִידָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s199">Said the teller: When I heard his riddle,</ab>
+<ab xml:id="s200" xml:lang="he">וּמִשְׁלֵי מְלִיצָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s200">and the parables of his eloquence,</ab>
+<ab xml:id="s201" xml:lang="he">כָּתַבְתִּי עַל לִבִּי דְבָרָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s201">I wrote his words on my heart,</ab>
+<ab xml:id="s202" xml:lang="he">וְחָקַקְתִּי בְּעֵט בַּרְזֶל אֲמָרָיו.</ab>
+<ab type="translation" xml:lang="en" corresp="#s202">and engraved his sayings with a pen of iron [Jer 17:1].</ab>
+<ab xml:id="s203" xml:lang="he">וְיָשַׁבְתִּי עִמּוֹ יָמִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s203">I stayed with him some days,</ab>
+<ab xml:id="s204" xml:lang="he">לְבַלּוֹת יָמַי בַּטּוֹב וּשְׁנוֹתַי בַּנְּעִימִים.</ab>
+<ab type="translation" xml:lang="en" corresp="#s204">to spend my days in good and my years in pleasures [Job 36:11],</ab>
+<ab xml:id="s205" xml:lang="he">עַד הוֹרַנִי הַזְּמַן בְּחִצֵּי פְרִידָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s205">until Time shot me with the arrows of his parting,</ab>
+<ab xml:id="s206" xml:lang="he">וּגְמָלַנִי מִשְּׂדֵי חֶבְרָתוֹ.</ab>
+<ab type="translation" xml:lang="en" corresp="#s206">and weaned me from the breasts of his company.</ab>
+</div>
+</body></text>
+</TEI>

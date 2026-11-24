@@ -17,6 +17,7 @@ WORKS = {
     "immanuel": ("immanuel-mahberot", "docs"),
     "tahkemoni": ("tahkemoni", "docs"),
     "maagal-tov": ("maagal-tov", "docs"),
+    "weiss": ("weiss-dor-dor", "docs"),
     "meor-einayim": ("meor-einayim", "docs"),
     "bochart": ("bochart-hierozoicon", "docs"),
     "lewysohn": ("lewysohn-zoologie", "docs"),

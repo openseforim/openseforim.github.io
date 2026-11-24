@@ -282,7 +282,8 @@
     var c3 = el('div');
     c3.appendChild(el('h2', {}, 'Corrections'));
     if (w.repo) {
-      c3.appendChild(para(['Found a misreading or a wrong translation? ', a(w.repo + '/issues/new', 'Report a mistake'), '.']));
+      reportLink = a(w.repo + '/issues/new', 'Report a mistake');
+      c3.appendChild(para(['Found a misreading or a wrong translation? ', reportLink, '.']));
       c3.appendChild(para([a(w.repo, 'Code and data'), ' on GitHub']));
     }
     fi.appendChild(c3);
@@ -299,7 +300,13 @@
   }
 
   // ---- cite this passage: a bar for the passage in the address (#anchor) ----
-  var work = null, bar = null;
+  var work = null, bar = null, reportLink = null;
+  // a new GitHub issue with the passage filled in (title: work, chapter, passage; body: the link)
+  function issueUrl(where, url) {
+    var title = plain(work.short_title || work.title) + ': ' + where;
+    var body = 'Passage: ' + url + '\n\nWhat is wrong (the reading or the translation), and what it should be:\n\n';
+    return work.repo + '/issues/new?title=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(body);
+  }
   function passageLabel(t, id) {
     if (t.getAttribute('data-label')) return t.getAttribute('data-label');
     var m;
@@ -327,6 +334,10 @@
   }
   function showPassage() {
     if (bar) { bar.remove(); bar = null; }
+    if (reportLink && work && work.repo) {
+      var ch0 = chapterTitle();
+      reportLink.href = ch0 ? issueUrl(ch0, location.origin + location.pathname) : work.repo + '/issues/new';
+    }
     var id = decodeURIComponent(location.hash.slice(1));
     if (!work || !id || id === 'notes' || id === 'top') return;
     var t = document.getElementById(id);
@@ -338,6 +349,12 @@
     bar.appendChild(el('span', { 'class': 'os-passage-label' }, 'This passage: ' + (ch ? ch + ', ' : '') + label));
     bar.appendChild(copyBtn('Copy citation', c));
     bar.appendChild(copyBtn('Copy link', url));
+    if (work.repo) {
+      var where = (ch ? ch + ', ' : '') + label;
+      var rl = el('a', { 'class': 'os-copy os-report', href: issueUrl(where, url), target: '_blank', rel: 'noopener' }, 'Report a mistake');
+      bar.appendChild(rl);
+      if (reportLink) reportLink.href = issueUrl(where, url);
+    }
     var x = el('button', { type: 'button', 'class': 'os-passage-x', 'aria-label': 'Close' }, '×');
     x.addEventListener('click', function () { bar.remove(); bar = null; });
     bar.appendChild(x);

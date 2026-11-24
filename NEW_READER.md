@@ -68,6 +68,8 @@ Candidate works and their research are in [openseforim/candidates](https://githu
       margin panel by itself. Test one link in the library's viewer: archive.org's viewer can leave out images.
 - [ ] Class names: check that a new class does not collide with one that `tools/export.py` treats specially
       (scan-page links: use `scanlink`, which the export skips; `.pg` is a page citation in Bochart and Lewysohn and is kept).
+- [ ] Give each row and note a `data-label` with its printed page or scan ("row 7, pp. 2–3", "note 2 (p. 3)"): the
+      passage bar and the prefilled "Report a mistake" issue use it as the passage's name.
 - [ ] Preview with `tools/serve_all.py` (all readers at their live paths). To preview a work that is not yet in
       `WORKS`, add its folder to `MOUNTS` locally and do not commit that change.
 

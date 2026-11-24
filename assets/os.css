@@ -217,3 +217,4 @@ html.os-scan-on:not(#os-none) body{margin-right:var(--os-scan-w)}
 @media (prefers-color-scheme: dark){:root:not([data-theme]) .os-scan-img img{filter:invert(.88) hue-rotate(180deg)}}
 :root[data-theme="paper"] .os-scan-img img{filter:sepia(.35)}
 @media (max-width:999px){.os-scan-btn{display:none}html.os-scan-on:not(#os-none) body{margin-right:0}.os-scan{display:none}}
+.os-passage a.os-report{text-decoration:none;display:inline-block}

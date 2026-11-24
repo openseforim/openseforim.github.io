@@ -1,0 +1,37 @@
+Zacharias Frankel, Mevo ha-Yerushalmi
+
+The first modern introduction to the Jerusalem Talmud, with an English translation paragraph by paragraph.
+
+Source text: Breslau 1870; Potsdam scan
+Licence: CC BY-SA 4.0
+Online: https://openseforim.org/frankel-mevo/ (Open Seforim)
+
+============================================================
+
+The author's foreword
+---------------------
+https://openseforim.org/frankel-mevo/part-01.html
+
+אמר המחבר כונת זה החיבור גלויה בהתו החקוק על פניו, וגם דרכיו לא נסתרו וכל קורא בו יעמוד עליהן בקל, לכן יהיו פה דברי מעטים ולא יעברו גבול הודעת איזה פרטים אשר אין מקומם בפנים הספר.
+
+The author says: The purpose of this work is plain from the mark engraved on its face [its title], and its methods too are not hidden; every reader will grasp them easily. Therefore my words here will be few, and will not go beyond reporting some details that have no place in the body of the book.
+
+
+מאמרי הירושלמי המובאים מקורם בדפוס ויניציאה כמעט מלה במלה ואות באות, ואך לפעמים נדפס אמר במ' אמ' בויניציאה, ישראל במ' ישר' בויניציאה. ותי' רבי בויניציאה בא לרוב בקיצור ר' ואך במאמר הראשון של כל ערך (או במאמר השני) כתבנו רבי במילואו אם הוא כן בד' ויניציאה, לפי שיש בזה מן הצורך, להבדיל בין רבי ובין רב וכמבואר בפנים נ"ה ע"א. — ולא מנענו להדפיס כד' ויניציאה אף במקום שיש שם טעות, ולפעמים תקננו הטעות בשני חצאי לבנה, וד' ויניציאה לא זז ממקומו.
+
+The sayings of the Yerushalmi that are quoted come from the Venice printing, almost word for word and letter for letter; only sometimes amar is printed for the Venice amr', and Yisrael for the Venice Yisr'. The word Rabbi appears in Venice mostly abbreviated as R'; but in the first saying of each entry (or in the second) we have written Rabbi in full if it is so in the Venice printing, because this is needed to distinguish between Rabbi and Rav, as is explained in the body of the book, folio 55a. — We did not refrain from printing as in the Venice edition even where there is an error there; sometimes we corrected the error in half-moon brackets [parentheses], and the Venice printing was not moved from its place.
+
+
+הכתב יד של הירושלמי הנמצא באוניפערזיטעט דליידן שלח לי מאת הפקידים על בית עקד הספרים שם והיה בידי כשלשה חדשים. ואתן תודה ברבים לחכמים אלה אשר תמכו ידי ברוח נדיבה ולקראת צמא הביאו מים, וכבר נודע לתהלה כי שערי אוצר הספרים ההוא נפתחו לכל מבקש תורה וחזון ומעיני הביבליאטעק יפוצו עד קצוי ארץ. — והנה זה שנתים יצא לאור ס' קורות היהודים בערפורט (Geschichte der Juden in Erfurt von Dr. Jaraczewski) וכתוב שם שיש בהמיניסטעריאל-ביבליאטהעק בערפורט כ"י של הירושלמי. ושמחתי על הבשורה כעל כל הון וחשתי ולא התמהמהתי לכתוב אל הפקידים על הביבליאטהעק ולשאול מהם הכ"י לקרוא בו איזה שבועות. וגם הפקידים אלה לא מנעו הטוב ממני, אך בפתחי הכ"י והנה תוחלתי נכזבה, כי הוא כ"י של התוספתא ולא של הירושלמי.
+
+The manuscript of the Yerushalmi that is in the University of Leiden was sent to me by the officers in charge of the library there, and it was in my hands for about three months. I give public thanks to these scholars, who supported me with a generous spirit and brought water to the thirsty [Isa 21:14]; it is already known to their praise that the gates of that library are open to everyone who seeks Torah and vision, and the springs of the library spread out to the ends of the earth [Prov 5:16]. — Two years ago there appeared a book on the history of the Jews in Erfurt (Geschichte der Juden in Erfurt, by Dr. Jaraczewski), where it is written that there is a manuscript of the Yerushalmi in the Ministerial Library in Erfurt. I rejoiced at the news as over all riches [Ps 119:14], and I hurried and did not delay [Ps 119:60] to write to the officers of the library and ask them for the manuscript, to read it for some weeks. These officers too did not withhold the good from me; but when I opened the manuscript, behold, my hope was disappointed: it is a manuscript of the Tosefta and not of the Yerushalmi.
+
+
+בפנים הספר כתוב לפעמים מ"ח, והכונה על המכתב חדשי אשר הוצאתי לאור משנת 1852 עד 1869.
+
+In the body of the book "M. Ḥ." is sometimes written; this means the monthly journal (Monatsschrift) that I published from the year 1852 to 1869.
+
+
+והנה לא אכלא שפתי להודות לה' על כל חסדו אשר גמלני והעיר בנפשי עז לגשת אל המלאכה, ולפנות הדרך להשואפים לשאוב מהבאר אשר מקורו בשערי ירושלים. וזה ימים כבירים נשמו מסלות שבת עובר אורח, ציון נדחה דורש אין לה, כי האבן גדולה על פי הבאר אבן הטועין והטעיות, ולא נאספו הרועים לגול האבן מעל פי הבאר. והנה פתחתי שער כיד ה' הטובה עלי לאשר יש את נפשו לשתות ממעין מים חיים ולרוות צמאו מתלמוד ירושלמי. ואני תפלה לאל חי לתמכני בימין צדקו להוציא לאור בקרב הימים הפירוש לס' זרעים, אשר מוכן כבר ברוב בנינו לבית הדפוס. ה' יגמור בעדי מעשה ידי אל ירף.
+
+And now I will not restrain my lips [Ps 40:10] from thanking the Lord for all the kindness with which He has dealt with me, and stirred strength in my soul to come near to the work [Exod 36:2], and to clear the way for those who long to draw from the well whose source is in the gates of Jerusalem. For many days now the highways have been desolate, the wayfarer has ceased [Isa 33:8]; Zion is an outcast, whom no one seeks [Jer 30:17], for a great stone is on the mouth of the well [Gen 29:2], a stone of errors and mistakes, and the shepherds have not gathered to roll the stone from the mouth of the well [Gen 29:8]. Now, by the good hand of the Lord upon me [Ezra 7:9], I have opened a gate for whoever wishes to drink from a spring of living water and to quench his thirst from the Jerusalem Talmud. And I am a prayer [Ps 109:4] to the living God, that He support me with His right hand of righteousness [Isa 41:10] to bring out to the light in a short time the commentary on the order Zera'im, which is already for the most part ready for the press. May the Lord complete what concerns me; do not abandon the work of Your hands [Ps 138:8].

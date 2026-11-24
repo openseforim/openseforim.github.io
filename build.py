@@ -18,6 +18,8 @@ WORKS = {
     "tahkemoni": ("tahkemoni", "docs"),
     "maagal-tov": ("maagal-tov", "docs"),
     "weiss": ("weiss-dor-dor", "docs"),
+    "frankel-mevo": ("frankel-mevo", "docs"),
+    "frankel-darkhe": ("frankel-darkhe", "docs"),
     "meor-einayim": ("meor-einayim", "docs"),
     "bochart": ("bochart-hierozoicon", "docs"),
     "lewysohn": ("lewysohn-zoologie", "docs"),

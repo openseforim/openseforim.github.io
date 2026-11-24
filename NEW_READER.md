@@ -29,6 +29,11 @@ Candidate works and their research are in [openseforim/candidates](https://githu
       (`maagal-tov/scripts/split_image.py`, `ocr_images.py`); Kraken's own segmenter drops lines on 1-bit print.
       `--base-dir R` gives logical order, with numbers the right way round.
 - [ ] Mixed scripts on one line (German or Latin with Hebrew, Greek, Arabic): a vision model, or Kraken with a second pass.
+- [ ] **Before any batch (cloud or long local run): read a sample of the actual output yourself**: 5–10 varied
+      pages per book (chapter openings, pages with headings and footnotes), against the scan, and look at the number
+      of lines per page across the run so far: it should form one cluster. Two clusters mean a fault (Weiss,
+      24-Nov-2026: on about a third of the pages the line finder merged lines in pairs). Equal output on CPU and GPU
+      proves only that the run is reproducible, not that it is right.
 - [ ] Long runs: in the background, resumable (one output file per page, skip pages already done), with a log and a
       progress line; one OCR job at a time on a laptop. Do not hold a log file open with `tail -F` on Windows:
       it can stop the writer.

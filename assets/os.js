@@ -201,8 +201,25 @@
 
   // ---- footer from work.json ----
   if (!slug) return;
+  // the work's home page (its contents page) gets a prominent "Start reading" button, from work.json "start"
+  var isHome = location.pathname === base || location.pathname === base + 'index.html';
+  if (isHome) document.documentElement.classList.add('os-home');
   fetch(base + 'work.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (w) { if (w) footer(w); }).catch(function () {});
+    .then(function (w) { if (w) { if (isHome) startButton(w); footer(w); } }).catch(function () {});
+
+  function startButton(w) {
+    if (!w.start || document.querySelector('a.os-start')) return;
+    var b = document.querySelector('a.cta') || el('a');  // a reader's own call-to-action is promoted, not doubled
+    b.href = w.start;
+    b.className = 'os-start';
+    b.innerHTML = 'Start reading' + (w.start_label ? ': ' + ital(w.start_label) : '') + ' <span aria-hidden="true">→</span>';
+    var h1 = document.querySelector('h1');
+    var head = h1 && h1.closest('header');
+    if (head) head.appendChild(b);
+    else if (h1) h1.parentNode.insertBefore(b, h1.nextElementSibling && /^P$/.test(h1.nextElementSibling.tagName)
+      ? h1.nextElementSibling.nextSibling : h1.nextSibling);
+    else document.body.insertBefore(b, document.body.firstChild);
+  }
 
   function a(href, text) { var x = el('a', { href: href }, text); if (/^https?:/.test(href)) x.rel = 'noopener'; return x; }
   function para(parts) {

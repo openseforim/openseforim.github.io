@@ -183,3 +183,12 @@ html:not(.os-own-palette):not(#os-none) :is(h1,h2,h3,h4):is(.he,.sub-he,[lang="h
 
 /* a reader's own sticky bar under the site strip: a clear edge of its own */
 html.os-has-bar :is(.bar,nav.where){box-shadow:0 2px 8px rgba(0,0,0,.08)}
+
+/* "Start reading" button on a work's home page (os.js, from work.json "start"), and clearer contents links */
+html:not(#os) a.os-start{display:inline-block;margin:14px 0 6px;padding:10px 18px;border-radius:6px;
+  background:var(--os-accent);color:var(--os-bg);font:600 16px/1.3 var(--os-sans);text-decoration:none;
+  box-shadow:0 1px 2px rgba(0,0,0,.15)}
+html:not(#os) a.os-start:hover,html:not(#os) a.os-start:focus-visible{filter:brightness(1.12);text-decoration:none}
+html:not(#os) a.os-start i{font-style:italic}
+html.os-home:not(#os) main table td a,html.os-home:not(#os) article table td a{font-weight:600;
+  text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px}

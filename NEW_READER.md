@@ -58,6 +58,9 @@ Candidate works and their research are in [openseforim/candidates](https://githu
 - [ ] Head of every page: the page's own CSS, then `/assets/os.css` and `/assets/os.js` (see README).
       The build ends with `tools/postbuild.py <slug> docs`.
 - [ ] Phone layout: the source text comes before the English when the columns stack.
+- [ ] Scans: mark each printed page start in the text with a link to the scan (`a.pg`, or `a.scanlink` with
+      `data-scan-img` for copies kept in the reader). The shared `os-scan.js` then adds the "Scan" button and the
+      margin panel by itself. Test one link in the library's viewer: archive.org's viewer can leave out images.
 - [ ] Class names: check that a new class does not collide with one that `tools/export.py` treats specially
       (scan-page links: use `scanlink`, which the export skips; `.pg` is a page citation in Bochart and Lewysohn and is kept).
 - [ ] Preview with `tools/serve_all.py` (all readers at their live paths). To preview a work that is not yet in

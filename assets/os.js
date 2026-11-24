@@ -351,6 +351,14 @@
     document.head.appendChild(vs);
   }
 
+  // page markers with scans: the "Scan" button and panel (assets/os-scan.js, loaded only when needed)
+  if (document.querySelector('a.pg, a.pb, a.scanlink, [data-scan-img], a[href*="archive.org/details/"][href*="/page/n"]')) {
+    var sc = document.createElement('script');
+    sc.src = '/assets/os-scan.js';
+    sc.defer = true;
+    document.head.appendChild(sc);
+  }
+
   window.addEventListener('hashchange', showPassage);
   document.addEventListener('click', function (e) {
     var l = e.target.closest && e.target.closest('a[href^="#"]');

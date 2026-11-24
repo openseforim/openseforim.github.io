@@ -192,3 +192,28 @@ html:not(#os) a.os-start:hover,html:not(#os) a.os-start:focus-visible{filter:bri
 html:not(#os) a.os-start i{font-style:italic}
 html.os-home:not(#os) main table td a,html.os-home:not(#os) article table td a{font-weight:600;
   text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px}
+/* scan panel (os-scan.js): "Scan" button beside "Display"; the panel is fixed at the right and the page makes room */
+:root{--os-scan-w:min(42vw,700px)}
+.os-scan-btn{display:inline-flex;align-items:center;gap:6px;font:500 14px/1.4 var(--os-sans);color:var(--os-fg);
+  background:var(--os-bg);border:1px solid var(--os-line);border-radius:6px;padding:5px 12px;cursor:pointer;margin-right:6px}
+.os-scan-btn:hover{border-color:var(--os-accent);color:var(--os-accent)}
+.os-scan-btn[aria-pressed="true"]{border-color:var(--os-accent);color:var(--os-bg);background:var(--os-accent)}
+.os-scan-ico{font-size:15px;line-height:1}
+.os-disp-inbar ~ .os-scan-btn,.os-scan-btn:has(+ .os-disp-inbar){font-size:13px;padding:3px 10px}
+html.os-scan-on:not(#os-none) body{margin-right:var(--os-scan-w)}
+.os-scan{position:fixed;z-index:30;right:0;top:var(--os-strip-h);bottom:0;width:var(--os-scan-w);
+  display:flex;flex-direction:column;background:var(--os-bg);border-left:1px solid var(--os-line);padding:8px 12px 10px}
+.os-scan[hidden]{display:none}
+.os-scan-head{display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;font:13px/1.4 var(--os-sans);color:var(--os-muted);margin-bottom:6px}
+.os-scan-lbl{font-weight:600;color:var(--os-fg)}
+.os-scan-ext{color:var(--os-accent)}
+.os-scan-x{margin-left:auto;font:18px/1 var(--os-sans);background:none;border:0;color:var(--os-muted);cursor:pointer;padding:2px 6px}
+.os-scan-x:hover{color:var(--os-fg)}
+.os-scan-img{position:relative;flex:1 1 auto;min-height:0;overflow:auto;border:1px solid var(--os-line);background:#fff}
+.os-scan-img img{display:block;width:100%;height:auto}
+.os-scan-wait{position:absolute;top:8px;left:10px;margin:0;font:12px var(--os-sans);color:#666;background:#fffc;padding:2px 6px;border-radius:3px}
+:root[data-theme="dark"] .os-scan-img{background:#111}
+:root[data-theme="dark"] .os-scan-img img{filter:invert(.88) hue-rotate(180deg)}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) .os-scan-img img{filter:invert(.88) hue-rotate(180deg)}}
+:root[data-theme="paper"] .os-scan-img img{filter:sepia(.35)}
+@media (max-width:999px){.os-scan-btn{display:none}html.os-scan-on:not(#os-none) body{margin-right:0}.os-scan{display:none}}

@@ -79,6 +79,30 @@
   },
   {
     "schema": 1,
+    "slug": "maagal-tov",
+    "order": 30,
+    "kind": "translation",
+    "title": "Ḥida, *Ma'agal Tov*",
+    "short_title": "*Ma'agal Tov*",
+    "title_he": "מעגל טוב",
+    "author": "Ḥayyim Yosef David Azulai (1724–1806)",
+    "status_label": "In progress · part 1 (scans 8–12 of the 1885 printing)",
+    "summary": "The Ḥida's travel diary as an emissary of the Land of Israel, with an English translation paragraph by paragraph.",
+    "base_edition": {
+      "label": "Przemyśl 1885 printing (partial)",
+      "scan_url": "https://archive.org/details/maagaltob00azul"
+    },
+    "method": "Paragraph-aligned Hebrew and English; Hebrew from Kraken OCR checked against the scan.",
+    "cite": "Ḥayyim Yosef David Azulai, *Ma'agal Tov*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
+    "url": "https://openseforim.org/maagal-tov/",
+    "repo": "https://github.com/openseforim/maagal-tov",
+    "licence": {
+      "name": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  {
+    "schema": 1,
     "slug": "meor-einayim",
     "order": 30,
     "kind": "translation",

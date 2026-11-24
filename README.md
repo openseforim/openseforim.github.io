@@ -18,6 +18,7 @@ Landing site for https://openseforim.org (org site of the `openseforim` GitHub o
   A site with its own palette (Defus) adds `class="os-own-palette"` to `<html>`. Pages still work without
   these files (for example in a local preview); they only lose the strip and the shared colours.
 - Add a work: give its repo a `work.json`, add it to `WORKS` in `build.py`, run `py -3.13 build.py`.
+  The whole procedure, from candidate to live reader: [NEW_READER.md](NEW_READER.md).
 - `build.py` makes `index.html` (cards), `works.json` and `sitemap.xml` from each reader's `work.json`.
 - `tools/export.py` writes `downloads/<slug>/<slug>.txt|.tei.xml|.epub` from a work's built pages (build.py runs it for
   every text work; `py -3.13 build.py --no-export` skips it). The footer of each work links them.

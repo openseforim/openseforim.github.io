@@ -88,7 +88,7 @@ Candidate works and their research are in [openseforim/candidates](https://githu
 
 ## 8. After publishing
 
-- [ ] Zenodo: the owner switches the new repo on at zenodo.org; then make a release (`vYYYY.MM.DD`), add `doi`
+- [ ] Zenodo: the owner switches the new repo on at <https://zenodo.org/account/settings/github/> (*Sync now*, then the switch); then make a release (`vYYYY.MM.DD`), add `doi`
       to `work.json`, rerun `citation_files.py` and `build.py`.
 - [ ] Old URLs: only for a repo moved into the org (`EzraBrand.github.io` 404 map and `build_redirects.py`).
 - [ ] Record the state (what is checked, translated, next part) in the repo README and in the candidate file.

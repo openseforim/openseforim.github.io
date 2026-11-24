@@ -53,7 +53,8 @@ Candidate works and their research are in [openseforim/candidates](https://githu
 
 - [ ] Copy the structure of a recent reader (`tahkemoni`, `maagal-tov`): `scripts/build_site.py` writes `docs/`,
       `docs/style.css` from that reader, and `docs/work.json` (schema 1: slug, order, kind, title, author,
-      status_label, summary, base_edition, method, cite, url, repo, licence).
+      status_label, start, start_label, summary, base_edition, method, cite, url, repo, licence).
+      `start` (the first reading page) makes the shared script show a "Start reading" button on the work's home page.
 - [ ] Head of every page: the page's own CSS, then `/assets/os.css` and `/assets/os.js` (see README).
       The build ends with `tools/postbuild.py <slug> docs`.
 - [ ] Phone layout: the source text comes before the English when the columns stack.

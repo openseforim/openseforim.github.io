@@ -92,3 +92,14 @@ Candidate works and their research are in [openseforim/candidates](https://githu
       to `work.json`, rerun `citation_files.py` and `build.py`.
 - [ ] Old URLs: only for a repo moved into the org (`EzraBrand.github.io` 404 map and `build_redirects.py`).
 - [ ] Record the state (what is checked, translated, next part) in the repo README and in the candidate file.
+
+## 9. Companion pieces: ask the owner about each one
+
+For every work, consider these three and **ask the owner** whether to make them (and when: at the pilot, or when the
+text is complete). Do not skip the question.
+
+- [ ] **Blog post** on ezrabrand.com about the work and how the edition was made (the `blogpost-writing` skill).
+- [ ] **Background page** for general readers: `BACKGROUND.md` in the repo, built as `docs/background.html` and linked
+      from the work's index (models: maagal-tov, tahkemoni). History, the author, the form, the world of the book,
+      how to read this edition, further reading.
+- [ ] **Index of places and people** across the whole text (model: emden).

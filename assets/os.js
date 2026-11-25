@@ -296,7 +296,7 @@
     f.appendChild(fi);
     document.body.appendChild(f);
     work = w;
-    showPassage();
+    showPassage(true);  // page opened at an address: a passage only, not a note or note mark
   }
 
   // ---- cite this passage: a bar for the passage in the address (#anchor) ----
@@ -332,7 +332,7 @@
     });
     return b;
   }
-  function showPassage() {
+  function showPassage(onLoad) {
     if (bar) { bar.remove(); bar = null; }
     if (reportLink && work && work.repo) {
       var ch0 = chapterTitle();
@@ -342,6 +342,7 @@
     if (!work || !id || id === 'notes' || id === 'top') return;
     var t = document.getElementById(id);
     if (!t || t.closest('footer, .os-foot, nav')) return;
+    if (onLoad === true && !isPassage(t)) return;
     var label = passageLabel(t, id), ch = chapterTitle();
     var url = location.origin + location.pathname + '#' + encodeURIComponent(id);
     var c = plain(work.cite || work.title) + '. ' + (ch ? ch + ', ' : '') + label + '. ' + url + ' (accessed ' + today() + ').';
@@ -376,9 +377,27 @@
     document.head.appendChild(sc);
   }
 
-  window.addEventListener('hashchange', showPassage);
+  // The bar opens only when the reader asks for this passage: a permalink (a link inside its own target,
+  // such as a paragraph number) is clicked, or the page opens at a passage address. Footnote jumps, the
+  // jump back from a note, and Back/Forward do not open it.
+  function closePassage() { if (bar) { bar.remove(); bar = null; } }
+  function isPassage(t) {
+    return t && !t.matches('a, sup, span, li') && !t.closest('ol, ul, aside, .notes, footer, .os-foot, nav');
+  }
+  var lastLink = null;
+  window.addEventListener('hashchange', function () {
+    var l = lastLink; lastLink = null;
+    var t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (l && t && t.contains(l)) showPassage(); else closePassage();
+  });
   document.addEventListener('click', function (e) {
     var l = e.target.closest && e.target.closest('a[href^="#"]');
-    if (l && l.getAttribute('href') === location.hash) setTimeout(showPassage, 0);  // same anchor clicked again
-  });
+    if (!l) return;
+    lastLink = l;
+    if (l.getAttribute('href') === location.hash) {  // same anchor clicked again: no hashchange
+      lastLink = null;
+      var t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (t && t.contains(l)) setTimeout(showPassage, 0);
+    }
+  }, true);
 })();

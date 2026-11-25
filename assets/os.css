@@ -218,3 +218,7 @@ html.os-scan-on:not(#os-none) body{margin-right:var(--os-scan-w)}
 :root[data-theme="paper"] .os-scan-img img{filter:sepia(.35)}
 @media (max-width:999px){.os-scan-btn{display:none}html.os-scan-on:not(#os-none) body{margin-right:0}.os-scan{display:none}}
 .os-passage a.os-report{text-decoration:none;display:inline-block}
+/* touch screens: a tap must not leave a paragraph colored (sticky :hover); a target paragraph shows, then clears */
+@media (hover:none){.row:hover:not(:target),.nl-row:hover:not(:target){background:transparent}}
+@keyframes os-flash{to{background-color:transparent}}
+.row:target,.nl-row:target,section.blk:target,.cell:target{animation:os-flash 1.6s ease-in 1.2s forwards}

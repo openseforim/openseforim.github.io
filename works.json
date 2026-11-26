@@ -92,15 +92,15 @@
     "short_title": "*Ma'agal Tov*",
     "title_he": "מעגל טוב",
     "author": "Ḥayyim Yosef David Azulai (1724–1806)",
-    "status_label": "Complete · the 1885 printing, 12 parts",
-    "start": "part-01.html",
-    "start_label": "Part 1, Tunis, Livorno and Pisa",
+    "status_label": "Complete · both journeys (Freimann) and the 1885 printing",
+    "start": "full-01.html",
+    "start_label": "The full diary, from Jerusalem to the Alps",
     "summary": "The Ḥida's travel diary as an emissary of the Land of Israel, with an English translation paragraph by paragraph.",
     "base_edition": {
-      "label": "Przemyśl 1885 printing (the second journey only)",
-      "scan_url": "https://archive.org/details/maagaltob00azul"
+      "label": "A. Freimann, Ma'agal Tov ha-Shalem (Berlin–Jerusalem 1921–34), and the Przemyśl 1885 printing",
+      "scan_url": "https://www.nli.org.il/he/books/NNL_ALEPH990011568950205171/NLI"
     },
-    "method": "Paragraph-aligned Hebrew and English; Hebrew from Kraken OCR checked against the scan.",
+    "method": "Paragraph-aligned Hebrew and English; Hebrew from Kraken OCR checked against the scans of both editions.",
     "cite": "Ḥayyim Yosef David Azulai, *Ma'agal Tov*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/maagal-tov/",
     "repo": "https://github.com/openseforim/maagal-tov",

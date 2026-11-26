@@ -185,6 +185,7 @@
     "cite": "Zacharias Frankel, *Mevo ha-Yerushalmi*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/frankel-mevo/",
     "repo": "https://github.com/openseforim/frankel-mevo",
+    "doi": "10.5281/zenodo.24559622",
     "licence": {
       "name": "CC BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -211,6 +212,7 @@
     "cite": "Zacharias Frankel, *Darkhe ha-Mishnah*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
     "url": "https://openseforim.org/frankel-darkhe/",
     "repo": "https://github.com/openseforim/frankel-darkhe",
+    "doi": "10.5281/zenodo.24559624",
     "licence": {
       "name": "CC BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/"
